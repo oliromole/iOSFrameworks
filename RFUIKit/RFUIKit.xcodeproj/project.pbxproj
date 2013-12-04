@@ -1,0 +1,744 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		300AC73B17C430C2002637FA /* RFUIInterfaceOrientationMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 300AC6FC17C430C2002637FA /* RFUIInterfaceOrientationMode.m */; };
+		300AC73C17C430C2002637FA /* RFUIBarButtonItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 300AC6FE17C430C2002637FA /* RFUIBarButtonItemView.m */; };
+		300AC73D17C430C2002637FA /* RFUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 300AC70017C430C2002637FA /* RFUIButton.m */; };
+		300AC73E17C430C2002637FA /* RFUICheckView.m in Sources */ = {isa = PBXBuildFile; fileRef = 300AC70217C430C2002637FA /* RFUICheckView.m */; };
+		300AC73F17C430C2002637FA /* RFUIContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 300AC70417C430C2002637FA /* RFUIContainerView.m */; };
+		300AC74017C430C2002637FA /* RFUIForwardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 300AC70617C430C2002637FA /* RFUIForwardView.m */; };
+		300AC74117C430C2002637FA /* RFUIImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 300AC70817C430C2002637FA /* RFUIImageCache.m */; };
+		300AC74217C430C2002637FA /* RFUIImageCheckView.m in Sources */ = {isa = PBXBuildFile; fileRef = 300AC70A17C430C2002637FA /* RFUIImageCheckView.m */; };
+		300AC74317C430C2002637FA /* RFUIImageSplitBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 300AC70C17C430C2002637FA /* RFUIImageSplitBackgroundView.m */; };
+		300AC74417C430C2002637FA /* RFUIKeyboardCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 300AC70E17C430C2002637FA /* RFUIKeyboardCenter.m */; };
+		300AC74517C430C2002637FA /* RFUIKeyboardLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 300AC71017C430C2002637FA /* RFUIKeyboardLayoutView.m */; };
+		300AC74617C430C2002637FA /* RFUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 300AC71217C430C2002637FA /* RFUIKit.m */; };
+		300AC74717C430C2002637FA /* RFUILocalNetworkActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 300AC71417C430C2002637FA /* RFUILocalNetworkActivityIndicator.m */; };
+		300AC74817C430C2002637FA /* RFUINavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 300AC71617C430C2002637FA /* RFUINavigationController.m */; };
+		300AC74917C430C2002637FA /* RFUINetworkActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 300AC71817C430C2002637FA /* RFUINetworkActivityIndicator.m */; };
+		300AC74A17C430C2002637FA /* RFUIPageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 300AC71A17C430C2002637FA /* RFUIPageScrollView.m */; };
+		300AC74B17C430C2002637FA /* RFUIPageScrollViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 300AC71C17C430C2002637FA /* RFUIPageScrollViewCell.m */; };
+		300AC74C17C430C2002637FA /* RFUIScreenShooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 300AC71E17C430C2002637FA /* RFUIScreenShooter.m */; };
+		300AC74D17C430C2002637FA /* RFUIScrollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 300AC72017C430C2002637FA /* RFUIScrollLabel.m */; };
+		300AC74E17C430C2002637FA /* RFUISplitBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 300AC72217C430C2002637FA /* RFUISplitBackgroundView.m */; };
+		300AC75017C430C2002637FA /* RFUIStatusBarCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 300AC72617C430C2002637FA /* RFUIStatusBarCenter.m */; };
+		300AC75117C430C2002637FA /* RFUIStatusBarLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 300AC72817C430C2002637FA /* RFUIStatusBarLayoutView.m */; };
+		300AC75417C430C2002637FA /* RFUITextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 300AC72E17C430C2002637FA /* RFUITextField.m */; };
+		300AC75517C430C2002637FA /* RFUITreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 300AC73017C430C2002637FA /* RFUITreeView.m */; };
+		300AC75617C430C2002637FA /* RFUITreeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 300AC73217C430C2002637FA /* RFUITreeViewCell.m */; };
+		300AC75717C430C2002637FA /* RFUITreeViewNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 300AC73417C430C2002637FA /* RFUITreeViewNode.m */; };
+		300AC75817C430C2002637FA /* RFUITreeViewRowAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 300AC73617C430C2002637FA /* RFUITreeViewRowAnimation.m */; };
+		30361CBE1825661A0064DBC3 /* RFUIBarButtonItemViewContentWidthMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 30361CBC1825661A0064DBC3 /* RFUIBarButtonItemViewContentWidthMode.m */; };
+		30361CC3182566D30064DBC3 /* RFUIBarButtonItemViewContentHeightMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 30361CC1182566D30064DBC3 /* RFUIBarButtonItemViewContentHeightMode.m */; };
+		30361CC8182569250064DBC3 /* RFUIContainerViewContentViewOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 30361CC6182569250064DBC3 /* RFUIContainerViewContentViewOptions.m */; };
+		30361CCD18256A0B0064DBC3 /* RFUIForwardViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30361CCB18256A0B0064DBC3 /* RFUIForwardViewDelegate.m */; };
+		30361CD218256BFA0064DBC3 /* RFUIImageCacheNotImageNamedBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 30361CD018256BFA0064DBC3 /* RFUIImageCacheNotImageNamedBlock.m */; };
+		30361CD718256FB80064DBC3 /* RFUIKeyboardDisplayState.m in Sources */ = {isa = PBXBuildFile; fileRef = 30361CD518256FB80064DBC3 /* RFUIKeyboardDisplayState.m */; };
+		30361CDC182572070064DBC3 /* RFUIFirstResponderArrangement.m in Sources */ = {isa = PBXBuildFile; fileRef = 30361CDA182572070064DBC3 /* RFUIFirstResponderArrangement.m */; };
+		30361CE11825924F0064DBC3 /* RFUIPageScrollViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 30361CDF1825924F0064DBC3 /* RFUIPageScrollViewDataSource.m */; };
+		30361CE6182592B70064DBC3 /* RFUIPageScrollViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30361CE4182592B70064DBC3 /* RFUIPageScrollViewDelegate.m */; };
+		30361CEB182593460064DBC3 /* RFUIScreenShooterImageType.m in Sources */ = {isa = PBXBuildFile; fileRef = 30361CE9182593460064DBC3 /* RFUIScreenShooterImageType.m */; };
+		308F93851825A76000D92D99 /* RFUITreeViewScrollPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 308F93831825A76000D92D99 /* RFUITreeViewScrollPosition.m */; };
+		308F938A1825A7FB00D92D99 /* RFUITreeViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 308F93881825A7FB00D92D99 /* RFUITreeViewDelegate.m */; };
+		308F938F1825A92B00D92D99 /* RFUITreeViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 308F938D1825A92B00D92D99 /* RFUITreeViewDataSource.m */; };
+		309342B3184EAEFA00FB31E9 /* RFUIBarButtonItemView.h in Headers */ = {isa = PBXBuildFile; fileRef = 300AC6FD17C430C2002637FA /* RFUIBarButtonItemView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309342B4184EAEFA00FB31E9 /* RFUIBarButtonItemViewContentHeightMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 30361CC0182566D30064DBC3 /* RFUIBarButtonItemViewContentHeightMode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309342B5184EAEFA00FB31E9 /* RFUIBarButtonItemViewContentWidthMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 30361CBB1825661A0064DBC3 /* RFUIBarButtonItemViewContentWidthMode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309342B6184EAEFA00FB31E9 /* RFUIButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 300AC6FF17C430C2002637FA /* RFUIButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309342B7184EAEFA00FB31E9 /* RFUICheckView.h in Headers */ = {isa = PBXBuildFile; fileRef = 300AC70117C430C2002637FA /* RFUICheckView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309342B8184EAEFA00FB31E9 /* RFUIContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 300AC70317C430C2002637FA /* RFUIContainerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309342B9184EAEFA00FB31E9 /* RFUIContainerViewContentViewOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 30361CC5182569250064DBC3 /* RFUIContainerViewContentViewOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309342BA184EAEFA00FB31E9 /* RFUIFirstResponderArrangement.h in Headers */ = {isa = PBXBuildFile; fileRef = 30361CD9182572070064DBC3 /* RFUIFirstResponderArrangement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309342BB184EAEFA00FB31E9 /* RFUIForwardView.h in Headers */ = {isa = PBXBuildFile; fileRef = 300AC70517C430C2002637FA /* RFUIForwardView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309342BC184EAEFA00FB31E9 /* RFUIForwardViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 30361CCA18256A0B0064DBC3 /* RFUIForwardViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309342BD184EAEFA00FB31E9 /* RFUIImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 300AC70717C430C2002637FA /* RFUIImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309342BE184EAEFA00FB31E9 /* RFUIImageCacheNotImageNamedBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 30361CCF18256BFA0064DBC3 /* RFUIImageCacheNotImageNamedBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309342BF184EAEFA00FB31E9 /* RFUIImageCheckView.h in Headers */ = {isa = PBXBuildFile; fileRef = 300AC70917C430C2002637FA /* RFUIImageCheckView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309342C0184EAEFA00FB31E9 /* RFUIImageSplitBackgroundView.h in Headers */ = {isa = PBXBuildFile; fileRef = 300AC70B17C430C2002637FA /* RFUIImageSplitBackgroundView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309342C1184EAEFA00FB31E9 /* RFUIInterfaceOrientationMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 300AC6FB17C430C2002637FA /* RFUIInterfaceOrientationMode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309342C2184EAEFA00FB31E9 /* RFUIKeyboardCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 300AC70D17C430C2002637FA /* RFUIKeyboardCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309342C3184EAEFA00FB31E9 /* RFUIKeyboardDisplayState.h in Headers */ = {isa = PBXBuildFile; fileRef = 30361CD418256FB80064DBC3 /* RFUIKeyboardDisplayState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309342C4184EAEFA00FB31E9 /* RFUIKeyboardLayoutView.h in Headers */ = {isa = PBXBuildFile; fileRef = 300AC70F17C430C2002637FA /* RFUIKeyboardLayoutView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309342C5184EAEFA00FB31E9 /* RFUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 300AC71117C430C2002637FA /* RFUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309342C6184EAEFA00FB31E9 /* RFUILocalNetworkActivityIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 300AC71317C430C2002637FA /* RFUILocalNetworkActivityIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309342C7184EAEFA00FB31E9 /* RFUINavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 300AC71517C430C2002637FA /* RFUINavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309342C8184EAEFA00FB31E9 /* RFUINetworkActivityIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 300AC71717C430C2002637FA /* RFUINetworkActivityIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309342C9184EAEFA00FB31E9 /* RFUIPageScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 300AC71917C430C2002637FA /* RFUIPageScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309342CA184EAEFA00FB31E9 /* RFUIPageScrollViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 300AC71B17C430C2002637FA /* RFUIPageScrollViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309342CB184EAEFA00FB31E9 /* RFUIPageScrollViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 30375FF7181F30670029AE3A /* RFUIPageScrollViewDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309342CC184EAEFA00FB31E9 /* RFUIPageScrollViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 30375FF9181F312B0029AE3A /* RFUIPageScrollViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309342CD184EAEFA00FB31E9 /* RFUIScreenShooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 300AC71D17C430C2002637FA /* RFUIScreenShooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309342CE184EAEFA00FB31E9 /* RFUIScreenShooterImageType.h in Headers */ = {isa = PBXBuildFile; fileRef = 30361CE8182593460064DBC3 /* RFUIScreenShooterImageType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309342CF184EAEFA00FB31E9 /* RFUIScrollLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 300AC71F17C430C2002637FA /* RFUIScrollLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309342D0184EAEFA00FB31E9 /* RFUISplitBackgroundView.h in Headers */ = {isa = PBXBuildFile; fileRef = 300AC72117C430C2002637FA /* RFUISplitBackgroundView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309342D1184EAEFA00FB31E9 /* RFUIStatusBarCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 300AC72517C430C2002637FA /* RFUIStatusBarCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309342D2184EAEFA00FB31E9 /* RFUIStatusBarLayoutView.h in Headers */ = {isa = PBXBuildFile; fileRef = 300AC72717C430C2002637FA /* RFUIStatusBarLayoutView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309342D3184EAEFA00FB31E9 /* RFUITextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 300AC72D17C430C2002637FA /* RFUITextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309342D4184EAEFA00FB31E9 /* RFUITreeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 300AC72F17C430C2002637FA /* RFUITreeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309342D5184EAEFA00FB31E9 /* RFUITreeViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 300AC73117C430C2002637FA /* RFUITreeViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309342D6184EAEFA00FB31E9 /* RFUITreeViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 308F938C1825A92B00D92D99 /* RFUITreeViewDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309342D7184EAEFA00FB31E9 /* RFUITreeViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 308F93871825A7FB00D92D99 /* RFUITreeViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309342D8184EAEFA00FB31E9 /* RFUITreeViewNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 300AC73317C430C2002637FA /* RFUITreeViewNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309342D9184EAEFA00FB31E9 /* RFUITreeViewRowAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 300AC73517C430C2002637FA /* RFUITreeViewRowAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309342DA184EAEFA00FB31E9 /* RFUITreeViewScrollPosition.h in Headers */ = {isa = PBXBuildFile; fileRef = 308F93821825A76000D92D99 /* RFUITreeViewScrollPosition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309342DB184EAF0200FB31E9 /* RFUIKit-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 300AC6F017C43081002637FA /* RFUIKit-Prefix.pch */; };
+		309342DD184EAF2B00FB31E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309342DC184EAF2B00FB31E9 /* UIKit.framework */; };
+		309342DF184EAF3B00FB31E9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309342DE184EAF3B00FB31E9 /* QuartzCore.framework */; };
+		309342E1184EAF4400FB31E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309342E0184EAF4400FB31E9 /* Foundation.framework */; };
+		309342E3184EAF4C00FB31E9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309342E2184EAF4C00FB31E9 /* CoreGraphics.framework */; };
+		309342E5184EAF5200FB31E9 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309342E4184EAF5200FB31E9 /* CoreFoundation.framework */; };
+		309342ED184EAFA800FB31E9 /* RECoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309342E7184EAFA800FB31E9 /* RECoreGraphics.framework */; };
+		309342EE184EAFA800FB31E9 /* REFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309342E8184EAFA800FB31E9 /* REFoundation.framework */; };
+		309342EF184EAFA800FB31E9 /* REUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309342E9184EAFA800FB31E9 /* REUIKit.framework */; };
+		309342F0184EAFA800FB31E9 /* RFFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309342EA184EAFA800FB31E9 /* RFFoundation.framework */; };
+		309342F1184EAFA800FB31E9 /* RWObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309342EB184EAFA800FB31E9 /* RWObjC.framework */; };
+		309342F2184EAFA800FB31E9 /* RWUUID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309342EC184EAFA800FB31E9 /* RWUUID.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		300AC6E917C43081002637FA /* libRFUIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRFUIKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		300AC6F017C43081002637FA /* RFUIKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RFUIKit-Prefix.pch"; sourceTree = "<group>"; };
+		300AC6FB17C430C2002637FA /* RFUIInterfaceOrientationMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUIInterfaceOrientationMode.h; sourceTree = "<group>"; };
+		300AC6FC17C430C2002637FA /* RFUIInterfaceOrientationMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUIInterfaceOrientationMode.m; sourceTree = "<group>"; };
+		300AC6FD17C430C2002637FA /* RFUIBarButtonItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUIBarButtonItemView.h; sourceTree = "<group>"; };
+		300AC6FE17C430C2002637FA /* RFUIBarButtonItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUIBarButtonItemView.m; sourceTree = "<group>"; };
+		300AC6FF17C430C2002637FA /* RFUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUIButton.h; sourceTree = "<group>"; };
+		300AC70017C430C2002637FA /* RFUIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUIButton.m; sourceTree = "<group>"; };
+		300AC70117C430C2002637FA /* RFUICheckView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUICheckView.h; sourceTree = "<group>"; };
+		300AC70217C430C2002637FA /* RFUICheckView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUICheckView.m; sourceTree = "<group>"; };
+		300AC70317C430C2002637FA /* RFUIContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUIContainerView.h; sourceTree = "<group>"; };
+		300AC70417C430C2002637FA /* RFUIContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUIContainerView.m; sourceTree = "<group>"; };
+		300AC70517C430C2002637FA /* RFUIForwardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUIForwardView.h; sourceTree = "<group>"; };
+		300AC70617C430C2002637FA /* RFUIForwardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUIForwardView.m; sourceTree = "<group>"; };
+		300AC70717C430C2002637FA /* RFUIImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUIImageCache.h; sourceTree = "<group>"; };
+		300AC70817C430C2002637FA /* RFUIImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUIImageCache.m; sourceTree = "<group>"; };
+		300AC70917C430C2002637FA /* RFUIImageCheckView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUIImageCheckView.h; sourceTree = "<group>"; };
+		300AC70A17C430C2002637FA /* RFUIImageCheckView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUIImageCheckView.m; sourceTree = "<group>"; };
+		300AC70B17C430C2002637FA /* RFUIImageSplitBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUIImageSplitBackgroundView.h; sourceTree = "<group>"; };
+		300AC70C17C430C2002637FA /* RFUIImageSplitBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUIImageSplitBackgroundView.m; sourceTree = "<group>"; };
+		300AC70D17C430C2002637FA /* RFUIKeyboardCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUIKeyboardCenter.h; sourceTree = "<group>"; };
+		300AC70E17C430C2002637FA /* RFUIKeyboardCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUIKeyboardCenter.m; sourceTree = "<group>"; };
+		300AC70F17C430C2002637FA /* RFUIKeyboardLayoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUIKeyboardLayoutView.h; sourceTree = "<group>"; };
+		300AC71017C430C2002637FA /* RFUIKeyboardLayoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUIKeyboardLayoutView.m; sourceTree = "<group>"; };
+		300AC71117C430C2002637FA /* RFUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUIKit.h; sourceTree = "<group>"; };
+		300AC71217C430C2002637FA /* RFUIKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUIKit.m; sourceTree = "<group>"; };
+		300AC71317C430C2002637FA /* RFUILocalNetworkActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUILocalNetworkActivityIndicator.h; sourceTree = "<group>"; };
+		300AC71417C430C2002637FA /* RFUILocalNetworkActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUILocalNetworkActivityIndicator.m; sourceTree = "<group>"; };
+		300AC71517C430C2002637FA /* RFUINavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUINavigationController.h; sourceTree = "<group>"; };
+		300AC71617C430C2002637FA /* RFUINavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUINavigationController.m; sourceTree = "<group>"; };
+		300AC71717C430C2002637FA /* RFUINetworkActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUINetworkActivityIndicator.h; sourceTree = "<group>"; };
+		300AC71817C430C2002637FA /* RFUINetworkActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUINetworkActivityIndicator.m; sourceTree = "<group>"; };
+		300AC71917C430C2002637FA /* RFUIPageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUIPageScrollView.h; sourceTree = "<group>"; };
+		300AC71A17C430C2002637FA /* RFUIPageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUIPageScrollView.m; sourceTree = "<group>"; };
+		300AC71B17C430C2002637FA /* RFUIPageScrollViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUIPageScrollViewCell.h; sourceTree = "<group>"; };
+		300AC71C17C430C2002637FA /* RFUIPageScrollViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUIPageScrollViewCell.m; sourceTree = "<group>"; };
+		300AC71D17C430C2002637FA /* RFUIScreenShooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUIScreenShooter.h; sourceTree = "<group>"; };
+		300AC71E17C430C2002637FA /* RFUIScreenShooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUIScreenShooter.m; sourceTree = "<group>"; };
+		300AC71F17C430C2002637FA /* RFUIScrollLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUIScrollLabel.h; sourceTree = "<group>"; };
+		300AC72017C430C2002637FA /* RFUIScrollLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUIScrollLabel.m; sourceTree = "<group>"; };
+		300AC72117C430C2002637FA /* RFUISplitBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUISplitBackgroundView.h; sourceTree = "<group>"; };
+		300AC72217C430C2002637FA /* RFUISplitBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUISplitBackgroundView.m; sourceTree = "<group>"; };
+		300AC72517C430C2002637FA /* RFUIStatusBarCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUIStatusBarCenter.h; sourceTree = "<group>"; };
+		300AC72617C430C2002637FA /* RFUIStatusBarCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUIStatusBarCenter.m; sourceTree = "<group>"; };
+		300AC72717C430C2002637FA /* RFUIStatusBarLayoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUIStatusBarLayoutView.h; sourceTree = "<group>"; };
+		300AC72817C430C2002637FA /* RFUIStatusBarLayoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUIStatusBarLayoutView.m; sourceTree = "<group>"; };
+		300AC72D17C430C2002637FA /* RFUITextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUITextField.h; sourceTree = "<group>"; };
+		300AC72E17C430C2002637FA /* RFUITextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUITextField.m; sourceTree = "<group>"; };
+		300AC72F17C430C2002637FA /* RFUITreeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUITreeView.h; sourceTree = "<group>"; };
+		300AC73017C430C2002637FA /* RFUITreeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUITreeView.m; sourceTree = "<group>"; };
+		300AC73117C430C2002637FA /* RFUITreeViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUITreeViewCell.h; sourceTree = "<group>"; };
+		300AC73217C430C2002637FA /* RFUITreeViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUITreeViewCell.m; sourceTree = "<group>"; };
+		300AC73317C430C2002637FA /* RFUITreeViewNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUITreeViewNode.h; sourceTree = "<group>"; };
+		300AC73417C430C2002637FA /* RFUITreeViewNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUITreeViewNode.m; sourceTree = "<group>"; };
+		300AC73517C430C2002637FA /* RFUITreeViewRowAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUITreeViewRowAnimation.h; sourceTree = "<group>"; };
+		300AC73617C430C2002637FA /* RFUITreeViewRowAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUITreeViewRowAnimation.m; sourceTree = "<group>"; };
+		30361CBB1825661A0064DBC3 /* RFUIBarButtonItemViewContentWidthMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUIBarButtonItemViewContentWidthMode.h; sourceTree = "<group>"; };
+		30361CBC1825661A0064DBC3 /* RFUIBarButtonItemViewContentWidthMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUIBarButtonItemViewContentWidthMode.m; sourceTree = "<group>"; };
+		30361CC0182566D30064DBC3 /* RFUIBarButtonItemViewContentHeightMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUIBarButtonItemViewContentHeightMode.h; sourceTree = "<group>"; };
+		30361CC1182566D30064DBC3 /* RFUIBarButtonItemViewContentHeightMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUIBarButtonItemViewContentHeightMode.m; sourceTree = "<group>"; };
+		30361CC5182569250064DBC3 /* RFUIContainerViewContentViewOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUIContainerViewContentViewOptions.h; sourceTree = "<group>"; };
+		30361CC6182569250064DBC3 /* RFUIContainerViewContentViewOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUIContainerViewContentViewOptions.m; sourceTree = "<group>"; };
+		30361CCA18256A0B0064DBC3 /* RFUIForwardViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUIForwardViewDelegate.h; sourceTree = "<group>"; };
+		30361CCB18256A0B0064DBC3 /* RFUIForwardViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUIForwardViewDelegate.m; sourceTree = "<group>"; };
+		30361CCF18256BFA0064DBC3 /* RFUIImageCacheNotImageNamedBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUIImageCacheNotImageNamedBlock.h; sourceTree = "<group>"; };
+		30361CD018256BFA0064DBC3 /* RFUIImageCacheNotImageNamedBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUIImageCacheNotImageNamedBlock.m; sourceTree = "<group>"; };
+		30361CD418256FB80064DBC3 /* RFUIKeyboardDisplayState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUIKeyboardDisplayState.h; sourceTree = "<group>"; };
+		30361CD518256FB80064DBC3 /* RFUIKeyboardDisplayState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUIKeyboardDisplayState.m; sourceTree = "<group>"; };
+		30361CD9182572070064DBC3 /* RFUIFirstResponderArrangement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUIFirstResponderArrangement.h; sourceTree = "<group>"; };
+		30361CDA182572070064DBC3 /* RFUIFirstResponderArrangement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUIFirstResponderArrangement.m; sourceTree = "<group>"; };
+		30361CDF1825924F0064DBC3 /* RFUIPageScrollViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUIPageScrollViewDataSource.m; sourceTree = "<group>"; };
+		30361CE4182592B70064DBC3 /* RFUIPageScrollViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUIPageScrollViewDelegate.m; sourceTree = "<group>"; };
+		30361CE8182593460064DBC3 /* RFUIScreenShooterImageType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUIScreenShooterImageType.h; sourceTree = "<group>"; };
+		30361CE9182593460064DBC3 /* RFUIScreenShooterImageType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUIScreenShooterImageType.m; sourceTree = "<group>"; };
+		30375FF7181F30670029AE3A /* RFUIPageScrollViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUIPageScrollViewDataSource.h; sourceTree = "<group>"; };
+		30375FF9181F312B0029AE3A /* RFUIPageScrollViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUIPageScrollViewDelegate.h; sourceTree = "<group>"; };
+		308F93821825A76000D92D99 /* RFUITreeViewScrollPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUITreeViewScrollPosition.h; sourceTree = "<group>"; };
+		308F93831825A76000D92D99 /* RFUITreeViewScrollPosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUITreeViewScrollPosition.m; sourceTree = "<group>"; };
+		308F93871825A7FB00D92D99 /* RFUITreeViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUITreeViewDelegate.h; sourceTree = "<group>"; };
+		308F93881825A7FB00D92D99 /* RFUITreeViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUITreeViewDelegate.m; sourceTree = "<group>"; };
+		308F938C1825A92B00D92D99 /* RFUITreeViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUITreeViewDataSource.h; sourceTree = "<group>"; };
+		308F938D1825A92B00D92D99 /* RFUITreeViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUITreeViewDataSource.m; sourceTree = "<group>"; };
+		309342DC184EAF2B00FB31E9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		309342DE184EAF3B00FB31E9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		309342E0184EAF4400FB31E9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		309342E2184EAF4C00FB31E9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		309342E4184EAF5200FB31E9 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		309342E7184EAFA800FB31E9 /* RECoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RECoreGraphics.framework; path = ../Frameworks/RECoreGraphics.framework; sourceTree = "<group>"; };
+		309342E8184EAFA800FB31E9 /* REFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = REFoundation.framework; path = ../Frameworks/REFoundation.framework; sourceTree = "<group>"; };
+		309342E9184EAFA800FB31E9 /* REUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = REUIKit.framework; path = ../Frameworks/REUIKit.framework; sourceTree = "<group>"; };
+		309342EA184EAFA800FB31E9 /* RFFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RFFoundation.framework; path = ../Frameworks/RFFoundation.framework; sourceTree = "<group>"; };
+		309342EB184EAFA800FB31E9 /* RWObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RWObjC.framework; path = ../Frameworks/RWObjC.framework; sourceTree = "<group>"; };
+		309342EC184EAFA800FB31E9 /* RWUUID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RWUUID.framework; path = ../Frameworks/RWUUID.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		300AC6E617C43081002637FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				309342E5184EAF5200FB31E9 /* CoreFoundation.framework in Frameworks */,
+				309342ED184EAFA800FB31E9 /* RECoreGraphics.framework in Frameworks */,
+				309342EF184EAFA800FB31E9 /* REUIKit.framework in Frameworks */,
+				309342E3184EAF4C00FB31E9 /* CoreGraphics.framework in Frameworks */,
+				309342F2184EAFA800FB31E9 /* RWUUID.framework in Frameworks */,
+				309342E1184EAF4400FB31E9 /* Foundation.framework in Frameworks */,
+				309342F1184EAFA800FB31E9 /* RWObjC.framework in Frameworks */,
+				309342EE184EAFA800FB31E9 /* REFoundation.framework in Frameworks */,
+				309342DF184EAF3B00FB31E9 /* QuartzCore.framework in Frameworks */,
+				309342F0184EAFA800FB31E9 /* RFFoundation.framework in Frameworks */,
+				309342DD184EAF2B00FB31E9 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		300AC6E017C43081002637FA = {
+			isa = PBXGroup;
+			children = (
+				300AC6EE17C43081002637FA /* RFUIKit */,
+				300AC6EB17C43081002637FA /* Frameworks */,
+				309342E6184EAF8900FB31E9 /* External Frameworks */,
+				300AC6EA17C43081002637FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		300AC6EA17C43081002637FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				300AC6E917C43081002637FA /* libRFUIKit.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		300AC6EB17C43081002637FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				309342E4184EAF5200FB31E9 /* CoreFoundation.framework */,
+				309342E2184EAF4C00FB31E9 /* CoreGraphics.framework */,
+				309342E0184EAF4400FB31E9 /* Foundation.framework */,
+				309342DE184EAF3B00FB31E9 /* QuartzCore.framework */,
+				309342DC184EAF2B00FB31E9 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		300AC6EE17C43081002637FA /* RFUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				300AC6FA17C430C2002637FA /* RFUIKit */,
+				300AC6F017C43081002637FA /* RFUIKit-Prefix.pch */,
+			);
+			path = RFUIKit;
+			sourceTree = "<group>";
+		};
+		300AC6FA17C430C2002637FA /* RFUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				300AC6FD17C430C2002637FA /* RFUIBarButtonItemView.h */,
+				300AC6FE17C430C2002637FA /* RFUIBarButtonItemView.m */,
+				30361CC0182566D30064DBC3 /* RFUIBarButtonItemViewContentHeightMode.h */,
+				30361CC1182566D30064DBC3 /* RFUIBarButtonItemViewContentHeightMode.m */,
+				30361CBB1825661A0064DBC3 /* RFUIBarButtonItemViewContentWidthMode.h */,
+				30361CBC1825661A0064DBC3 /* RFUIBarButtonItemViewContentWidthMode.m */,
+				300AC6FF17C430C2002637FA /* RFUIButton.h */,
+				300AC70017C430C2002637FA /* RFUIButton.m */,
+				300AC70117C430C2002637FA /* RFUICheckView.h */,
+				300AC70217C430C2002637FA /* RFUICheckView.m */,
+				300AC70317C430C2002637FA /* RFUIContainerView.h */,
+				300AC70417C430C2002637FA /* RFUIContainerView.m */,
+				30361CC5182569250064DBC3 /* RFUIContainerViewContentViewOptions.h */,
+				30361CC6182569250064DBC3 /* RFUIContainerViewContentViewOptions.m */,
+				30361CD9182572070064DBC3 /* RFUIFirstResponderArrangement.h */,
+				30361CDA182572070064DBC3 /* RFUIFirstResponderArrangement.m */,
+				300AC70517C430C2002637FA /* RFUIForwardView.h */,
+				300AC70617C430C2002637FA /* RFUIForwardView.m */,
+				30361CCA18256A0B0064DBC3 /* RFUIForwardViewDelegate.h */,
+				30361CCB18256A0B0064DBC3 /* RFUIForwardViewDelegate.m */,
+				300AC70717C430C2002637FA /* RFUIImageCache.h */,
+				300AC70817C430C2002637FA /* RFUIImageCache.m */,
+				30361CCF18256BFA0064DBC3 /* RFUIImageCacheNotImageNamedBlock.h */,
+				30361CD018256BFA0064DBC3 /* RFUIImageCacheNotImageNamedBlock.m */,
+				300AC70917C430C2002637FA /* RFUIImageCheckView.h */,
+				300AC70A17C430C2002637FA /* RFUIImageCheckView.m */,
+				300AC70B17C430C2002637FA /* RFUIImageSplitBackgroundView.h */,
+				300AC70C17C430C2002637FA /* RFUIImageSplitBackgroundView.m */,
+				300AC6FB17C430C2002637FA /* RFUIInterfaceOrientationMode.h */,
+				300AC6FC17C430C2002637FA /* RFUIInterfaceOrientationMode.m */,
+				300AC70D17C430C2002637FA /* RFUIKeyboardCenter.h */,
+				300AC70E17C430C2002637FA /* RFUIKeyboardCenter.m */,
+				30361CD418256FB80064DBC3 /* RFUIKeyboardDisplayState.h */,
+				30361CD518256FB80064DBC3 /* RFUIKeyboardDisplayState.m */,
+				300AC70F17C430C2002637FA /* RFUIKeyboardLayoutView.h */,
+				300AC71017C430C2002637FA /* RFUIKeyboardLayoutView.m */,
+				300AC71117C430C2002637FA /* RFUIKit.h */,
+				300AC71217C430C2002637FA /* RFUIKit.m */,
+				300AC71317C430C2002637FA /* RFUILocalNetworkActivityIndicator.h */,
+				300AC71417C430C2002637FA /* RFUILocalNetworkActivityIndicator.m */,
+				300AC71517C430C2002637FA /* RFUINavigationController.h */,
+				300AC71617C430C2002637FA /* RFUINavigationController.m */,
+				300AC71717C430C2002637FA /* RFUINetworkActivityIndicator.h */,
+				300AC71817C430C2002637FA /* RFUINetworkActivityIndicator.m */,
+				300AC71917C430C2002637FA /* RFUIPageScrollView.h */,
+				300AC71A17C430C2002637FA /* RFUIPageScrollView.m */,
+				300AC71B17C430C2002637FA /* RFUIPageScrollViewCell.h */,
+				300AC71C17C430C2002637FA /* RFUIPageScrollViewCell.m */,
+				30375FF7181F30670029AE3A /* RFUIPageScrollViewDataSource.h */,
+				30361CDF1825924F0064DBC3 /* RFUIPageScrollViewDataSource.m */,
+				30375FF9181F312B0029AE3A /* RFUIPageScrollViewDelegate.h */,
+				30361CE4182592B70064DBC3 /* RFUIPageScrollViewDelegate.m */,
+				300AC71D17C430C2002637FA /* RFUIScreenShooter.h */,
+				300AC71E17C430C2002637FA /* RFUIScreenShooter.m */,
+				30361CE8182593460064DBC3 /* RFUIScreenShooterImageType.h */,
+				30361CE9182593460064DBC3 /* RFUIScreenShooterImageType.m */,
+				300AC71F17C430C2002637FA /* RFUIScrollLabel.h */,
+				300AC72017C430C2002637FA /* RFUIScrollLabel.m */,
+				300AC72117C430C2002637FA /* RFUISplitBackgroundView.h */,
+				300AC72217C430C2002637FA /* RFUISplitBackgroundView.m */,
+				300AC72517C430C2002637FA /* RFUIStatusBarCenter.h */,
+				300AC72617C430C2002637FA /* RFUIStatusBarCenter.m */,
+				300AC72717C430C2002637FA /* RFUIStatusBarLayoutView.h */,
+				300AC72817C430C2002637FA /* RFUIStatusBarLayoutView.m */,
+				300AC72D17C430C2002637FA /* RFUITextField.h */,
+				300AC72E17C430C2002637FA /* RFUITextField.m */,
+				300AC72F17C430C2002637FA /* RFUITreeView.h */,
+				300AC73017C430C2002637FA /* RFUITreeView.m */,
+				300AC73117C430C2002637FA /* RFUITreeViewCell.h */,
+				300AC73217C430C2002637FA /* RFUITreeViewCell.m */,
+				308F938C1825A92B00D92D99 /* RFUITreeViewDataSource.h */,
+				308F938D1825A92B00D92D99 /* RFUITreeViewDataSource.m */,
+				308F93871825A7FB00D92D99 /* RFUITreeViewDelegate.h */,
+				308F93881825A7FB00D92D99 /* RFUITreeViewDelegate.m */,
+				300AC73317C430C2002637FA /* RFUITreeViewNode.h */,
+				300AC73417C430C2002637FA /* RFUITreeViewNode.m */,
+				300AC73517C430C2002637FA /* RFUITreeViewRowAnimation.h */,
+				300AC73617C430C2002637FA /* RFUITreeViewRowAnimation.m */,
+				308F93821825A76000D92D99 /* RFUITreeViewScrollPosition.h */,
+				308F93831825A76000D92D99 /* RFUITreeViewScrollPosition.m */,
+			);
+			path = RFUIKit;
+			sourceTree = "<group>";
+		};
+		309342E6184EAF8900FB31E9 /* External Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				309342E7184EAFA800FB31E9 /* RECoreGraphics.framework */,
+				309342E8184EAFA800FB31E9 /* REFoundation.framework */,
+				309342E9184EAFA800FB31E9 /* REUIKit.framework */,
+				309342EA184EAFA800FB31E9 /* RFFoundation.framework */,
+				309342EB184EAFA800FB31E9 /* RWObjC.framework */,
+				309342EC184EAFA800FB31E9 /* RWUUID.framework */,
+			);
+			name = "External Frameworks";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		309342B2184EAED100FB31E9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				309342DB184EAF0200FB31E9 /* RFUIKit-Prefix.pch in Headers */,
+				309342C7184EAEFA00FB31E9 /* RFUINavigationController.h in Headers */,
+				309342D8184EAEFA00FB31E9 /* RFUITreeViewNode.h in Headers */,
+				309342C9184EAEFA00FB31E9 /* RFUIPageScrollView.h in Headers */,
+				309342B6184EAEFA00FB31E9 /* RFUIButton.h in Headers */,
+				309342CA184EAEFA00FB31E9 /* RFUIPageScrollViewCell.h in Headers */,
+				309342BF184EAEFA00FB31E9 /* RFUIImageCheckView.h in Headers */,
+				309342D5184EAEFA00FB31E9 /* RFUITreeViewCell.h in Headers */,
+				309342DA184EAEFA00FB31E9 /* RFUITreeViewScrollPosition.h in Headers */,
+				309342C2184EAEFA00FB31E9 /* RFUIKeyboardCenter.h in Headers */,
+				309342D0184EAEFA00FB31E9 /* RFUISplitBackgroundView.h in Headers */,
+				309342BA184EAEFA00FB31E9 /* RFUIFirstResponderArrangement.h in Headers */,
+				309342D7184EAEFA00FB31E9 /* RFUITreeViewDelegate.h in Headers */,
+				309342C4184EAEFA00FB31E9 /* RFUIKeyboardLayoutView.h in Headers */,
+				309342B7184EAEFA00FB31E9 /* RFUICheckView.h in Headers */,
+				309342B9184EAEFA00FB31E9 /* RFUIContainerViewContentViewOptions.h in Headers */,
+				309342BD184EAEFA00FB31E9 /* RFUIImageCache.h in Headers */,
+				309342C0184EAEFA00FB31E9 /* RFUIImageSplitBackgroundView.h in Headers */,
+				309342D6184EAEFA00FB31E9 /* RFUITreeViewDataSource.h in Headers */,
+				309342D9184EAEFA00FB31E9 /* RFUITreeViewRowAnimation.h in Headers */,
+				309342BC184EAEFA00FB31E9 /* RFUIForwardViewDelegate.h in Headers */,
+				309342B5184EAEFA00FB31E9 /* RFUIBarButtonItemViewContentWidthMode.h in Headers */,
+				309342D1184EAEFA00FB31E9 /* RFUIStatusBarCenter.h in Headers */,
+				309342C3184EAEFA00FB31E9 /* RFUIKeyboardDisplayState.h in Headers */,
+				309342B4184EAEFA00FB31E9 /* RFUIBarButtonItemViewContentHeightMode.h in Headers */,
+				309342C5184EAEFA00FB31E9 /* RFUIKit.h in Headers */,
+				309342CE184EAEFA00FB31E9 /* RFUIScreenShooterImageType.h in Headers */,
+				309342CB184EAEFA00FB31E9 /* RFUIPageScrollViewDataSource.h in Headers */,
+				309342D3184EAEFA00FB31E9 /* RFUITextField.h in Headers */,
+				309342B3184EAEFA00FB31E9 /* RFUIBarButtonItemView.h in Headers */,
+				309342BE184EAEFA00FB31E9 /* RFUIImageCacheNotImageNamedBlock.h in Headers */,
+				309342D2184EAEFA00FB31E9 /* RFUIStatusBarLayoutView.h in Headers */,
+				309342BB184EAEFA00FB31E9 /* RFUIForwardView.h in Headers */,
+				309342C1184EAEFA00FB31E9 /* RFUIInterfaceOrientationMode.h in Headers */,
+				309342D4184EAEFA00FB31E9 /* RFUITreeView.h in Headers */,
+				309342CC184EAEFA00FB31E9 /* RFUIPageScrollViewDelegate.h in Headers */,
+				309342CF184EAEFA00FB31E9 /* RFUIScrollLabel.h in Headers */,
+				309342C6184EAEFA00FB31E9 /* RFUILocalNetworkActivityIndicator.h in Headers */,
+				309342C8184EAEFA00FB31E9 /* RFUINetworkActivityIndicator.h in Headers */,
+				309342B8184EAEFA00FB31E9 /* RFUIContainerView.h in Headers */,
+				309342CD184EAEFA00FB31E9 /* RFUIScreenShooter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		300AC6E817C43081002637FA /* RFUIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 300AC6F717C43081002637FA /* Build configuration list for PBXNativeTarget "RFUIKit" */;
+			buildPhases = (
+				300AC6E517C43081002637FA /* Sources */,
+				300AC6E617C43081002637FA /* Frameworks */,
+				309342B2184EAED100FB31E9 /* Headers */,
+				309342F3184EAFC200FB31E9 /* Finish Build */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RFUIKit;
+			productName = RFUIKit;
+			productReference = 300AC6E917C43081002637FA /* libRFUIKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		300AC6E117C43081002637FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Roman Oliichuk";
+			};
+			buildConfigurationList = 300AC6E417C43081002637FA /* Build configuration list for PBXProject "RFUIKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 300AC6E017C43081002637FA;
+			productRefGroup = 300AC6EA17C43081002637FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				300AC6E817C43081002637FA /* RFUIKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		309342F3184EAFC200FB31E9 /* Finish Build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Finish Build";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\n# Moving the built static library into the framework.\n\nvar_library_path=\"${CONFIGURATION_BUILD_DIR}/${EXECUTABLE_PREFIX}${PRODUCT_NAME}.${EXECUTABLE_EXTENSION}\"\nvar_framework_library_path=\"${CONFIGURATION_BUILD_DIR}/${PRODUCT_NAME}.framework/${PRODUCT_NAME}\"\n\nif [ ! -f \"${var_library_path}\" ]\nthen\n    echo \"The file ${var_library_path} is not exist.\"\n    exit 1\nfi\n\nmv \"${var_library_path}\" \"${var_framework_library_path}\"\n\nif [ $? -ne 0 ]\nthen\n    echo \"Can not move the file ${var_library_path} to the file ${var_framework_library_path}.\"\n    exit 1\nfi\n\n# Copying the framework into the directory ${PR_MOVE_FRAMEWORK_TO_PARENT_PATH}.\n\nif [ -n \"${PR_COPY_FRAMEWORK_INTO_PARENT_PATH}\" ]\nthen\n    var_source_framework_path=\"${CONFIGURATION_BUILD_DIR}/${PRODUCT_NAME}.framework\"\n    var_distination_framework_path=\"${PR_COPY_FRAMEWORK_INTO_PARENT_PATH}/${PRODUCT_NAME}.framework\"\n\n    if [ ! -d \"${var_source_framework_path}\" ]\n    then\n        echo \"The directory ${var_source_framework_path} is not exist.\"\n        exit 1\n    fi\n\n    cp -R \"${var_source_framework_path}/\" \"${var_distination_framework_path}/\"\n\n    if [ $? -ne 0 ]\n    then\n        echo \"Can not copy the directory ${var_source_framework_path}/ into the directory ${var_distination_framework_path}/.\"\n        exit 1\n    fi\nfi\n\n# Moving the framework into the directory ${PR_MOVE_FRAMEWORK_TO_PARENT_PATH}.\n\nif [ -n \"${PR_MOVE_FRAMEWORK_INTO_PARENT_PATH}\" ]\nthen\n    var_source_framework_path=\"${CONFIGURATION_BUILD_DIR}/${PRODUCT_NAME}.framework\"\n    var_distination_framework_path=\"${PR_MOVE_FRAMEWORK_INTO_PARENT_PATH}/${PRODUCT_NAME}.framework\"\n\n    if [ ! -d \"${var_source_framework_path}\" ]\n    then\n        echo \"The directory ${var_source_framework_path} is not exist.\"\n        exit 1\n    fi\n\n    mv \"${var_source_framework_path}/\" \"${var_distination_framework_path}/\"\n\n    if [ $? -ne 0 ]\n    then\n        echo \"Can not move the directory ${var_source_framework_path}/ into the directory ${var_distination_framework_path}/.\"\n        exit 1\n    fi\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		300AC6E517C43081002637FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				300AC73B17C430C2002637FA /* RFUIInterfaceOrientationMode.m in Sources */,
+				300AC73C17C430C2002637FA /* RFUIBarButtonItemView.m in Sources */,
+				300AC73D17C430C2002637FA /* RFUIButton.m in Sources */,
+				300AC73E17C430C2002637FA /* RFUICheckView.m in Sources */,
+				308F93851825A76000D92D99 /* RFUITreeViewScrollPosition.m in Sources */,
+				30361CEB182593460064DBC3 /* RFUIScreenShooterImageType.m in Sources */,
+				300AC73F17C430C2002637FA /* RFUIContainerView.m in Sources */,
+				300AC74017C430C2002637FA /* RFUIForwardView.m in Sources */,
+				300AC74117C430C2002637FA /* RFUIImageCache.m in Sources */,
+				300AC74217C430C2002637FA /* RFUIImageCheckView.m in Sources */,
+				300AC74317C430C2002637FA /* RFUIImageSplitBackgroundView.m in Sources */,
+				300AC74417C430C2002637FA /* RFUIKeyboardCenter.m in Sources */,
+				30361CE6182592B70064DBC3 /* RFUIPageScrollViewDelegate.m in Sources */,
+				300AC74517C430C2002637FA /* RFUIKeyboardLayoutView.m in Sources */,
+				300AC74617C430C2002637FA /* RFUIKit.m in Sources */,
+				30361CE11825924F0064DBC3 /* RFUIPageScrollViewDataSource.m in Sources */,
+				300AC74717C430C2002637FA /* RFUILocalNetworkActivityIndicator.m in Sources */,
+				300AC74817C430C2002637FA /* RFUINavigationController.m in Sources */,
+				30361CDC182572070064DBC3 /* RFUIFirstResponderArrangement.m in Sources */,
+				300AC74917C430C2002637FA /* RFUINetworkActivityIndicator.m in Sources */,
+				300AC74A17C430C2002637FA /* RFUIPageScrollView.m in Sources */,
+				300AC74B17C430C2002637FA /* RFUIPageScrollViewCell.m in Sources */,
+				30361CC3182566D30064DBC3 /* RFUIBarButtonItemViewContentHeightMode.m in Sources */,
+				300AC74C17C430C2002637FA /* RFUIScreenShooter.m in Sources */,
+				300AC74D17C430C2002637FA /* RFUIScrollLabel.m in Sources */,
+				30361CC8182569250064DBC3 /* RFUIContainerViewContentViewOptions.m in Sources */,
+				30361CCD18256A0B0064DBC3 /* RFUIForwardViewDelegate.m in Sources */,
+				300AC74E17C430C2002637FA /* RFUISplitBackgroundView.m in Sources */,
+				30361CD218256BFA0064DBC3 /* RFUIImageCacheNotImageNamedBlock.m in Sources */,
+				308F938A1825A7FB00D92D99 /* RFUITreeViewDelegate.m in Sources */,
+				30361CBE1825661A0064DBC3 /* RFUIBarButtonItemViewContentWidthMode.m in Sources */,
+				300AC75017C430C2002637FA /* RFUIStatusBarCenter.m in Sources */,
+				300AC75117C430C2002637FA /* RFUIStatusBarLayoutView.m in Sources */,
+				30361CD718256FB80064DBC3 /* RFUIKeyboardDisplayState.m in Sources */,
+				300AC75417C430C2002637FA /* RFUITextField.m in Sources */,
+				300AC75517C430C2002637FA /* RFUITreeView.m in Sources */,
+				300AC75617C430C2002637FA /* RFUITreeViewCell.m in Sources */,
+				300AC75717C430C2002637FA /* RFUITreeViewNode.m in Sources */,
+				300AC75817C430C2002637FA /* RFUITreeViewRowAnimation.m in Sources */,
+				308F938F1825A92B00D92D99 /* RFUITreeViewDataSource.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		300AC6F517C43081002637FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_DEADCODE_DEADSTORES = YES;
+				CLANG_ANALYZER_GCD = YES;
+				CLANG_ANALYZER_MALLOC = YES;
+				CLANG_ANALYZER_OBJC_ATSYNC = YES;
+				CLANG_ANALYZER_OBJC_CFNUMBER = YES;
+				CLANG_ANALYZER_OBJC_COLLECTIONS = YES;
+				CLANG_ANALYZER_OBJC_INCOMP_METHOD_TYPES = YES;
+				CLANG_ANALYZER_OBJC_NSCFERROR = YES;
+				CLANG_ANALYZER_OBJC_RETAIN_COUNT = YES;
+				CLANG_ANALYZER_OBJC_SELF_INIT = YES;
+				CLANG_ANALYZER_OBJC_UNUSED_IVARS = YES;
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_GETPW_GETS = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_MKSTEMP = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = NO;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_UNCHECKEDRETURN = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_VFORK = YES;
+				CLANG_ANALYZER_SECURITY_KEYCHAIN_API = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES;
+				CLANG_WARN_OBJC_RECEIVER_WEAK = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN__ARC_BRIDGE_CAST_NONARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = NO;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = NO;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		300AC6F617C43081002637FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_DEADCODE_DEADSTORES = YES;
+				CLANG_ANALYZER_GCD = YES;
+				CLANG_ANALYZER_MALLOC = YES;
+				CLANG_ANALYZER_OBJC_ATSYNC = YES;
+				CLANG_ANALYZER_OBJC_CFNUMBER = YES;
+				CLANG_ANALYZER_OBJC_COLLECTIONS = YES;
+				CLANG_ANALYZER_OBJC_INCOMP_METHOD_TYPES = YES;
+				CLANG_ANALYZER_OBJC_NSCFERROR = YES;
+				CLANG_ANALYZER_OBJC_RETAIN_COUNT = YES;
+				CLANG_ANALYZER_OBJC_SELF_INIT = YES;
+				CLANG_ANALYZER_OBJC_UNUSED_IVARS = YES;
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_GETPW_GETS = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_MKSTEMP = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = NO;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_UNCHECKEDRETURN = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_VFORK = YES;
+				CLANG_ANALYZER_SECURITY_KEYCHAIN_API = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES;
+				CLANG_WARN_OBJC_RECEIVER_WEAK = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN__ARC_BRIDGE_CAST_NONARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = NO;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = NO;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		300AC6F817C43081002637FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = "/tmp/$(PROJECT_NAME).dst";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_NAME)/$(PROJECT_NAME)-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(PRODUCT_NAME).framework/PrivateHeaders";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PRODUCT_NAME).framework/Headers";
+				SHARED_PRECOMPS_DIR = "$(BUILD_ROOT)/SharedPrecompiledHeaders";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		300AC6F917C43081002637FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = "/tmp/$(PROJECT_NAME).dst";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_NAME)/$(PROJECT_NAME)-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(PRODUCT_NAME).framework/PrivateHeaders";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PRODUCT_NAME).framework/Headers";
+				SHARED_PRECOMPS_DIR = "$(BUILD_ROOT)/SharedPrecompiledHeaders";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		300AC6E417C43081002637FA /* Build configuration list for PBXProject "RFUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				300AC6F517C43081002637FA /* Debug */,
+				300AC6F617C43081002637FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		300AC6F717C43081002637FA /* Build configuration list for PBXNativeTarget "RFUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				300AC6F817C43081002637FA /* Debug */,
+				300AC6F917C43081002637FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 300AC6E117C43081002637FA /* Project object */;
+}

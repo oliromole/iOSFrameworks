@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3093422C184EA16700FB31E9 /* REMapKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 30CFE46817C4179700BCB25C /* REMapKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3093422D184EA16700FB31E9 /* REMKAnnotationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 30CFE46A17C4179700BCB25C /* REMKAnnotationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3093422E184EA16700FB31E9 /* REMKGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 30CFE46C17C4179700BCB25C /* REMKGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3093422F184EA16700FB31E9 /* REMKMapView.h in Headers */ = {isa = PBXBuildFile; fileRef = 30CFE46E17C4179700BCB25C /* REMKMapView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30934230184EA16C00FB31E9 /* REMapKit-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 30592B6717C4173B00F5BD7D /* REMapKit-Prefix.pch */; };
+		30934234184EA30600FB31E9 /* RECoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30934233184EA30600FB31E9 /* RECoreLocation.framework */; };
+		30934236184EA32500FB31E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30934235184EA32500FB31E9 /* Foundation.framework */; };
+		30934238184EA32A00FB31E9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30934237184EA32A00FB31E9 /* MapKit.framework */; };
+		30CFE47017C4179700BCB25C /* REMapKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFE46917C4179700BCB25C /* REMapKit.m */; };
+		30CFE47117C4179700BCB25C /* REMKAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFE46B17C4179700BCB25C /* REMKAnnotationView.m */; };
+		30CFE47217C4179700BCB25C /* REMKGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFE46D17C4179700BCB25C /* REMKGeometry.m */; };
+		30CFE47317C4179700BCB25C /* REMKMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFE46F17C4179700BCB25C /* REMKMapView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		30592B6017C4173B00F5BD7D /* libREMapKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libREMapKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		30592B6717C4173B00F5BD7D /* REMapKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "REMapKit-Prefix.pch"; sourceTree = "<group>"; };
+		30934233184EA30600FB31E9 /* RECoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RECoreLocation.framework; path = ../Frameworks/RECoreLocation.framework; sourceTree = "<group>"; };
+		30934235184EA32500FB31E9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		30934237184EA32A00FB31E9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		30CFE46817C4179700BCB25C /* REMapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REMapKit.h; sourceTree = "<group>"; };
+		30CFE46917C4179700BCB25C /* REMapKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REMapKit.m; sourceTree = "<group>"; };
+		30CFE46A17C4179700BCB25C /* REMKAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REMKAnnotationView.h; sourceTree = "<group>"; };
+		30CFE46B17C4179700BCB25C /* REMKAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REMKAnnotationView.m; sourceTree = "<group>"; };
+		30CFE46C17C4179700BCB25C /* REMKGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REMKGeometry.h; sourceTree = "<group>"; };
+		30CFE46D17C4179700BCB25C /* REMKGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REMKGeometry.m; sourceTree = "<group>"; };
+		30CFE46E17C4179700BCB25C /* REMKMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REMKMapView.h; sourceTree = "<group>"; };
+		30CFE46F17C4179700BCB25C /* REMKMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REMKMapView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30592B5D17C4173B00F5BD7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30934238184EA32A00FB31E9 /* MapKit.framework in Frameworks */,
+				30934236184EA32500FB31E9 /* Foundation.framework in Frameworks */,
+				30934234184EA30600FB31E9 /* RECoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30592B5717C4173B00F5BD7D = {
+			isa = PBXGroup;
+			children = (
+				30592B6517C4173B00F5BD7D /* REMapKit */,
+				30592B6217C4173B00F5BD7D /* Frameworks */,
+				30934232184EA2E700FB31E9 /* External Frameworks */,
+				30592B6117C4173B00F5BD7D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30592B6117C4173B00F5BD7D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30592B6017C4173B00F5BD7D /* libREMapKit.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30592B6217C4173B00F5BD7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30934235184EA32500FB31E9 /* Foundation.framework */,
+				30934237184EA32A00FB31E9 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		30592B6517C4173B00F5BD7D /* REMapKit */ = {
+			isa = PBXGroup;
+			children = (
+				30CFE46717C4179700BCB25C /* REMapKit */,
+				30592B6717C4173B00F5BD7D /* REMapKit-Prefix.pch */,
+			);
+			path = REMapKit;
+			sourceTree = "<group>";
+		};
+		30934232184EA2E700FB31E9 /* External Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30934233184EA30600FB31E9 /* RECoreLocation.framework */,
+			);
+			name = "External Frameworks";
+			sourceTree = "<group>";
+		};
+		30CFE46717C4179700BCB25C /* REMapKit */ = {
+			isa = PBXGroup;
+			children = (
+				30CFE46817C4179700BCB25C /* REMapKit.h */,
+				30CFE46917C4179700BCB25C /* REMapKit.m */,
+				30CFE46A17C4179700BCB25C /* REMKAnnotationView.h */,
+				30CFE46B17C4179700BCB25C /* REMKAnnotationView.m */,
+				30CFE46C17C4179700BCB25C /* REMKGeometry.h */,
+				30CFE46D17C4179700BCB25C /* REMKGeometry.m */,
+				30CFE46E17C4179700BCB25C /* REMKMapView.h */,
+				30CFE46F17C4179700BCB25C /* REMKMapView.m */,
+			);
+			path = REMapKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3093422B184EA15A00FB31E9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3093422E184EA16700FB31E9 /* REMKGeometry.h in Headers */,
+				3093422C184EA16700FB31E9 /* REMapKit.h in Headers */,
+				3093422D184EA16700FB31E9 /* REMKAnnotationView.h in Headers */,
+				3093422F184EA16700FB31E9 /* REMKMapView.h in Headers */,
+				30934230184EA16C00FB31E9 /* REMapKit-Prefix.pch in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		30592B5F17C4173B00F5BD7D /* REMapKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30592B6E17C4173B00F5BD7D /* Build configuration list for PBXNativeTarget "REMapKit" */;
+			buildPhases = (
+				30592B5C17C4173B00F5BD7D /* Sources */,
+				30592B5D17C4173B00F5BD7D /* Frameworks */,
+				3093422B184EA15A00FB31E9 /* Headers */,
+				30934231184EA1EF00FB31E9 /* Finish Build */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = REMapKit;
+			productName = REMapKit;
+			productReference = 30592B6017C4173B00F5BD7D /* libREMapKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30592B5817C4173B00F5BD7D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Roman Oliichuk";
+			};
+			buildConfigurationList = 30592B5B17C4173B00F5BD7D /* Build configuration list for PBXProject "REMapKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 30592B5717C4173B00F5BD7D;
+			productRefGroup = 30592B6117C4173B00F5BD7D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30592B5F17C4173B00F5BD7D /* REMapKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30934231184EA1EF00FB31E9 /* Finish Build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Finish Build";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\n# Moving the built static library into the framework.\n\nvar_library_path=\"${CONFIGURATION_BUILD_DIR}/${EXECUTABLE_PREFIX}${PRODUCT_NAME}.${EXECUTABLE_EXTENSION}\"\nvar_framework_library_path=\"${CONFIGURATION_BUILD_DIR}/${PRODUCT_NAME}.framework/${PRODUCT_NAME}\"\n\nif [ ! -f \"${var_library_path}\" ]\nthen\n    echo \"The file ${var_library_path} is not exist.\"\n    exit 1\nfi\n\nmv \"${var_library_path}\" \"${var_framework_library_path}\"\n\nif [ $? -ne 0 ]\nthen\n    echo \"Can not move the file ${var_library_path} to the file ${var_framework_library_path}.\"\n    exit 1\nfi\n\n# Copying the framework into the directory ${PR_MOVE_FRAMEWORK_TO_PARENT_PATH}.\n\nif [ -n \"${PR_COPY_FRAMEWORK_INTO_PARENT_PATH}\" ]\nthen\n    var_source_framework_path=\"${CONFIGURATION_BUILD_DIR}/${PRODUCT_NAME}.framework\"\n    var_distination_framework_path=\"${PR_COPY_FRAMEWORK_INTO_PARENT_PATH}/${PRODUCT_NAME}.framework\"\n\n    if [ ! -d \"${var_source_framework_path}\" ]\n    then\n        echo \"The directory ${var_source_framework_path} is not exist.\"\n        exit 1\n    fi\n\n    cp -R \"${var_source_framework_path}/\" \"${var_distination_framework_path}/\"\n\n    if [ $? -ne 0 ]\n    then\n        echo \"Can not copy the directory ${var_source_framework_path}/ into the directory ${var_distination_framework_path}/.\"\n        exit 1\n    fi\nfi\n\n# Moving the framework into the directory ${PR_MOVE_FRAMEWORK_TO_PARENT_PATH}.\n\nif [ -n \"${PR_MOVE_FRAMEWORK_INTO_PARENT_PATH}\" ]\nthen\n    var_source_framework_path=\"${CONFIGURATION_BUILD_DIR}/${PRODUCT_NAME}.framework\"\n    var_distination_framework_path=\"${PR_MOVE_FRAMEWORK_INTO_PARENT_PATH}/${PRODUCT_NAME}.framework\"\n\n    if [ ! -d \"${var_source_framework_path}\" ]\n    then\n        echo \"The directory ${var_source_framework_path} is not exist.\"\n        exit 1\n    fi\n\n    mv \"${var_source_framework_path}/\" \"${var_distination_framework_path}/\"\n\n    if [ $? -ne 0 ]\n    then\n        echo \"Can not move the directory ${var_source_framework_path}/ into the directory ${var_distination_framework_path}/.\"\n        exit 1\n    fi\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30592B5C17C4173B00F5BD7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30CFE47017C4179700BCB25C /* REMapKit.m in Sources */,
+				30CFE47117C4179700BCB25C /* REMKAnnotationView.m in Sources */,
+				30CFE47217C4179700BCB25C /* REMKGeometry.m in Sources */,
+				30CFE47317C4179700BCB25C /* REMKMapView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		30592B6C17C4173B00F5BD7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_DEADCODE_DEADSTORES = YES;
+				CLANG_ANALYZER_GCD = YES;
+				CLANG_ANALYZER_MALLOC = YES;
+				CLANG_ANALYZER_OBJC_ATSYNC = YES;
+				CLANG_ANALYZER_OBJC_CFNUMBER = YES;
+				CLANG_ANALYZER_OBJC_COLLECTIONS = YES;
+				CLANG_ANALYZER_OBJC_INCOMP_METHOD_TYPES = YES;
+				CLANG_ANALYZER_OBJC_NSCFERROR = YES;
+				CLANG_ANALYZER_OBJC_RETAIN_COUNT = YES;
+				CLANG_ANALYZER_OBJC_SELF_INIT = YES;
+				CLANG_ANALYZER_OBJC_UNUSED_IVARS = YES;
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_GETPW_GETS = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_MKSTEMP = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = NO;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_UNCHECKEDRETURN = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_VFORK = YES;
+				CLANG_ANALYZER_SECURITY_KEYCHAIN_API = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES;
+				CLANG_WARN_OBJC_RECEIVER_WEAK = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN__ARC_BRIDGE_CAST_NONARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = NO;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = NO;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		30592B6D17C4173B00F5BD7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_DEADCODE_DEADSTORES = YES;
+				CLANG_ANALYZER_GCD = YES;
+				CLANG_ANALYZER_MALLOC = YES;
+				CLANG_ANALYZER_OBJC_ATSYNC = YES;
+				CLANG_ANALYZER_OBJC_CFNUMBER = YES;
+				CLANG_ANALYZER_OBJC_COLLECTIONS = YES;
+				CLANG_ANALYZER_OBJC_INCOMP_METHOD_TYPES = YES;
+				CLANG_ANALYZER_OBJC_NSCFERROR = YES;
+				CLANG_ANALYZER_OBJC_RETAIN_COUNT = YES;
+				CLANG_ANALYZER_OBJC_SELF_INIT = YES;
+				CLANG_ANALYZER_OBJC_UNUSED_IVARS = YES;
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_GETPW_GETS = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_MKSTEMP = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = NO;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_UNCHECKEDRETURN = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_VFORK = YES;
+				CLANG_ANALYZER_SECURITY_KEYCHAIN_API = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES;
+				CLANG_WARN_OBJC_RECEIVER_WEAK = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN__ARC_BRIDGE_CAST_NONARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = NO;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = NO;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30592B6F17C4173B00F5BD7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = "/tmp/$(PROJECT_NAME).dst";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_NAME)/$(PROJECT_NAME)-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(PRODUCT_NAME).framework/PrivateHeaders";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PRODUCT_NAME).framework/Headers";
+				SHARED_PRECOMPS_DIR = "$(BUILD_ROOT)/SharedPrecompiledHeaders";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		30592B7017C4173B00F5BD7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = "/tmp/$(PROJECT_NAME).dst";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_NAME)/$(PROJECT_NAME)-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(PRODUCT_NAME).framework/PrivateHeaders";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PRODUCT_NAME).framework/Headers";
+				SHARED_PRECOMPS_DIR = "$(BUILD_ROOT)/SharedPrecompiledHeaders";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30592B5B17C4173B00F5BD7D /* Build configuration list for PBXProject "REMapKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30592B6C17C4173B00F5BD7D /* Debug */,
+				30592B6D17C4173B00F5BD7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30592B6E17C4173B00F5BD7D /* Build configuration list for PBXNativeTarget "REMapKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30592B6F17C4173B00F5BD7D /* Debug */,
+				30592B7017C4173B00F5BD7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30592B5817C4173B00F5BD7D /* Project object */;
+}

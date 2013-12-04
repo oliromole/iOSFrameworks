@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3083C9D7183C1A4300BC2DB2 /* RWSQLiteStringEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 3083C9D5183C1A4300BC2DB2 /* RWSQLiteStringEncoding.m */; };
+		30D2628417C4B74D00929A2C /* RWSQLite-1.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D2626917C4B74D00929A2C /* RWSQLite-1.m */; };
+		30D2628517C4B74D00929A2C /* RWSQLiteData.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D2626B17C4B74D00929A2C /* RWSQLiteData.m */; };
+		30D2628617C4B74D00929A2C /* RWSQLiteDataType.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D2626D17C4B74D00929A2C /* RWSQLiteDataType.m */; };
+		30D2628717C4B74D00929A2C /* RWSQLiteError.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D2626F17C4B74D00929A2C /* RWSQLiteError.m */; };
+		30D2628817C4B74D00929A2C /* RWSQLiteFileOpenOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D2627117C4B74D00929A2C /* RWSQLiteFileOpenOperations.m */; };
+		30D2628917C4B74D00929A2C /* RWSQLiteLibraryConfigurationOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D2627317C4B74D00929A2C /* RWSQLiteLibraryConfigurationOptions.m */; };
+		30D2628A17C4B74D00929A2C /* RWSQLiteLibraryThreadsafeMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D2627517C4B74D00929A2C /* RWSQLiteLibraryThreadsafeMode.m */; };
+		30D2628B17C4B74D00929A2C /* RWSQLiteLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D2627717C4B74D00929A2C /* RWSQLiteLimit.m */; };
+		30D2628C17C4B74D00929A2C /* RWSQLiteMutex.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D2627917C4B74D00929A2C /* RWSQLiteMutex.m */; };
+		30D2628D17C4B74D00929A2C /* RWSQLiteMutexType.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D2627B17C4B74D00929A2C /* RWSQLiteMutexType.m */; };
+		30D2628E17C4B74D00929A2C /* RWSQLiteStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D2627D17C4B74D00929A2C /* RWSQLiteStatement.m */; };
+		30D2628F17C4B74D00929A2C /* RWSQLiteString.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D2627F17C4B74D00929A2C /* RWSQLiteString.m */; };
+		30D2629017C4B74D00929A2C /* RWSQLiteURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D2628117C4B74D00929A2C /* RWSQLiteURL.m */; };
+		30D2629117C4B74D00929A2C /* RWSQLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D2628317C4B74D00929A2C /* RWSQLite.m */; };
+		30D832B2184D4FDC0068D6EE /* RWSQLite-1.h in Headers */ = {isa = PBXBuildFile; fileRef = 30D2626817C4B74D00929A2C /* RWSQLite-1.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832B3184D4FDC0068D6EE /* RWSQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = 30D2628217C4B74D00929A2C /* RWSQLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832B4184D4FDC0068D6EE /* RWSQLiteData.h in Headers */ = {isa = PBXBuildFile; fileRef = 30D2626A17C4B74D00929A2C /* RWSQLiteData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832B5184D4FDC0068D6EE /* RWSQLiteDataType.h in Headers */ = {isa = PBXBuildFile; fileRef = 30D2626C17C4B74D00929A2C /* RWSQLiteDataType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832B6184D4FDC0068D6EE /* RWSQLiteError.h in Headers */ = {isa = PBXBuildFile; fileRef = 30D2626E17C4B74D00929A2C /* RWSQLiteError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832B7184D4FDC0068D6EE /* RWSQLiteFileOpenOperations.h in Headers */ = {isa = PBXBuildFile; fileRef = 30D2627017C4B74D00929A2C /* RWSQLiteFileOpenOperations.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832B8184D4FDC0068D6EE /* RWSQLiteLibraryConfigurationOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 30D2627217C4B74D00929A2C /* RWSQLiteLibraryConfigurationOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832B9184D4FDC0068D6EE /* RWSQLiteLibraryThreadsafeMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 30D2627417C4B74D00929A2C /* RWSQLiteLibraryThreadsafeMode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832BA184D4FDC0068D6EE /* RWSQLiteLimit.h in Headers */ = {isa = PBXBuildFile; fileRef = 30D2627617C4B74D00929A2C /* RWSQLiteLimit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832BB184D4FDC0068D6EE /* RWSQLiteMutex.h in Headers */ = {isa = PBXBuildFile; fileRef = 30D2627817C4B74D00929A2C /* RWSQLiteMutex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832BC184D4FDC0068D6EE /* RWSQLiteMutexType.h in Headers */ = {isa = PBXBuildFile; fileRef = 30D2627A17C4B74D00929A2C /* RWSQLiteMutexType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832BD184D4FDC0068D6EE /* RWSQLiteRow.h in Headers */ = {isa = PBXBuildFile; fileRef = A7BCD692183A38B500E65A83 /* RWSQLiteRow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832BE184D4FDC0068D6EE /* RWSQLiteStatement.h in Headers */ = {isa = PBXBuildFile; fileRef = 30D2627C17C4B74D00929A2C /* RWSQLiteStatement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832BF184D4FDC0068D6EE /* RWSQLiteString.h in Headers */ = {isa = PBXBuildFile; fileRef = 30D2627E17C4B74D00929A2C /* RWSQLiteString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832C0184D4FDC0068D6EE /* RWSQLiteStringEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 3083C9D4183C1A4300BC2DB2 /* RWSQLiteStringEncoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832C1184D4FDC0068D6EE /* RWSQLiteURL.h in Headers */ = {isa = PBXBuildFile; fileRef = 30D2628017C4B74D00929A2C /* RWSQLiteURL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832C2184D4FE50068D6EE /* RWSQLite-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 30D2625D17C4B6FA00929A2C /* RWSQLite-Prefix.pch */; };
+		30D832C6184D51060068D6EE /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30D832C4184D51060068D6EE /* CoreFoundation.framework */; };
+		30D832C7184D51060068D6EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30D832C5184D51060068D6EE /* Foundation.framework */; };
+		A7BCD695183A38B500E65A83 /* RWSQLiteRow.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BCD693183A38B500E65A83 /* RWSQLiteRow.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3083C9D4183C1A4300BC2DB2 /* RWSQLiteStringEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWSQLiteStringEncoding.h; sourceTree = "<group>"; };
+		3083C9D5183C1A4300BC2DB2 /* RWSQLiteStringEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSQLiteStringEncoding.m; sourceTree = "<group>"; };
+		30D2625617C4B6FA00929A2C /* libRWSQLite.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRWSQLite.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		30D2625D17C4B6FA00929A2C /* RWSQLite-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RWSQLite-Prefix.pch"; sourceTree = "<group>"; };
+		30D2626817C4B74D00929A2C /* RWSQLite-1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RWSQLite-1.h"; sourceTree = "<group>"; };
+		30D2626917C4B74D00929A2C /* RWSQLite-1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RWSQLite-1.m"; sourceTree = "<group>"; };
+		30D2626A17C4B74D00929A2C /* RWSQLiteData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWSQLiteData.h; sourceTree = "<group>"; };
+		30D2626B17C4B74D00929A2C /* RWSQLiteData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSQLiteData.m; sourceTree = "<group>"; };
+		30D2626C17C4B74D00929A2C /* RWSQLiteDataType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWSQLiteDataType.h; sourceTree = "<group>"; };
+		30D2626D17C4B74D00929A2C /* RWSQLiteDataType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSQLiteDataType.m; sourceTree = "<group>"; };
+		30D2626E17C4B74D00929A2C /* RWSQLiteError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWSQLiteError.h; sourceTree = "<group>"; };
+		30D2626F17C4B74D00929A2C /* RWSQLiteError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSQLiteError.m; sourceTree = "<group>"; };
+		30D2627017C4B74D00929A2C /* RWSQLiteFileOpenOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWSQLiteFileOpenOperations.h; sourceTree = "<group>"; };
+		30D2627117C4B74D00929A2C /* RWSQLiteFileOpenOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSQLiteFileOpenOperations.m; sourceTree = "<group>"; };
+		30D2627217C4B74D00929A2C /* RWSQLiteLibraryConfigurationOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWSQLiteLibraryConfigurationOptions.h; sourceTree = "<group>"; };
+		30D2627317C4B74D00929A2C /* RWSQLiteLibraryConfigurationOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSQLiteLibraryConfigurationOptions.m; sourceTree = "<group>"; };
+		30D2627417C4B74D00929A2C /* RWSQLiteLibraryThreadsafeMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWSQLiteLibraryThreadsafeMode.h; sourceTree = "<group>"; };
+		30D2627517C4B74D00929A2C /* RWSQLiteLibraryThreadsafeMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSQLiteLibraryThreadsafeMode.m; sourceTree = "<group>"; };
+		30D2627617C4B74D00929A2C /* RWSQLiteLimit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWSQLiteLimit.h; sourceTree = "<group>"; };
+		30D2627717C4B74D00929A2C /* RWSQLiteLimit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSQLiteLimit.m; sourceTree = "<group>"; };
+		30D2627817C4B74D00929A2C /* RWSQLiteMutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWSQLiteMutex.h; sourceTree = "<group>"; };
+		30D2627917C4B74D00929A2C /* RWSQLiteMutex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSQLiteMutex.m; sourceTree = "<group>"; };
+		30D2627A17C4B74D00929A2C /* RWSQLiteMutexType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWSQLiteMutexType.h; sourceTree = "<group>"; };
+		30D2627B17C4B74D00929A2C /* RWSQLiteMutexType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSQLiteMutexType.m; sourceTree = "<group>"; };
+		30D2627C17C4B74D00929A2C /* RWSQLiteStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWSQLiteStatement.h; sourceTree = "<group>"; };
+		30D2627D17C4B74D00929A2C /* RWSQLiteStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSQLiteStatement.m; sourceTree = "<group>"; };
+		30D2627E17C4B74D00929A2C /* RWSQLiteString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWSQLiteString.h; sourceTree = "<group>"; };
+		30D2627F17C4B74D00929A2C /* RWSQLiteString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSQLiteString.m; sourceTree = "<group>"; };
+		30D2628017C4B74D00929A2C /* RWSQLiteURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWSQLiteURL.h; sourceTree = "<group>"; };
+		30D2628117C4B74D00929A2C /* RWSQLiteURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSQLiteURL.m; sourceTree = "<group>"; };
+		30D2628217C4B74D00929A2C /* RWSQLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWSQLite.h; sourceTree = "<group>"; };
+		30D2628317C4B74D00929A2C /* RWSQLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSQLite.m; sourceTree = "<group>"; };
+		30D832C4184D51060068D6EE /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		30D832C5184D51060068D6EE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A7BCD692183A38B500E65A83 /* RWSQLiteRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWSQLiteRow.h; sourceTree = "<group>"; };
+		A7BCD693183A38B500E65A83 /* RWSQLiteRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSQLiteRow.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30D2625317C4B6FA00929A2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30D832C6184D51060068D6EE /* CoreFoundation.framework in Frameworks */,
+				30D832C7184D51060068D6EE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30D2624D17C4B6FA00929A2C = {
+			isa = PBXGroup;
+			children = (
+				30D2625B17C4B6FA00929A2C /* RWSQLite */,
+				30D2625817C4B6FA00929A2C /* Frameworks */,
+				30D2625717C4B6FA00929A2C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30D2625717C4B6FA00929A2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30D2625617C4B6FA00929A2C /* libRWSQLite.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30D2625817C4B6FA00929A2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30D832C4184D51060068D6EE /* CoreFoundation.framework */,
+				30D832C5184D51060068D6EE /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		30D2625B17C4B6FA00929A2C /* RWSQLite */ = {
+			isa = PBXGroup;
+			children = (
+				30D2626717C4B74D00929A2C /* RWSQLite */,
+				30D2625D17C4B6FA00929A2C /* RWSQLite-Prefix.pch */,
+			);
+			path = RWSQLite;
+			sourceTree = "<group>";
+		};
+		30D2626717C4B74D00929A2C /* RWSQLite */ = {
+			isa = PBXGroup;
+			children = (
+				30D2626817C4B74D00929A2C /* RWSQLite-1.h */,
+				30D2626917C4B74D00929A2C /* RWSQLite-1.m */,
+				30D2628217C4B74D00929A2C /* RWSQLite.h */,
+				30D2628317C4B74D00929A2C /* RWSQLite.m */,
+				30D2626A17C4B74D00929A2C /* RWSQLiteData.h */,
+				30D2626B17C4B74D00929A2C /* RWSQLiteData.m */,
+				30D2626C17C4B74D00929A2C /* RWSQLiteDataType.h */,
+				30D2626D17C4B74D00929A2C /* RWSQLiteDataType.m */,
+				30D2626E17C4B74D00929A2C /* RWSQLiteError.h */,
+				30D2626F17C4B74D00929A2C /* RWSQLiteError.m */,
+				30D2627017C4B74D00929A2C /* RWSQLiteFileOpenOperations.h */,
+				30D2627117C4B74D00929A2C /* RWSQLiteFileOpenOperations.m */,
+				30D2627217C4B74D00929A2C /* RWSQLiteLibraryConfigurationOptions.h */,
+				30D2627317C4B74D00929A2C /* RWSQLiteLibraryConfigurationOptions.m */,
+				30D2627417C4B74D00929A2C /* RWSQLiteLibraryThreadsafeMode.h */,
+				30D2627517C4B74D00929A2C /* RWSQLiteLibraryThreadsafeMode.m */,
+				30D2627617C4B74D00929A2C /* RWSQLiteLimit.h */,
+				30D2627717C4B74D00929A2C /* RWSQLiteLimit.m */,
+				30D2627817C4B74D00929A2C /* RWSQLiteMutex.h */,
+				30D2627917C4B74D00929A2C /* RWSQLiteMutex.m */,
+				30D2627A17C4B74D00929A2C /* RWSQLiteMutexType.h */,
+				30D2627B17C4B74D00929A2C /* RWSQLiteMutexType.m */,
+				A7BCD692183A38B500E65A83 /* RWSQLiteRow.h */,
+				A7BCD693183A38B500E65A83 /* RWSQLiteRow.m */,
+				30D2627C17C4B74D00929A2C /* RWSQLiteStatement.h */,
+				30D2627D17C4B74D00929A2C /* RWSQLiteStatement.m */,
+				30D2627E17C4B74D00929A2C /* RWSQLiteString.h */,
+				30D2627F17C4B74D00929A2C /* RWSQLiteString.m */,
+				3083C9D4183C1A4300BC2DB2 /* RWSQLiteStringEncoding.h */,
+				3083C9D5183C1A4300BC2DB2 /* RWSQLiteStringEncoding.m */,
+				30D2628017C4B74D00929A2C /* RWSQLiteURL.h */,
+				30D2628117C4B74D00929A2C /* RWSQLiteURL.m */,
+			);
+			path = RWSQLite;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		30D832B1184D4FB40068D6EE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30D832BF184D4FDC0068D6EE /* RWSQLiteString.h in Headers */,
+				30D832C1184D4FDC0068D6EE /* RWSQLiteURL.h in Headers */,
+				30D832B4184D4FDC0068D6EE /* RWSQLiteData.h in Headers */,
+				30D832BB184D4FDC0068D6EE /* RWSQLiteMutex.h in Headers */,
+				30D832BC184D4FDC0068D6EE /* RWSQLiteMutexType.h in Headers */,
+				30D832B9184D4FDC0068D6EE /* RWSQLiteLibraryThreadsafeMode.h in Headers */,
+				30D832BE184D4FDC0068D6EE /* RWSQLiteStatement.h in Headers */,
+				30D832B7184D4FDC0068D6EE /* RWSQLiteFileOpenOperations.h in Headers */,
+				30D832B8184D4FDC0068D6EE /* RWSQLiteLibraryConfigurationOptions.h in Headers */,
+				30D832BD184D4FDC0068D6EE /* RWSQLiteRow.h in Headers */,
+				30D832B2184D4FDC0068D6EE /* RWSQLite-1.h in Headers */,
+				30D832C2184D4FE50068D6EE /* RWSQLite-Prefix.pch in Headers */,
+				30D832B3184D4FDC0068D6EE /* RWSQLite.h in Headers */,
+				30D832B5184D4FDC0068D6EE /* RWSQLiteDataType.h in Headers */,
+				30D832B6184D4FDC0068D6EE /* RWSQLiteError.h in Headers */,
+				30D832C0184D4FDC0068D6EE /* RWSQLiteStringEncoding.h in Headers */,
+				30D832BA184D4FDC0068D6EE /* RWSQLiteLimit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		30D2625517C4B6FA00929A2C /* RWSQLite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30D2626417C4B6FA00929A2C /* Build configuration list for PBXNativeTarget "RWSQLite" */;
+			buildPhases = (
+				30D2625217C4B6FA00929A2C /* Sources */,
+				30D2625317C4B6FA00929A2C /* Frameworks */,
+				30D832B1184D4FB40068D6EE /* Headers */,
+				30D832C3184D50750068D6EE /* Finish Build */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RWSQLite;
+			productName = RWSQLite;
+			productReference = 30D2625617C4B6FA00929A2C /* libRWSQLite.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30D2624E17C4B6FA00929A2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Roman Oliichuk";
+			};
+			buildConfigurationList = 30D2625117C4B6FA00929A2C /* Build configuration list for PBXProject "RWSQLite" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 30D2624D17C4B6FA00929A2C;
+			productRefGroup = 30D2625717C4B6FA00929A2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30D2625517C4B6FA00929A2C /* RWSQLite */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30D832C3184D50750068D6EE /* Finish Build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Finish Build";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\n# Moving the built static library into the framework.\n\nvar_library_path=\"${CONFIGURATION_BUILD_DIR}/${EXECUTABLE_PREFIX}${PRODUCT_NAME}.${EXECUTABLE_EXTENSION}\"\nvar_framework_library_path=\"${CONFIGURATION_BUILD_DIR}/${PRODUCT_NAME}.framework/${PRODUCT_NAME}\"\n\nif [ ! -f \"${var_library_path}\" ]\nthen\n    echo \"The file ${var_library_path} is not exist.\"\n    exit 1\nfi\n\nmv \"${var_library_path}\" \"${var_framework_library_path}\"\n\nif [ $? -ne 0 ]\nthen\n    echo \"Can not move the file ${var_library_path} to the file ${var_framework_library_path}.\"\n    exit 1\nfi\n\n# Copying the framework into the directory ${PR_MOVE_FRAMEWORK_TO_PARENT_PATH}.\n\nif [ -n \"${PR_COPY_FRAMEWORK_INTO_PARENT_PATH}\" ]\nthen\n    var_source_framework_path=\"${CONFIGURATION_BUILD_DIR}/${PRODUCT_NAME}.framework\"\n    var_distination_framework_path=\"${PR_COPY_FRAMEWORK_INTO_PARENT_PATH}/${PRODUCT_NAME}.framework\"\n\n    if [ ! -d \"${var_source_framework_path}\" ]\n    then\n        echo \"The directory ${var_source_framework_path} is not exist.\"\n        exit 1\n    fi\n\n    cp -R \"${var_source_framework_path}/\" \"${var_distination_framework_path}/\"\n\n    if [ $? -ne 0 ]\n    then\n        echo \"Can not copy the directory ${var_source_framework_path}/ into the directory ${var_distination_framework_path}/.\"\n        exit 1\n    fi\nfi\n\n# Moving the framework into the directory ${PR_MOVE_FRAMEWORK_TO_PARENT_PATH}.\n\nif [ -n \"${PR_MOVE_FRAMEWORK_INTO_PARENT_PATH}\" ]\nthen\n    var_source_framework_path=\"${CONFIGURATION_BUILD_DIR}/${PRODUCT_NAME}.framework\"\n    var_distination_framework_path=\"${PR_MOVE_FRAMEWORK_INTO_PARENT_PATH}/${PRODUCT_NAME}.framework\"\n\n    if [ ! -d \"${var_source_framework_path}\" ]\n    then\n        echo \"The directory ${var_source_framework_path} is not exist.\"\n        exit 1\n    fi\n\n    mv \"${var_source_framework_path}/\" \"${var_distination_framework_path}/\"\n\n    if [ $? -ne 0 ]\n    then\n        echo \"Can not move the directory ${var_source_framework_path}/ into the directory ${var_distination_framework_path}/.\"\n        exit 1\n    fi\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30D2625217C4B6FA00929A2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7BCD695183A38B500E65A83 /* RWSQLiteRow.m in Sources */,
+				30D2628417C4B74D00929A2C /* RWSQLite-1.m in Sources */,
+				30D2628517C4B74D00929A2C /* RWSQLiteData.m in Sources */,
+				30D2628617C4B74D00929A2C /* RWSQLiteDataType.m in Sources */,
+				30D2628717C4B74D00929A2C /* RWSQLiteError.m in Sources */,
+				30D2628817C4B74D00929A2C /* RWSQLiteFileOpenOperations.m in Sources */,
+				30D2628917C4B74D00929A2C /* RWSQLiteLibraryConfigurationOptions.m in Sources */,
+				30D2628A17C4B74D00929A2C /* RWSQLiteLibraryThreadsafeMode.m in Sources */,
+				30D2628B17C4B74D00929A2C /* RWSQLiteLimit.m in Sources */,
+				30D2628C17C4B74D00929A2C /* RWSQLiteMutex.m in Sources */,
+				30D2628D17C4B74D00929A2C /* RWSQLiteMutexType.m in Sources */,
+				30D2628E17C4B74D00929A2C /* RWSQLiteStatement.m in Sources */,
+				3083C9D7183C1A4300BC2DB2 /* RWSQLiteStringEncoding.m in Sources */,
+				30D2628F17C4B74D00929A2C /* RWSQLiteString.m in Sources */,
+				30D2629017C4B74D00929A2C /* RWSQLiteURL.m in Sources */,
+				30D2629117C4B74D00929A2C /* RWSQLite.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		30D2626217C4B6FA00929A2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_DEADCODE_DEADSTORES = YES;
+				CLANG_ANALYZER_GCD = YES;
+				CLANG_ANALYZER_MALLOC = YES;
+				CLANG_ANALYZER_OBJC_ATSYNC = YES;
+				CLANG_ANALYZER_OBJC_CFNUMBER = YES;
+				CLANG_ANALYZER_OBJC_COLLECTIONS = YES;
+				CLANG_ANALYZER_OBJC_INCOMP_METHOD_TYPES = YES;
+				CLANG_ANALYZER_OBJC_NSCFERROR = YES;
+				CLANG_ANALYZER_OBJC_RETAIN_COUNT = YES;
+				CLANG_ANALYZER_OBJC_SELF_INIT = YES;
+				CLANG_ANALYZER_OBJC_UNUSED_IVARS = YES;
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_GETPW_GETS = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_MKSTEMP = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = NO;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_UNCHECKEDRETURN = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_VFORK = YES;
+				CLANG_ANALYZER_SECURITY_KEYCHAIN_API = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES;
+				CLANG_WARN_OBJC_RECEIVER_WEAK = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN__ARC_BRIDGE_CAST_NONARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = NO;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = NO;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		30D2626317C4B6FA00929A2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_DEADCODE_DEADSTORES = YES;
+				CLANG_ANALYZER_GCD = YES;
+				CLANG_ANALYZER_MALLOC = YES;
+				CLANG_ANALYZER_OBJC_ATSYNC = YES;
+				CLANG_ANALYZER_OBJC_CFNUMBER = YES;
+				CLANG_ANALYZER_OBJC_COLLECTIONS = YES;
+				CLANG_ANALYZER_OBJC_INCOMP_METHOD_TYPES = YES;
+				CLANG_ANALYZER_OBJC_NSCFERROR = YES;
+				CLANG_ANALYZER_OBJC_RETAIN_COUNT = YES;
+				CLANG_ANALYZER_OBJC_SELF_INIT = YES;
+				CLANG_ANALYZER_OBJC_UNUSED_IVARS = YES;
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_GETPW_GETS = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_MKSTEMP = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = NO;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_UNCHECKEDRETURN = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_VFORK = YES;
+				CLANG_ANALYZER_SECURITY_KEYCHAIN_API = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES;
+				CLANG_WARN_OBJC_RECEIVER_WEAK = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN__ARC_BRIDGE_CAST_NONARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = NO;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = NO;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30D2626517C4B6FA00929A2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = "/tmp/$(PROJECT_NAME).dst";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_NAME)/$(PROJECT_NAME)-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(PRODUCT_NAME).framework/PrivateHeaders";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PRODUCT_NAME).framework/Headers";
+				SHARED_PRECOMPS_DIR = "$(BUILD_ROOT)/SharedPrecompiledHeaders";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		30D2626617C4B6FA00929A2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = "/tmp/$(PROJECT_NAME).dst";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_NAME)/$(PROJECT_NAME)-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(PRODUCT_NAME).framework/PrivateHeaders";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PRODUCT_NAME).framework/Headers";
+				SHARED_PRECOMPS_DIR = "$(BUILD_ROOT)/SharedPrecompiledHeaders";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30D2625117C4B6FA00929A2C /* Build configuration list for PBXProject "RWSQLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30D2626217C4B6FA00929A2C /* Debug */,
+				30D2626317C4B6FA00929A2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30D2626417C4B6FA00929A2C /* Build configuration list for PBXNativeTarget "RWSQLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30D2626517C4B6FA00929A2C /* Debug */,
+				30D2626617C4B6FA00929A2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30D2624E17C4B6FA00929A2C /* Project object */;
+}

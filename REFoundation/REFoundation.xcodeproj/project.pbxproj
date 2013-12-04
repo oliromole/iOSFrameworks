@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		304BF2F3184D683F00084FE2 /* RWObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 304BF2F2184D683F00084FE2 /* RWObjC.framework */; };
+		3082505D17CDFD6500026B07 /* RENSJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 3082505C17CDFD6500026B07 /* RENSJSONSerialization.m */; };
+		30AE2D7F17C2F53100DD7D72 /* REBase256.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AE2D3A17C2F53100DD7D72 /* REBase256.m */; };
+		30AE2D8017C2F53100DD7D72 /* REFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AE2D3C17C2F53100DD7D72 /* REFoundation.m */; };
+		30AE2D8117C2F53100DD7D72 /* RENSArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AE2D3E17C2F53100DD7D72 /* RENSArray.m */; };
+		30AE2D8217C2F53100DD7D72 /* RENSAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AE2D4017C2F53100DD7D72 /* RENSAttributedString.m */; };
+		30AE2D8317C2F53100DD7D72 /* RENSCharacterSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AE2D4217C2F53100DD7D72 /* RENSCharacterSet.m */; };
+		30AE2D8417C2F53100DD7D72 /* RENSData.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AE2D4417C2F53100DD7D72 /* RENSData.m */; };
+		30AE2D8517C2F53100DD7D72 /* RENSDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AE2D4617C2F53100DD7D72 /* RENSDate.m */; };
+		30AE2D8617C2F53100DD7D72 /* RENSDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AE2D4817C2F53100DD7D72 /* RENSDateFormatter.m */; };
+		30AE2D8717C2F53100DD7D72 /* RENSDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AE2D4A17C2F53100DD7D72 /* RENSDictionary.m */; };
+		30AE2D8817C2F53100DD7D72 /* RENSError.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AE2D4C17C2F53100DD7D72 /* RENSError.m */; };
+		30AE2D8917C2F53100DD7D72 /* RENSException.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AE2D4E17C2F53100DD7D72 /* RENSException.m */; };
+		30AE2D8A17C2F53100DD7D72 /* RENSFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AE2D5017C2F53100DD7D72 /* RENSFileManager.m */; };
+		30AE2D8B17C2F53100DD7D72 /* RENSIndexPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AE2D5217C2F53100DD7D72 /* RENSIndexPath.m */; };
+		30AE2D8C17C2F53100DD7D72 /* RENSIndexSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AE2D5417C2F53100DD7D72 /* RENSIndexSet.m */; };
+		30AE2D8D17C2F53100DD7D72 /* RENSInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AE2D5617C2F53100DD7D72 /* RENSInvocation.m */; };
+		30AE2D8E17C2F53100DD7D72 /* RENSLocale.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AE2D5817C2F53100DD7D72 /* RENSLocale.m */; };
+		30AE2D8F17C2F53100DD7D72 /* RENSNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AE2D5A17C2F53100DD7D72 /* RENSNotification.m */; };
+		30AE2D9017C2F53100DD7D72 /* RENSNotificationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AE2D5C17C2F53100DD7D72 /* RENSNotificationQueue.m */; };
+		30AE2D9117C2F53100DD7D72 /* RENSNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AE2D5E17C2F53100DD7D72 /* RENSNull.m */; };
+		30AE2D9217C2F53100DD7D72 /* RENSNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AE2D6017C2F53100DD7D72 /* RENSNumber.m */; };
+		30AE2D9317C2F53100DD7D72 /* RENSObjCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AE2D6217C2F53100DD7D72 /* RENSObjCRuntime.m */; };
+		30AE2D9417C2F53100DD7D72 /* RENSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AE2D6417C2F53100DD7D72 /* RENSObject.m */; };
+		30AE2D9517C2F53100DD7D72 /* RENSOrderedSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AE2D6617C2F53100DD7D72 /* RENSOrderedSet.m */; };
+		30AE2D9617C2F53100DD7D72 /* RENSPathUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AE2D6817C2F53100DD7D72 /* RENSPathUtilities.m */; };
+		30AE2D9717C2F53100DD7D72 /* RENSPropertyList.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AE2D6A17C2F53100DD7D72 /* RENSPropertyList.m */; };
+		30AE2D9817C2F53100DD7D72 /* RENSRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AE2D6C17C2F53100DD7D72 /* RENSRange.m */; };
+		30AE2D9917C2F53100DD7D72 /* RENSRunLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AE2D6E17C2F53100DD7D72 /* RENSRunLoop.m */; };
+		30AE2D9A17C2F53100DD7D72 /* RENSSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AE2D7017C2F53100DD7D72 /* RENSSet.m */; };
+		30AE2D9B17C2F53100DD7D72 /* RENSStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AE2D7217C2F53100DD7D72 /* RENSStream.m */; };
+		30AE2D9C17C2F53100DD7D72 /* RENSString.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AE2D7417C2F53100DD7D72 /* RENSString.m */; };
+		30AE2D9D17C2F53100DD7D72 /* RENSThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AE2D7617C2F53100DD7D72 /* RENSThread.m */; };
+		30AE2D9E17C2F53100DD7D72 /* RENSTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AE2D7817C2F53100DD7D72 /* RENSTimer.m */; };
+		30AE2D9F17C2F53100DD7D72 /* RENSURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AE2D7A17C2F53100DD7D72 /* RENSURLRequest.m */; };
+		30AE2DA017C2F53100DD7D72 /* RERFC5322.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AE2D7C17C2F53100DD7D72 /* RERFC5322.m */; };
+		30AE2DA117C2F53100DD7D72 /* RERFC822.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AE2D7E17C2F53100DD7D72 /* RERFC822.m */; };
+		30D832DB184D55D50068D6EE /* REBase256.h in Headers */ = {isa = PBXBuildFile; fileRef = 30AE2D3917C2F53100DD7D72 /* REBase256.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832DC184D55D50068D6EE /* REFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 30AE2D3B17C2F53100DD7D72 /* REFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832DD184D55D50068D6EE /* RENSArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 30AE2D3D17C2F53100DD7D72 /* RENSArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832DE184D55D50068D6EE /* RENSAttributedString.h in Headers */ = {isa = PBXBuildFile; fileRef = 30AE2D3F17C2F53100DD7D72 /* RENSAttributedString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832DF184D55D50068D6EE /* RENSCharacterSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 30AE2D4117C2F53100DD7D72 /* RENSCharacterSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832E0184D55D50068D6EE /* RENSData.h in Headers */ = {isa = PBXBuildFile; fileRef = 30AE2D4317C2F53100DD7D72 /* RENSData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832E1184D55D50068D6EE /* RENSDate.h in Headers */ = {isa = PBXBuildFile; fileRef = 30AE2D4517C2F53100DD7D72 /* RENSDate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832E2184D55D50068D6EE /* RENSDateFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 30AE2D4717C2F53100DD7D72 /* RENSDateFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832E3184D55D50068D6EE /* RENSDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 30AE2D4917C2F53100DD7D72 /* RENSDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832E4184D55D50068D6EE /* RENSError.h in Headers */ = {isa = PBXBuildFile; fileRef = 30AE2D4B17C2F53100DD7D72 /* RENSError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832E5184D55D50068D6EE /* RENSException.h in Headers */ = {isa = PBXBuildFile; fileRef = 30AE2D4D17C2F53100DD7D72 /* RENSException.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832E6184D55D50068D6EE /* RENSFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 30AE2D4F17C2F53100DD7D72 /* RENSFileManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832E7184D55D50068D6EE /* RENSIndexPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 30AE2D5117C2F53100DD7D72 /* RENSIndexPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832E8184D55D50068D6EE /* RENSIndexSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 30AE2D5317C2F53100DD7D72 /* RENSIndexSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832E9184D55D50068D6EE /* RENSInvocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 30AE2D5517C2F53100DD7D72 /* RENSInvocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832EA184D55D50068D6EE /* RENSJSONSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 3082505B17CDFD6500026B07 /* RENSJSONSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832EB184D55D50068D6EE /* RENSLocale.h in Headers */ = {isa = PBXBuildFile; fileRef = 30AE2D5717C2F53100DD7D72 /* RENSLocale.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832EC184D55D50068D6EE /* RENSNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 30AE2D5917C2F53100DD7D72 /* RENSNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832ED184D55D50068D6EE /* RENSNotificationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 30AE2D5B17C2F53100DD7D72 /* RENSNotificationQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832EE184D55D50068D6EE /* RENSNull.h in Headers */ = {isa = PBXBuildFile; fileRef = 30AE2D5D17C2F53100DD7D72 /* RENSNull.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832EF184D55D50068D6EE /* RENSNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 30AE2D5F17C2F53100DD7D72 /* RENSNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832F0184D55D50068D6EE /* RENSObjCRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 30AE2D6117C2F53100DD7D72 /* RENSObjCRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832F1184D55D50068D6EE /* RENSObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 30AE2D6317C2F53100DD7D72 /* RENSObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832F2184D55D50068D6EE /* RENSOrderedSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 30AE2D6517C2F53100DD7D72 /* RENSOrderedSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832F3184D55D50068D6EE /* RENSPathUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 30AE2D6717C2F53100DD7D72 /* RENSPathUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832F4184D55D50068D6EE /* RENSPropertyList.h in Headers */ = {isa = PBXBuildFile; fileRef = 30AE2D6917C2F53100DD7D72 /* RENSPropertyList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832F5184D55D50068D6EE /* RENSRange.h in Headers */ = {isa = PBXBuildFile; fileRef = 30AE2D6B17C2F53100DD7D72 /* RENSRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832F6184D55D50068D6EE /* RENSRunLoop.h in Headers */ = {isa = PBXBuildFile; fileRef = 30AE2D6D17C2F53100DD7D72 /* RENSRunLoop.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832F7184D55D50068D6EE /* RENSSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 30AE2D6F17C2F53100DD7D72 /* RENSSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832F8184D55D50068D6EE /* RENSStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 30AE2D7117C2F53100DD7D72 /* RENSStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832F9184D55D50068D6EE /* RENSString.h in Headers */ = {isa = PBXBuildFile; fileRef = 30AE2D7317C2F53100DD7D72 /* RENSString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832FA184D55D50068D6EE /* RENSThread.h in Headers */ = {isa = PBXBuildFile; fileRef = 30AE2D7517C2F53100DD7D72 /* RENSThread.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832FB184D55D50068D6EE /* RENSTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 30AE2D7717C2F53100DD7D72 /* RENSTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832FC184D55D50068D6EE /* RENSURLRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 30AE2D7917C2F53100DD7D72 /* RENSURLRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832FD184D55D50068D6EE /* RERFC5322.h in Headers */ = {isa = PBXBuildFile; fileRef = 30AE2D7B17C2F53100DD7D72 /* RERFC5322.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832FE184D55D50068D6EE /* RERFC822.h in Headers */ = {isa = PBXBuildFile; fileRef = 30AE2D7D17C2F53100DD7D72 /* RERFC822.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832FF184D55DD0068D6EE /* REFoundation-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 30AE2D2E17C2F50600DD7D72 /* REFoundation-Prefix.pch */; };
+		30D83303184D56B10068D6EE /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30D83301184D56B10068D6EE /* CoreFoundation.framework */; };
+		30D83304184D56B10068D6EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30D83302184D56B10068D6EE /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		304BF2F2184D683F00084FE2 /* RWObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RWObjC.framework; path = ../Frameworks/RWObjC.framework; sourceTree = "<group>"; };
+		3082505B17CDFD6500026B07 /* RENSJSONSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENSJSONSerialization.h; sourceTree = "<group>"; };
+		3082505C17CDFD6500026B07 /* RENSJSONSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENSJSONSerialization.m; sourceTree = "<group>"; };
+		30AE2D2717C2F50600DD7D72 /* libREFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libREFoundation.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		30AE2D2E17C2F50600DD7D72 /* REFoundation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "REFoundation-Prefix.pch"; sourceTree = "<group>"; };
+		30AE2D3917C2F53100DD7D72 /* REBase256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REBase256.h; sourceTree = "<group>"; };
+		30AE2D3A17C2F53100DD7D72 /* REBase256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REBase256.m; sourceTree = "<group>"; };
+		30AE2D3B17C2F53100DD7D72 /* REFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REFoundation.h; sourceTree = "<group>"; };
+		30AE2D3C17C2F53100DD7D72 /* REFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REFoundation.m; sourceTree = "<group>"; };
+		30AE2D3D17C2F53100DD7D72 /* RENSArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENSArray.h; sourceTree = "<group>"; };
+		30AE2D3E17C2F53100DD7D72 /* RENSArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENSArray.m; sourceTree = "<group>"; };
+		30AE2D3F17C2F53100DD7D72 /* RENSAttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENSAttributedString.h; sourceTree = "<group>"; };
+		30AE2D4017C2F53100DD7D72 /* RENSAttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENSAttributedString.m; sourceTree = "<group>"; };
+		30AE2D4117C2F53100DD7D72 /* RENSCharacterSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENSCharacterSet.h; sourceTree = "<group>"; };
+		30AE2D4217C2F53100DD7D72 /* RENSCharacterSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENSCharacterSet.m; sourceTree = "<group>"; };
+		30AE2D4317C2F53100DD7D72 /* RENSData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENSData.h; sourceTree = "<group>"; };
+		30AE2D4417C2F53100DD7D72 /* RENSData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENSData.m; sourceTree = "<group>"; };
+		30AE2D4517C2F53100DD7D72 /* RENSDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENSDate.h; sourceTree = "<group>"; };
+		30AE2D4617C2F53100DD7D72 /* RENSDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENSDate.m; sourceTree = "<group>"; };
+		30AE2D4717C2F53100DD7D72 /* RENSDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENSDateFormatter.h; sourceTree = "<group>"; };
+		30AE2D4817C2F53100DD7D72 /* RENSDateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENSDateFormatter.m; sourceTree = "<group>"; };
+		30AE2D4917C2F53100DD7D72 /* RENSDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENSDictionary.h; sourceTree = "<group>"; };
+		30AE2D4A17C2F53100DD7D72 /* RENSDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENSDictionary.m; sourceTree = "<group>"; };
+		30AE2D4B17C2F53100DD7D72 /* RENSError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENSError.h; sourceTree = "<group>"; };
+		30AE2D4C17C2F53100DD7D72 /* RENSError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENSError.m; sourceTree = "<group>"; };
+		30AE2D4D17C2F53100DD7D72 /* RENSException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENSException.h; sourceTree = "<group>"; };
+		30AE2D4E17C2F53100DD7D72 /* RENSException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENSException.m; sourceTree = "<group>"; };
+		30AE2D4F17C2F53100DD7D72 /* RENSFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENSFileManager.h; sourceTree = "<group>"; };
+		30AE2D5017C2F53100DD7D72 /* RENSFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENSFileManager.m; sourceTree = "<group>"; };
+		30AE2D5117C2F53100DD7D72 /* RENSIndexPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENSIndexPath.h; sourceTree = "<group>"; };
+		30AE2D5217C2F53100DD7D72 /* RENSIndexPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENSIndexPath.m; sourceTree = "<group>"; };
+		30AE2D5317C2F53100DD7D72 /* RENSIndexSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENSIndexSet.h; sourceTree = "<group>"; };
+		30AE2D5417C2F53100DD7D72 /* RENSIndexSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENSIndexSet.m; sourceTree = "<group>"; };
+		30AE2D5517C2F53100DD7D72 /* RENSInvocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENSInvocation.h; sourceTree = "<group>"; };
+		30AE2D5617C2F53100DD7D72 /* RENSInvocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENSInvocation.m; sourceTree = "<group>"; };
+		30AE2D5717C2F53100DD7D72 /* RENSLocale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENSLocale.h; sourceTree = "<group>"; };
+		30AE2D5817C2F53100DD7D72 /* RENSLocale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENSLocale.m; sourceTree = "<group>"; };
+		30AE2D5917C2F53100DD7D72 /* RENSNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENSNotification.h; sourceTree = "<group>"; };
+		30AE2D5A17C2F53100DD7D72 /* RENSNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENSNotification.m; sourceTree = "<group>"; };
+		30AE2D5B17C2F53100DD7D72 /* RENSNotificationQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENSNotificationQueue.h; sourceTree = "<group>"; };
+		30AE2D5C17C2F53100DD7D72 /* RENSNotificationQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENSNotificationQueue.m; sourceTree = "<group>"; };
+		30AE2D5D17C2F53100DD7D72 /* RENSNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENSNull.h; sourceTree = "<group>"; };
+		30AE2D5E17C2F53100DD7D72 /* RENSNull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENSNull.m; sourceTree = "<group>"; };
+		30AE2D5F17C2F53100DD7D72 /* RENSNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENSNumber.h; sourceTree = "<group>"; };
+		30AE2D6017C2F53100DD7D72 /* RENSNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENSNumber.m; sourceTree = "<group>"; };
+		30AE2D6117C2F53100DD7D72 /* RENSObjCRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENSObjCRuntime.h; sourceTree = "<group>"; };
+		30AE2D6217C2F53100DD7D72 /* RENSObjCRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENSObjCRuntime.m; sourceTree = "<group>"; };
+		30AE2D6317C2F53100DD7D72 /* RENSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENSObject.h; sourceTree = "<group>"; };
+		30AE2D6417C2F53100DD7D72 /* RENSObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENSObject.m; sourceTree = "<group>"; };
+		30AE2D6517C2F53100DD7D72 /* RENSOrderedSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENSOrderedSet.h; sourceTree = "<group>"; };
+		30AE2D6617C2F53100DD7D72 /* RENSOrderedSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENSOrderedSet.m; sourceTree = "<group>"; };
+		30AE2D6717C2F53100DD7D72 /* RENSPathUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENSPathUtilities.h; sourceTree = "<group>"; };
+		30AE2D6817C2F53100DD7D72 /* RENSPathUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENSPathUtilities.m; sourceTree = "<group>"; };
+		30AE2D6917C2F53100DD7D72 /* RENSPropertyList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENSPropertyList.h; sourceTree = "<group>"; };
+		30AE2D6A17C2F53100DD7D72 /* RENSPropertyList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENSPropertyList.m; sourceTree = "<group>"; };
+		30AE2D6B17C2F53100DD7D72 /* RENSRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENSRange.h; sourceTree = "<group>"; };
+		30AE2D6C17C2F53100DD7D72 /* RENSRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENSRange.m; sourceTree = "<group>"; };
+		30AE2D6D17C2F53100DD7D72 /* RENSRunLoop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENSRunLoop.h; sourceTree = "<group>"; };
+		30AE2D6E17C2F53100DD7D72 /* RENSRunLoop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENSRunLoop.m; sourceTree = "<group>"; };
+		30AE2D6F17C2F53100DD7D72 /* RENSSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENSSet.h; sourceTree = "<group>"; };
+		30AE2D7017C2F53100DD7D72 /* RENSSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENSSet.m; sourceTree = "<group>"; };
+		30AE2D7117C2F53100DD7D72 /* RENSStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENSStream.h; sourceTree = "<group>"; };
+		30AE2D7217C2F53100DD7D72 /* RENSStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENSStream.m; sourceTree = "<group>"; };
+		30AE2D7317C2F53100DD7D72 /* RENSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENSString.h; sourceTree = "<group>"; };
+		30AE2D7417C2F53100DD7D72 /* RENSString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENSString.m; sourceTree = "<group>"; };
+		30AE2D7517C2F53100DD7D72 /* RENSThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENSThread.h; sourceTree = "<group>"; };
+		30AE2D7617C2F53100DD7D72 /* RENSThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENSThread.m; sourceTree = "<group>"; };
+		30AE2D7717C2F53100DD7D72 /* RENSTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENSTimer.h; sourceTree = "<group>"; };
+		30AE2D7817C2F53100DD7D72 /* RENSTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENSTimer.m; sourceTree = "<group>"; };
+		30AE2D7917C2F53100DD7D72 /* RENSURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENSURLRequest.h; sourceTree = "<group>"; };
+		30AE2D7A17C2F53100DD7D72 /* RENSURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENSURLRequest.m; sourceTree = "<group>"; };
+		30AE2D7B17C2F53100DD7D72 /* RERFC5322.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RERFC5322.h; sourceTree = "<group>"; };
+		30AE2D7C17C2F53100DD7D72 /* RERFC5322.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RERFC5322.m; sourceTree = "<group>"; };
+		30AE2D7D17C2F53100DD7D72 /* RERFC822.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RERFC822.h; sourceTree = "<group>"; };
+		30AE2D7E17C2F53100DD7D72 /* RERFC822.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RERFC822.m; sourceTree = "<group>"; };
+		30D83301184D56B10068D6EE /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		30D83302184D56B10068D6EE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30AE2D2417C2F50600DD7D72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30D83303184D56B10068D6EE /* CoreFoundation.framework in Frameworks */,
+				304BF2F3184D683F00084FE2 /* RWObjC.framework in Frameworks */,
+				30D83304184D56B10068D6EE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		304BF2F1184D683300084FE2 /* External Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				304BF2F2184D683F00084FE2 /* RWObjC.framework */,
+			);
+			name = "External Frameworks";
+			sourceTree = "<group>";
+		};
+		30AE2D1E17C2F50600DD7D72 = {
+			isa = PBXGroup;
+			children = (
+				30AE2D2C17C2F50600DD7D72 /* REFoundation */,
+				30AE2D2917C2F50600DD7D72 /* Frameworks */,
+				304BF2F1184D683300084FE2 /* External Frameworks */,
+				30AE2D2817C2F50600DD7D72 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30AE2D2817C2F50600DD7D72 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30AE2D2717C2F50600DD7D72 /* libREFoundation.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30AE2D2917C2F50600DD7D72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30D83301184D56B10068D6EE /* CoreFoundation.framework */,
+				30D83302184D56B10068D6EE /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		30AE2D2C17C2F50600DD7D72 /* REFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				30AE2D3817C2F53100DD7D72 /* REFoundation */,
+				30AE2D2E17C2F50600DD7D72 /* REFoundation-Prefix.pch */,
+			);
+			path = REFoundation;
+			sourceTree = "<group>";
+		};
+		30AE2D3817C2F53100DD7D72 /* REFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				30AE2D3917C2F53100DD7D72 /* REBase256.h */,
+				30AE2D3A17C2F53100DD7D72 /* REBase256.m */,
+				30AE2D3B17C2F53100DD7D72 /* REFoundation.h */,
+				30AE2D3C17C2F53100DD7D72 /* REFoundation.m */,
+				30AE2D3D17C2F53100DD7D72 /* RENSArray.h */,
+				30AE2D3E17C2F53100DD7D72 /* RENSArray.m */,
+				30AE2D3F17C2F53100DD7D72 /* RENSAttributedString.h */,
+				30AE2D4017C2F53100DD7D72 /* RENSAttributedString.m */,
+				30AE2D4117C2F53100DD7D72 /* RENSCharacterSet.h */,
+				30AE2D4217C2F53100DD7D72 /* RENSCharacterSet.m */,
+				30AE2D4317C2F53100DD7D72 /* RENSData.h */,
+				30AE2D4417C2F53100DD7D72 /* RENSData.m */,
+				30AE2D4517C2F53100DD7D72 /* RENSDate.h */,
+				30AE2D4617C2F53100DD7D72 /* RENSDate.m */,
+				30AE2D4717C2F53100DD7D72 /* RENSDateFormatter.h */,
+				30AE2D4817C2F53100DD7D72 /* RENSDateFormatter.m */,
+				30AE2D4917C2F53100DD7D72 /* RENSDictionary.h */,
+				30AE2D4A17C2F53100DD7D72 /* RENSDictionary.m */,
+				30AE2D4B17C2F53100DD7D72 /* RENSError.h */,
+				30AE2D4C17C2F53100DD7D72 /* RENSError.m */,
+				30AE2D4D17C2F53100DD7D72 /* RENSException.h */,
+				30AE2D4E17C2F53100DD7D72 /* RENSException.m */,
+				30AE2D4F17C2F53100DD7D72 /* RENSFileManager.h */,
+				30AE2D5017C2F53100DD7D72 /* RENSFileManager.m */,
+				30AE2D5117C2F53100DD7D72 /* RENSIndexPath.h */,
+				30AE2D5217C2F53100DD7D72 /* RENSIndexPath.m */,
+				30AE2D5317C2F53100DD7D72 /* RENSIndexSet.h */,
+				30AE2D5417C2F53100DD7D72 /* RENSIndexSet.m */,
+				30AE2D5517C2F53100DD7D72 /* RENSInvocation.h */,
+				30AE2D5617C2F53100DD7D72 /* RENSInvocation.m */,
+				3082505B17CDFD6500026B07 /* RENSJSONSerialization.h */,
+				3082505C17CDFD6500026B07 /* RENSJSONSerialization.m */,
+				30AE2D5717C2F53100DD7D72 /* RENSLocale.h */,
+				30AE2D5817C2F53100DD7D72 /* RENSLocale.m */,
+				30AE2D5917C2F53100DD7D72 /* RENSNotification.h */,
+				30AE2D5A17C2F53100DD7D72 /* RENSNotification.m */,
+				30AE2D5B17C2F53100DD7D72 /* RENSNotificationQueue.h */,
+				30AE2D5C17C2F53100DD7D72 /* RENSNotificationQueue.m */,
+				30AE2D5D17C2F53100DD7D72 /* RENSNull.h */,
+				30AE2D5E17C2F53100DD7D72 /* RENSNull.m */,
+				30AE2D5F17C2F53100DD7D72 /* RENSNumber.h */,
+				30AE2D6017C2F53100DD7D72 /* RENSNumber.m */,
+				30AE2D6117C2F53100DD7D72 /* RENSObjCRuntime.h */,
+				30AE2D6217C2F53100DD7D72 /* RENSObjCRuntime.m */,
+				30AE2D6317C2F53100DD7D72 /* RENSObject.h */,
+				30AE2D6417C2F53100DD7D72 /* RENSObject.m */,
+				30AE2D6517C2F53100DD7D72 /* RENSOrderedSet.h */,
+				30AE2D6617C2F53100DD7D72 /* RENSOrderedSet.m */,
+				30AE2D6717C2F53100DD7D72 /* RENSPathUtilities.h */,
+				30AE2D6817C2F53100DD7D72 /* RENSPathUtilities.m */,
+				30AE2D6917C2F53100DD7D72 /* RENSPropertyList.h */,
+				30AE2D6A17C2F53100DD7D72 /* RENSPropertyList.m */,
+				30AE2D6B17C2F53100DD7D72 /* RENSRange.h */,
+				30AE2D6C17C2F53100DD7D72 /* RENSRange.m */,
+				30AE2D6D17C2F53100DD7D72 /* RENSRunLoop.h */,
+				30AE2D6E17C2F53100DD7D72 /* RENSRunLoop.m */,
+				30AE2D6F17C2F53100DD7D72 /* RENSSet.h */,
+				30AE2D7017C2F53100DD7D72 /* RENSSet.m */,
+				30AE2D7117C2F53100DD7D72 /* RENSStream.h */,
+				30AE2D7217C2F53100DD7D72 /* RENSStream.m */,
+				30AE2D7317C2F53100DD7D72 /* RENSString.h */,
+				30AE2D7417C2F53100DD7D72 /* RENSString.m */,
+				30AE2D7517C2F53100DD7D72 /* RENSThread.h */,
+				30AE2D7617C2F53100DD7D72 /* RENSThread.m */,
+				30AE2D7717C2F53100DD7D72 /* RENSTimer.h */,
+				30AE2D7817C2F53100DD7D72 /* RENSTimer.m */,
+				30AE2D7917C2F53100DD7D72 /* RENSURLRequest.h */,
+				30AE2D7A17C2F53100DD7D72 /* RENSURLRequest.m */,
+				30AE2D7B17C2F53100DD7D72 /* RERFC5322.h */,
+				30AE2D7C17C2F53100DD7D72 /* RERFC5322.m */,
+				30AE2D7D17C2F53100DD7D72 /* RERFC822.h */,
+				30AE2D7E17C2F53100DD7D72 /* RERFC822.m */,
+			);
+			path = REFoundation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		30D832DA184D55AD0068D6EE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30D832DD184D55D50068D6EE /* RENSArray.h in Headers */,
+				30D832E1184D55D50068D6EE /* RENSDate.h in Headers */,
+				30D832E6184D55D50068D6EE /* RENSFileManager.h in Headers */,
+				30D832EE184D55D50068D6EE /* RENSNull.h in Headers */,
+				30D832E7184D55D50068D6EE /* RENSIndexPath.h in Headers */,
+				30D832F0184D55D50068D6EE /* RENSObjCRuntime.h in Headers */,
+				30D832FB184D55D50068D6EE /* RENSTimer.h in Headers */,
+				30D832F9184D55D50068D6EE /* RENSString.h in Headers */,
+				30D832F5184D55D50068D6EE /* RENSRange.h in Headers */,
+				30D832FF184D55DD0068D6EE /* REFoundation-Prefix.pch in Headers */,
+				30D832DF184D55D50068D6EE /* RENSCharacterSet.h in Headers */,
+				30D832F8184D55D50068D6EE /* RENSStream.h in Headers */,
+				30D832F2184D55D50068D6EE /* RENSOrderedSet.h in Headers */,
+				30D832E2184D55D50068D6EE /* RENSDateFormatter.h in Headers */,
+				30D832F1184D55D50068D6EE /* RENSObject.h in Headers */,
+				30D832FE184D55D50068D6EE /* RERFC822.h in Headers */,
+				30D832E0184D55D50068D6EE /* RENSData.h in Headers */,
+				30D832DC184D55D50068D6EE /* REFoundation.h in Headers */,
+				30D832FC184D55D50068D6EE /* RENSURLRequest.h in Headers */,
+				30D832E5184D55D50068D6EE /* RENSException.h in Headers */,
+				30D832DB184D55D50068D6EE /* REBase256.h in Headers */,
+				30D832E8184D55D50068D6EE /* RENSIndexSet.h in Headers */,
+				30D832FA184D55D50068D6EE /* RENSThread.h in Headers */,
+				30D832DE184D55D50068D6EE /* RENSAttributedString.h in Headers */,
+				30D832FD184D55D50068D6EE /* RERFC5322.h in Headers */,
+				30D832EB184D55D50068D6EE /* RENSLocale.h in Headers */,
+				30D832F4184D55D50068D6EE /* RENSPropertyList.h in Headers */,
+				30D832EC184D55D50068D6EE /* RENSNotification.h in Headers */,
+				30D832E3184D55D50068D6EE /* RENSDictionary.h in Headers */,
+				30D832EA184D55D50068D6EE /* RENSJSONSerialization.h in Headers */,
+				30D832F6184D55D50068D6EE /* RENSRunLoop.h in Headers */,
+				30D832EF184D55D50068D6EE /* RENSNumber.h in Headers */,
+				30D832E9184D55D50068D6EE /* RENSInvocation.h in Headers */,
+				30D832F7184D55D50068D6EE /* RENSSet.h in Headers */,
+				30D832F3184D55D50068D6EE /* RENSPathUtilities.h in Headers */,
+				30D832ED184D55D50068D6EE /* RENSNotificationQueue.h in Headers */,
+				30D832E4184D55D50068D6EE /* RENSError.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		30AE2D2617C2F50600DD7D72 /* REFoundation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30AE2D3517C2F50600DD7D72 /* Build configuration list for PBXNativeTarget "REFoundation" */;
+			buildPhases = (
+				30AE2D2317C2F50600DD7D72 /* Sources */,
+				30AE2D2417C2F50600DD7D72 /* Frameworks */,
+				30D832DA184D55AD0068D6EE /* Headers */,
+				30D83300184D56590068D6EE /* Finish Build */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = REFoundation;
+			productName = REFoundation;
+			productReference = 30AE2D2717C2F50600DD7D72 /* libREFoundation.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30AE2D1F17C2F50600DD7D72 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Roman Oliichuk";
+			};
+			buildConfigurationList = 30AE2D2217C2F50600DD7D72 /* Build configuration list for PBXProject "REFoundation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 30AE2D1E17C2F50600DD7D72;
+			productRefGroup = 30AE2D2817C2F50600DD7D72 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30AE2D2617C2F50600DD7D72 /* REFoundation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30D83300184D56590068D6EE /* Finish Build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Finish Build";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\n# Moving the built static library into the framework.\n\nvar_library_path=\"${CONFIGURATION_BUILD_DIR}/${EXECUTABLE_PREFIX}${PRODUCT_NAME}.${EXECUTABLE_EXTENSION}\"\nvar_framework_library_path=\"${CONFIGURATION_BUILD_DIR}/${PRODUCT_NAME}.framework/${PRODUCT_NAME}\"\n\nif [ ! -f \"${var_library_path}\" ]\nthen\n    echo \"The file ${var_library_path} is not exist.\"\n    exit 1\nfi\n\nmv \"${var_library_path}\" \"${var_framework_library_path}\"\n\nif [ $? -ne 0 ]\nthen\n    echo \"Can not move the file ${var_library_path} to the file ${var_framework_library_path}.\"\n    exit 1\nfi\n\n# Copying the framework into the directory ${PR_MOVE_FRAMEWORK_TO_PARENT_PATH}.\n\nif [ -n \"${PR_COPY_FRAMEWORK_INTO_PARENT_PATH}\" ]\nthen\n    var_source_framework_path=\"${CONFIGURATION_BUILD_DIR}/${PRODUCT_NAME}.framework\"\n    var_distination_framework_path=\"${PR_COPY_FRAMEWORK_INTO_PARENT_PATH}/${PRODUCT_NAME}.framework\"\n\n    if [ ! -d \"${var_source_framework_path}\" ]\n    then\n        echo \"The directory ${var_source_framework_path} is not exist.\"\n        exit 1\n    fi\n\n    cp -R \"${var_source_framework_path}/\" \"${var_distination_framework_path}/\"\n\n    if [ $? -ne 0 ]\n    then\n        echo \"Can not copy the directory ${var_source_framework_path}/ into the directory ${var_distination_framework_path}/.\"\n        exit 1\n    fi\nfi\n\n# Moving the framework into the directory ${PR_MOVE_FRAMEWORK_TO_PARENT_PATH}.\n\nif [ -n \"${PR_MOVE_FRAMEWORK_INTO_PARENT_PATH}\" ]\nthen\n    var_source_framework_path=\"${CONFIGURATION_BUILD_DIR}/${PRODUCT_NAME}.framework\"\n    var_distination_framework_path=\"${PR_MOVE_FRAMEWORK_INTO_PARENT_PATH}/${PRODUCT_NAME}.framework\"\n\n    if [ ! -d \"${var_source_framework_path}\" ]\n    then\n        echo \"The directory ${var_source_framework_path} is not exist.\"\n        exit 1\n    fi\n\n    mv \"${var_source_framework_path}/\" \"${var_distination_framework_path}/\"\n\n    if [ $? -ne 0 ]\n    then\n        echo \"Can not move the directory ${var_source_framework_path}/ into the directory ${var_distination_framework_path}/.\"\n        exit 1\n    fi\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30AE2D2317C2F50600DD7D72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30AE2D7F17C2F53100DD7D72 /* REBase256.m in Sources */,
+				30AE2D8017C2F53100DD7D72 /* REFoundation.m in Sources */,
+				30AE2D8117C2F53100DD7D72 /* RENSArray.m in Sources */,
+				30AE2D8217C2F53100DD7D72 /* RENSAttributedString.m in Sources */,
+				30AE2D8317C2F53100DD7D72 /* RENSCharacterSet.m in Sources */,
+				30AE2D8417C2F53100DD7D72 /* RENSData.m in Sources */,
+				30AE2D8517C2F53100DD7D72 /* RENSDate.m in Sources */,
+				30AE2D8617C2F53100DD7D72 /* RENSDateFormatter.m in Sources */,
+				30AE2D8717C2F53100DD7D72 /* RENSDictionary.m in Sources */,
+				30AE2D8817C2F53100DD7D72 /* RENSError.m in Sources */,
+				30AE2D8917C2F53100DD7D72 /* RENSException.m in Sources */,
+				30AE2D8A17C2F53100DD7D72 /* RENSFileManager.m in Sources */,
+				30AE2D8B17C2F53100DD7D72 /* RENSIndexPath.m in Sources */,
+				30AE2D8C17C2F53100DD7D72 /* RENSIndexSet.m in Sources */,
+				30AE2D8D17C2F53100DD7D72 /* RENSInvocation.m in Sources */,
+				30AE2D8E17C2F53100DD7D72 /* RENSLocale.m in Sources */,
+				30AE2D8F17C2F53100DD7D72 /* RENSNotification.m in Sources */,
+				30AE2D9017C2F53100DD7D72 /* RENSNotificationQueue.m in Sources */,
+				30AE2D9117C2F53100DD7D72 /* RENSNull.m in Sources */,
+				30AE2D9217C2F53100DD7D72 /* RENSNumber.m in Sources */,
+				30AE2D9317C2F53100DD7D72 /* RENSObjCRuntime.m in Sources */,
+				30AE2D9417C2F53100DD7D72 /* RENSObject.m in Sources */,
+				30AE2D9517C2F53100DD7D72 /* RENSOrderedSet.m in Sources */,
+				30AE2D9617C2F53100DD7D72 /* RENSPathUtilities.m in Sources */,
+				30AE2D9717C2F53100DD7D72 /* RENSPropertyList.m in Sources */,
+				30AE2D9817C2F53100DD7D72 /* RENSRange.m in Sources */,
+				30AE2D9917C2F53100DD7D72 /* RENSRunLoop.m in Sources */,
+				30AE2D9A17C2F53100DD7D72 /* RENSSet.m in Sources */,
+				30AE2D9B17C2F53100DD7D72 /* RENSStream.m in Sources */,
+				30AE2D9C17C2F53100DD7D72 /* RENSString.m in Sources */,
+				30AE2D9D17C2F53100DD7D72 /* RENSThread.m in Sources */,
+				30AE2D9E17C2F53100DD7D72 /* RENSTimer.m in Sources */,
+				30AE2D9F17C2F53100DD7D72 /* RENSURLRequest.m in Sources */,
+				30AE2DA017C2F53100DD7D72 /* RERFC5322.m in Sources */,
+				30AE2DA117C2F53100DD7D72 /* RERFC822.m in Sources */,
+				3082505D17CDFD6500026B07 /* RENSJSONSerialization.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		30AE2D3317C2F50600DD7D72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_DEADCODE_DEADSTORES = YES;
+				CLANG_ANALYZER_GCD = YES;
+				CLANG_ANALYZER_MALLOC = YES;
+				CLANG_ANALYZER_OBJC_ATSYNC = YES;
+				CLANG_ANALYZER_OBJC_CFNUMBER = YES;
+				CLANG_ANALYZER_OBJC_COLLECTIONS = YES;
+				CLANG_ANALYZER_OBJC_INCOMP_METHOD_TYPES = YES;
+				CLANG_ANALYZER_OBJC_NSCFERROR = YES;
+				CLANG_ANALYZER_OBJC_RETAIN_COUNT = YES;
+				CLANG_ANALYZER_OBJC_SELF_INIT = YES;
+				CLANG_ANALYZER_OBJC_UNUSED_IVARS = YES;
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_GETPW_GETS = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_MKSTEMP = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = NO;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_UNCHECKEDRETURN = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_VFORK = YES;
+				CLANG_ANALYZER_SECURITY_KEYCHAIN_API = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES;
+				CLANG_WARN_OBJC_RECEIVER_WEAK = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN__ARC_BRIDGE_CAST_NONARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = NO;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = NO;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		30AE2D3417C2F50600DD7D72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_DEADCODE_DEADSTORES = YES;
+				CLANG_ANALYZER_GCD = YES;
+				CLANG_ANALYZER_MALLOC = YES;
+				CLANG_ANALYZER_OBJC_ATSYNC = YES;
+				CLANG_ANALYZER_OBJC_CFNUMBER = YES;
+				CLANG_ANALYZER_OBJC_COLLECTIONS = YES;
+				CLANG_ANALYZER_OBJC_INCOMP_METHOD_TYPES = YES;
+				CLANG_ANALYZER_OBJC_NSCFERROR = YES;
+				CLANG_ANALYZER_OBJC_RETAIN_COUNT = YES;
+				CLANG_ANALYZER_OBJC_SELF_INIT = YES;
+				CLANG_ANALYZER_OBJC_UNUSED_IVARS = YES;
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_GETPW_GETS = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_MKSTEMP = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = NO;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_UNCHECKEDRETURN = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_VFORK = YES;
+				CLANG_ANALYZER_SECURITY_KEYCHAIN_API = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES;
+				CLANG_WARN_OBJC_RECEIVER_WEAK = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN__ARC_BRIDGE_CAST_NONARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = NO;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = NO;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30AE2D3617C2F50600DD7D72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = "/tmp/$(PROJECT_NAME).dst";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_NAME)/$(PROJECT_NAME)-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(PRODUCT_NAME).framework/PrivateHeaders";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PRODUCT_NAME).framework/Headers";
+				SHARED_PRECOMPS_DIR = "$(BUILD_ROOT)/SharedPrecompiledHeaders";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		30AE2D3717C2F50600DD7D72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = "/tmp/$(PROJECT_NAME).dst";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_NAME)/$(PROJECT_NAME)-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(PRODUCT_NAME).framework/PrivateHeaders";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PRODUCT_NAME).framework/Headers";
+				SHARED_PRECOMPS_DIR = "$(BUILD_ROOT)/SharedPrecompiledHeaders";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30AE2D2217C2F50600DD7D72 /* Build configuration list for PBXProject "REFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30AE2D3317C2F50600DD7D72 /* Debug */,
+				30AE2D3417C2F50600DD7D72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30AE2D3517C2F50600DD7D72 /* Build configuration list for PBXNativeTarget "REFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30AE2D3617C2F50600DD7D72 /* Debug */,
+				30AE2D3717C2F50600DD7D72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30AE2D1F17C2F50600DD7D72 /* Project object */;
+}

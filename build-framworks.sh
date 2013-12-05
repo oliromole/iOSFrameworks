@@ -5,6 +5,7 @@ var_framework_names=(
 "RECoreLocation"
 "REFoundation"
 "REMapKit"
+"REQuartzCore"
 "REUIKit"
 "RFFoundation"
 "RFLibKern"
@@ -35,6 +36,7 @@ var_framework_names2=(
 "REMapKit"         # RECoreLocation
 
 "${var_separator}"
+"REQuartzCore"     # REFoundation   RWObjC
 "REUIKit"          # REFoundation   RWObjC
 "RFMapKit"         # RECoreGraphics RECoreLocation REFoundation    REMapKit RWObjC
 "RWUUID"           # REFoundation   RWObjC

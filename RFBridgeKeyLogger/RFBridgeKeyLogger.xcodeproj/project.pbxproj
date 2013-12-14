@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30198421185293AF001774F3 /* RFBridgeKeyLogger-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 301983F218528FB4001774F3 /* RFBridgeKeyLogger-Prefix.pch */; };
+		3096D84D18529CAA00FA913B /* RFBridgeKeyLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 3096D84718529CAA00FA913B /* RFBridgeKeyLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3096D84E18529CAA00FA913B /* RFBridgeKeyLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 3096D84818529CAA00FA913B /* RFBridgeKeyLogger.m */; };
+		3096D84F18529CAA00FA913B /* RFNSBridgeKeyLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 3096D84918529CAA00FA913B /* RFNSBridgeKeyLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3096D85018529CAA00FA913B /* RFNSBridgeKeyLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3096D84A18529CAA00FA913B /* RFNSBridgeKeyLog.m */; };
+		3096D85118529CAA00FA913B /* RFNSBridgeKeyLogParameter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3096D84B18529CAA00FA913B /* RFNSBridgeKeyLogParameter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3096D85218529CAA00FA913B /* RFNSBridgeKeyLogParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3096D84C18529CAA00FA913B /* RFNSBridgeKeyLogParameter.m */; };
+		3096D85518529E1D00FA913B /* RFNSBridgeKeyLogDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 3096D85318529E1D00FA913B /* RFNSBridgeKeyLogDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3096D85618529E1D00FA913B /* RFNSBridgeKeyLogDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 3096D85418529E1D00FA913B /* RFNSBridgeKeyLogDefines.m */; };
+		3096D8591852A1CC00FA913B /* RFNSBridgeKeyLogHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 3096D8571852A1CC00FA913B /* RFNSBridgeKeyLogHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3096D85A1852A1CC00FA913B /* RFNSBridgeKeyLogHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3096D8581852A1CC00FA913B /* RFNSBridgeKeyLogHandler.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		301983EB18528FB4001774F3 /* libRFBridgeKeyLogger.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRFBridgeKeyLogger.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		301983F218528FB4001774F3 /* RFBridgeKeyLogger-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RFBridgeKeyLogger-Prefix.pch"; sourceTree = "<group>"; };
+		3096D84718529CAA00FA913B /* RFBridgeKeyLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFBridgeKeyLogger.h; sourceTree = "<group>"; };
+		3096D84818529CAA00FA913B /* RFBridgeKeyLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFBridgeKeyLogger.m; sourceTree = "<group>"; };
+		3096D84918529CAA00FA913B /* RFNSBridgeKeyLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFNSBridgeKeyLog.h; sourceTree = "<group>"; };
+		3096D84A18529CAA00FA913B /* RFNSBridgeKeyLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFNSBridgeKeyLog.m; sourceTree = "<group>"; };
+		3096D84B18529CAA00FA913B /* RFNSBridgeKeyLogParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFNSBridgeKeyLogParameter.h; sourceTree = "<group>"; };
+		3096D84C18529CAA00FA913B /* RFNSBridgeKeyLogParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFNSBridgeKeyLogParameter.m; sourceTree = "<group>"; };
+		3096D85318529E1D00FA913B /* RFNSBridgeKeyLogDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFNSBridgeKeyLogDefines.h; sourceTree = "<group>"; };
+		3096D85418529E1D00FA913B /* RFNSBridgeKeyLogDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFNSBridgeKeyLogDefines.m; sourceTree = "<group>"; };
+		3096D8571852A1CC00FA913B /* RFNSBridgeKeyLogHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFNSBridgeKeyLogHandler.h; sourceTree = "<group>"; };
+		3096D8581852A1CC00FA913B /* RFNSBridgeKeyLogHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFNSBridgeKeyLogHandler.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		301983E818528FB4001774F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		301983E218528FB4001774F3 = {
+			isa = PBXGroup;
+			children = (
+				301983F018528FB4001774F3 /* RFBridgeKeyLogger */,
+				301983ED18528FB4001774F3 /* Frameworks */,
+				301983EC18528FB4001774F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		301983EC18528FB4001774F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				301983EB18528FB4001774F3 /* libRFBridgeKeyLogger.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		301983ED18528FB4001774F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		301983F018528FB4001774F3 /* RFBridgeKeyLogger */ = {
+			isa = PBXGroup;
+			children = (
+				3019841C1852921E001774F3 /* RFBridgeKeyLogger */,
+				301983F218528FB4001774F3 /* RFBridgeKeyLogger-Prefix.pch */,
+			);
+			path = RFBridgeKeyLogger;
+			sourceTree = "<group>";
+		};
+		3019841C1852921E001774F3 /* RFBridgeKeyLogger */ = {
+			isa = PBXGroup;
+			children = (
+				3096D84718529CAA00FA913B /* RFBridgeKeyLogger.h */,
+				3096D84818529CAA00FA913B /* RFBridgeKeyLogger.m */,
+				3096D84918529CAA00FA913B /* RFNSBridgeKeyLog.h */,
+				3096D84A18529CAA00FA913B /* RFNSBridgeKeyLog.m */,
+				3096D85318529E1D00FA913B /* RFNSBridgeKeyLogDefines.h */,
+				3096D85418529E1D00FA913B /* RFNSBridgeKeyLogDefines.m */,
+				3096D8571852A1CC00FA913B /* RFNSBridgeKeyLogHandler.h */,
+				3096D8581852A1CC00FA913B /* RFNSBridgeKeyLogHandler.m */,
+				3096D84B18529CAA00FA913B /* RFNSBridgeKeyLogParameter.h */,
+				3096D84C18529CAA00FA913B /* RFNSBridgeKeyLogParameter.m */,
+			);
+			path = RFBridgeKeyLogger;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		301984141852907D001774F3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3096D85518529E1D00FA913B /* RFNSBridgeKeyLogDefines.h in Headers */,
+				3096D84F18529CAA00FA913B /* RFNSBridgeKeyLog.h in Headers */,
+				30198421185293AF001774F3 /* RFBridgeKeyLogger-Prefix.pch in Headers */,
+				3096D84D18529CAA00FA913B /* RFBridgeKeyLogger.h in Headers */,
+				3096D8591852A1CC00FA913B /* RFNSBridgeKeyLogHandler.h in Headers */,
+				3096D85118529CAA00FA913B /* RFNSBridgeKeyLogParameter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		301983EA18528FB4001774F3 /* RFBridgeKeyLogger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3019840E18528FB4001774F3 /* Build configuration list for PBXNativeTarget "RFBridgeKeyLogger" */;
+			buildPhases = (
+				301983E718528FB4001774F3 /* Sources */,
+				301983E818528FB4001774F3 /* Frameworks */,
+				301984141852907D001774F3 /* Headers */,
+				301984151852908B001774F3 /* Finish Build */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RFBridgeKeyLogger;
+			productName = RFBridgeKeyLogger;
+			productReference = 301983EB18528FB4001774F3 /* libRFBridgeKeyLogger.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		301983E318528FB4001774F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Roman Oliichuk";
+			};
+			buildConfigurationList = 301983E618528FB4001774F3 /* Build configuration list for PBXProject "RFBridgeKeyLogger" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 301983E218528FB4001774F3;
+			productRefGroup = 301983EC18528FB4001774F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				301983EA18528FB4001774F3 /* RFBridgeKeyLogger */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		301984151852908B001774F3 /* Finish Build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Finish Build";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\n# Moving the built static library into the framework.\n\nvar_library_path=\"${CONFIGURATION_BUILD_DIR}/${EXECUTABLE_PREFIX}${PRODUCT_NAME}.${EXECUTABLE_EXTENSION}\"\nvar_framework_library_path=\"${CONFIGURATION_BUILD_DIR}/${PRODUCT_NAME}.framework/${PRODUCT_NAME}\"\n\nif [ ! -f \"${var_library_path}\" ]\nthen\n    echo \"The file ${var_library_path} is not exist.\"\n    exit 1\nfi\n\nmv \"${var_library_path}\" \"${var_framework_library_path}\"\n\nif [ $? -ne 0 ]\nthen\n    echo \"Can not move the file ${var_library_path} to the file ${var_framework_library_path}.\"\n    exit 1\nfi\n\n# Copying the framework into the directory ${PR_MOVE_FRAMEWORK_TO_PARENT_PATH}.\n\nif [ -n \"${PR_COPY_FRAMEWORK_INTO_PARENT_PATH}\" ]\nthen\n    var_source_framework_path=\"${CONFIGURATION_BUILD_DIR}/${PRODUCT_NAME}.framework\"\n    var_distination_framework_path=\"${PR_COPY_FRAMEWORK_INTO_PARENT_PATH}/${PRODUCT_NAME}.framework\"\n\n    if [ ! -d \"${var_source_framework_path}\" ]\n    then\n        echo \"The directory ${var_source_framework_path} is not exist.\"\n        exit 1\n    fi\n\n    cp -R \"${var_source_framework_path}/\" \"${var_distination_framework_path}/\"\n\n    if [ $? -ne 0 ]\n    then\n        echo \"Can not copy the directory ${var_source_framework_path}/ into the directory ${var_distination_framework_path}/.\"\n        exit 1\n    fi\nfi\n\n# Moving the framework into the directory ${PR_MOVE_FRAMEWORK_TO_PARENT_PATH}.\n\nif [ -n \"${PR_MOVE_FRAMEWORK_INTO_PARENT_PATH}\" ]\nthen\n    var_source_framework_path=\"${CONFIGURATION_BUILD_DIR}/${PRODUCT_NAME}.framework\"\n    var_distination_framework_path=\"${PR_MOVE_FRAMEWORK_INTO_PARENT_PATH}/${PRODUCT_NAME}.framework\"\n\n    if [ ! -d \"${var_source_framework_path}\" ]\n    then\n        echo \"The directory ${var_source_framework_path} is not exist.\"\n        exit 1\n    fi\n\n    mv \"${var_source_framework_path}/\" \"${var_distination_framework_path}/\"\n\n    if [ $? -ne 0 ]\n    then\n        echo \"Can not move the directory ${var_source_framework_path}/ into the directory ${var_distination_framework_path}/.\"\n        exit 1\n    fi\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		301983E718528FB4001774F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3096D85018529CAA00FA913B /* RFNSBridgeKeyLog.m in Sources */,
+				3096D84E18529CAA00FA913B /* RFBridgeKeyLogger.m in Sources */,
+				3096D85218529CAA00FA913B /* RFNSBridgeKeyLogParameter.m in Sources */,
+				3096D85A1852A1CC00FA913B /* RFNSBridgeKeyLogHandler.m in Sources */,
+				3096D85618529E1D00FA913B /* RFNSBridgeKeyLogDefines.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3019840C18528FB4001774F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ANALYZER_DEADCODE_DEADSTORES = YES;
+				CLANG_ANALYZER_GCD = YES;
+				CLANG_ANALYZER_MALLOC = YES;
+				CLANG_ANALYZER_OBJC_ATSYNC = YES;
+				CLANG_ANALYZER_OBJC_CFNUMBER = YES;
+				CLANG_ANALYZER_OBJC_COLLECTIONS = YES;
+				CLANG_ANALYZER_OBJC_INCOMP_METHOD_TYPES = YES;
+				CLANG_ANALYZER_OBJC_NSCFERROR = YES;
+				CLANG_ANALYZER_OBJC_RETAIN_COUNT = YES;
+				CLANG_ANALYZER_OBJC_SELF_INIT = YES;
+				CLANG_ANALYZER_OBJC_UNUSED_IVARS = YES;
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_GETPW_GETS = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_MKSTEMP = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = NO;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_UNCHECKEDRETURN = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_VFORK = YES;
+				CLANG_ANALYZER_SECURITY_KEYCHAIN_API = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES;
+				CLANG_WARN_OBJC_RECEIVER_WEAK = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN__ARC_BRIDGE_CAST_NONARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = NO;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = NO;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3019840D18528FB4001774F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ANALYZER_DEADCODE_DEADSTORES = YES;
+				CLANG_ANALYZER_GCD = YES;
+				CLANG_ANALYZER_MALLOC = YES;
+				CLANG_ANALYZER_OBJC_ATSYNC = YES;
+				CLANG_ANALYZER_OBJC_CFNUMBER = YES;
+				CLANG_ANALYZER_OBJC_COLLECTIONS = YES;
+				CLANG_ANALYZER_OBJC_INCOMP_METHOD_TYPES = YES;
+				CLANG_ANALYZER_OBJC_NSCFERROR = YES;
+				CLANG_ANALYZER_OBJC_RETAIN_COUNT = YES;
+				CLANG_ANALYZER_OBJC_SELF_INIT = YES;
+				CLANG_ANALYZER_OBJC_UNUSED_IVARS = YES;
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_GETPW_GETS = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_MKSTEMP = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = NO;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_UNCHECKEDRETURN = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_VFORK = YES;
+				CLANG_ANALYZER_SECURITY_KEYCHAIN_API = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES;
+				CLANG_WARN_OBJC_RECEIVER_WEAK = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN__ARC_BRIDGE_CAST_NONARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = NO;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = NO;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3019840F18528FB4001774F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = "/tmp/$(PROJECT_NAME).dst";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_NAME)/$(PROJECT_NAME)-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(PRODUCT_NAME).framework/PrivateHeaders";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PRODUCT_NAME).framework/Headers";
+				SHARED_PRECOMPS_DIR = "$(BUILD_ROOT)/SharedPrecompiledHeaders";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3019841018528FB4001774F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = "/tmp/$(PROJECT_NAME).dst";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_NAME)/$(PROJECT_NAME)-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(PRODUCT_NAME).framework/PrivateHeaders";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PRODUCT_NAME).framework/Headers";
+				SHARED_PRECOMPS_DIR = "$(BUILD_ROOT)/SharedPrecompiledHeaders";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		301983E618528FB4001774F3 /* Build configuration list for PBXProject "RFBridgeKeyLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3019840C18528FB4001774F3 /* Debug */,
+				3019840D18528FB4001774F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3019840E18528FB4001774F3 /* Build configuration list for PBXNativeTarget "RFBridgeKeyLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3019840F18528FB4001774F3 /* Debug */,
+				3019841018528FB4001774F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 301983E318528FB4001774F3 /* Project object */;
+}

@@ -7,6 +7,7 @@ var_framework_names=(
 "REMapKit"
 "REQuartzCore"
 "REUIKit"
+"RFBridgeKeyLogger"
 "RFFoundation"
 "RFLibKern"
 "RFMapKit"
@@ -23,32 +24,33 @@ var_separator="---"
 
 var_framework_names2=(
 "${var_separator}"
-"RECoreGraphics"   #
-"RECoreLocation"   #
-"RFQuartzCore"     #
-"RFObjC"           #
-"RFLibKern"        #
-"RWSQLite"         #
-"RWObjC"           #
+"RECoreGraphics"    #
+"RECoreLocation"    #
+"RFBridgeKeyLogger" #
+"RFQuartzCore"      #
+"RFObjC"            #
+"RFLibKern"         #
+"RWSQLite"          #
+"RWObjC"            #
 
 "${var_separator}"
-"REFoundation"     # RWObjC
-"REMapKit"         # RECoreLocation
+"REFoundation"      # RWObjC
+"REMapKit"          # RECoreLocation
 
 "${var_separator}"
-"REQuartzCore"     # REFoundation   RWObjC
-"REUIKit"          # REFoundation   RWObjC
-"RFMapKit"         # RECoreGraphics RECoreLocation REFoundation    REMapKit RWObjC
-"RWUUID"           # REFoundation   RWObjC
+"REQuartzCore"      # REFoundation   RWObjC
+"REUIKit"           # REFoundation   RWObjC
+"RFMapKit"          # RECoreGraphics RECoreLocation REFoundation    REMapKit RWObjC
+"RWUUID"            # REFoundation   RWObjC
 
 "${var_separator}"
-"RFFoundation"     # REFoundation   RWObjC         RWUUID
+"RFFoundation"      # REFoundation   RWObjC         RWUUID
 
 "${var_separator}"
-"RFUIKit"          # REFoundation   RFFoundation   RWObjC          RWUUID
+"RFUIKit"           # REFoundation   RFFoundation   RWObjC          RWUUID
 
 "${var_separator}"
-"RFNetwork"        # REFoundation   RFFoundation   RFUIKit         RWUUID   RWObjC
+"RFNetwork"         # REFoundation   RFFoundation   RFUIKit         RWUUID   RWObjC
 )
 
 var_used_paranel_command=1
@@ -150,6 +152,8 @@ do
         var_command_xcodebuild_build="${var_command_xcodebuild_build} -project ${var_framework_project_path}"
         var_command_xcodebuild_build="${var_command_xcodebuild_build} -target ${var_framework_project_target}"
         var_command_xcodebuild_build="${var_command_xcodebuild_build} -configuration ${var_framework_project_configuration}"
+        var_command_xcodebuild_build="${var_command_xcodebuild_build} -sdk iphonesimulator"
+        var_command_xcodebuild_build="${var_command_xcodebuild_build} build"
         var_command_xcodebuild_build="${var_command_xcodebuild_build} BUILD_DIR=${var_framework_project_build_dir}"
         var_command_xcodebuild_build="${var_command_xcodebuild_build} BUILD_ROOT=${var_framework_project_build_root}"
         var_command_xcodebuild_build="${var_command_xcodebuild_build} OBJROOT=${var_framework_project_obj_root}"

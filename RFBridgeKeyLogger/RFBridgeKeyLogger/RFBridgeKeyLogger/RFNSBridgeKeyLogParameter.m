@@ -44,6 +44,8 @@
 // Parameter Types.
 const void * const RFNSBridgeKeyLogParameterTypeCString = &RFNSBridgeKeyLogParameterTypeCString;
 const void * const RFNSBridgeKeyLogParameterTypeObjectiveCID = &RFNSBridgeKeyLogParameterTypeObjectiveCID;
+const void * const RFNSBridgeKeyLogParameterTypeObjectiveCNSException = &RFNSBridgeKeyLogParameterTypeObjectiveCNSException;
+const void * const RFNSBridgeKeyLogParameterTypeObjectiveCNSError = &RFNSBridgeKeyLogParameterTypeObjectiveCNSError;
 const void * const RFNSBridgeKeyLogParameterTypeObjectiveCNSString = &RFNSBridgeKeyLogParameterTypeObjectiveCNSString;
 const void * const RFNSBridgeKeyLogParameterTypeObjectiveCSelector = &RFNSBridgeKeyLogParameterTypeObjectiveCSelector;
 const void * const RFNSBridgeKeyLogParameterTypeLongInteger = &RFNSBridgeKeyLogParameterTypeLongInteger;
@@ -62,10 +64,14 @@ const void * const RFNSBridgeKeyLogParameterKeyNamePredefinedMacro__TIMESTAMP__ 
 // Parameter Key Names for Commands.
 const void * const RFNSBridgeKeyLogParameterKeyNameCommandAbort = &RFNSBridgeKeyLogParameterKeyNameCommandAbort;
 const void * const RFNSBridgeKeyLogParameterKeyNameCommandAssert = &RFNSBridgeKeyLogParameterKeyNameCommandAssert;
+const void * const RFNSBridgeKeyLogParameterKeyNameCommandBreakpoint = &RFNSBridgeKeyLogParameterKeyNameCommandBreakpoint;
+const void * const RFNSBridgeKeyLogParameterKeyNameCommandInform = &RFNSBridgeKeyLogParameterKeyNameCommandInform;
 const void * const RFNSBridgeKeyLogParameterKeyNameCommandWarn = &RFNSBridgeKeyLogParameterKeyNameCommandWarn;
 
 // Common Parameter Key Names.
 const void * const RFNSBridgeKeyLogParameterKeyNameConditionText = &RFNSBridgeKeyLogParameterKeyNameConditionText;
+const void * const RFNSBridgeKeyLogParameterKeyNameException = &RFNSBridgeKeyLogParameterKeyNameException;
+const void * const RFNSBridgeKeyLogParameterKeyNameError = &RFNSBridgeKeyLogParameterKeyNameError;
 const void * const RFNSBridgeKeyLogParameterKeyNameMessage = &RFNSBridgeKeyLogParameterKeyNameMessage;
 
 // Parameter Key Names for Objective-C.

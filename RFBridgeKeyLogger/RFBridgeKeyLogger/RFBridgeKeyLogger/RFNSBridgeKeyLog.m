@@ -49,13 +49,13 @@
 #import <pthread.h>
 #import <time.h>
 
-void RFNSDefaultBridgeKeyLog(RFNSBridgeKeyLogParameter* parameters, size_t length);
+void RFNSDefaultBridgeKeyLog(RFNSBridgeKeyLogParameter *parameters, size_t length);
 
 static RFNSBridgeKeyLogHandler * volatile RFNSBridgeKeyLog_Handler = RFNSDefaultBridgeKeyLog;
 
 static volatile int32_t RFNSDefaultBridgeKeyLog_NumberOfLogs = 0;
 
-void RFNSDefaultBridgeKeyLog(RFNSBridgeKeyLogParameter* parameters, size_t numberOfParameters)
+void RFNSDefaultBridgeKeyLog(RFNSBridgeKeyLogParameter *parameters, size_t numberOfParameters)
 {
     int32_t numberOfLog = OSAtomicAdd32Barrier(1, &RFNSDefaultBridgeKeyLog_NumberOfLogs);
     
@@ -274,7 +274,7 @@ void RFNSDefaultBridgeKeyLog(RFNSBridgeKeyLogParameter* parameters, size_t numbe
     }
 }
 
-void RFNSBridgeKeyLog(RFNSBridgeKeyLogParameter* parameters, size_t length)
+void RFNSBridgeKeyLog(RFNSBridgeKeyLogParameter *parameters, size_t length)
 {
     // Getting the bridge key log handler.
     RFNSBridgeKeyLogHandler *bridgeKeyLogHandler = RFNSBridgeKeyLog_Handler;

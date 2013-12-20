@@ -45,4 +45,3 @@
 #import <sys/types.h>
 
 typedef void RFNSBridgeKeyLogHandler(RFNSBridgeKeyLogParameter* parameters, size_t length);
-typedef void RFNSBridgeKeyLogHandler(RFNSBridgeKeyLogParameter* parameters, size_t length) __dead2;

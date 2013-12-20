@@ -52,6 +52,8 @@ typedef struct
 // Parameter Types.
 RFNS_BRIDGE_KEY_LOGGER_EXTERN const void * const RFNSBridgeKeyLogParameterTypeCString;
 RFNS_BRIDGE_KEY_LOGGER_EXTERN const void * const RFNSBridgeKeyLogParameterTypeObjectiveCID;
+RFNS_BRIDGE_KEY_LOGGER_EXTERN const void * const RFNSBridgeKeyLogParameterTypeObjectiveCNSException;
+RFNS_BRIDGE_KEY_LOGGER_EXTERN const void * const RFNSBridgeKeyLogParameterTypeObjectiveCNSError;
 RFNS_BRIDGE_KEY_LOGGER_EXTERN const void * const RFNSBridgeKeyLogParameterTypeObjectiveCNSString;
 RFNS_BRIDGE_KEY_LOGGER_EXTERN const void * const RFNSBridgeKeyLogParameterTypeObjectiveCSelector;
 RFNS_BRIDGE_KEY_LOGGER_EXTERN const void * const RFNSBridgeKeyLogParameterTypeLongInteger;
@@ -75,12 +77,16 @@ RFNS_BRIDGE_KEY_LOGGER_EXTERN const void * const RFNSBridgeKeyLogParameterKeyNam
 RFNS_BRIDGE_KEY_LOGGER_EXTERN const void * const RFNSBridgeKeyLogParameterKeyNamePredefinedMacro__TIMESTAMP__;       // RFNSBridgeKeyLogParameterTypeVoidPointer, RFNSBridgeKeyLogParameterTypeCString.
 
 // Parameter Key Names for Commands.
-RFNS_BRIDGE_KEY_LOGGER_EXTERN const void * const RFNSBridgeKeyLogParameterKeyNameCommandAbort;  // RFNSBridgeKeyLogParameterTypeVoidPointer, NULL.
-RFNS_BRIDGE_KEY_LOGGER_EXTERN const void * const RFNSBridgeKeyLogParameterKeyNameCommandAssert; // RFNSBridgeKeyLogParameterTypeVoidPointer, NULL.
-RFNS_BRIDGE_KEY_LOGGER_EXTERN const void * const RFNSBridgeKeyLogParameterKeyNameCommandWarn;   // RFNSBridgeKeyLogParameterTypeVoidPointer, NULL.
+RFNS_BRIDGE_KEY_LOGGER_EXTERN const void * const RFNSBridgeKeyLogParameterKeyNameCommandAbort;      // RFNSBridgeKeyLogParameterTypeVoidPointer, NULL.
+RFNS_BRIDGE_KEY_LOGGER_EXTERN const void * const RFNSBridgeKeyLogParameterKeyNameCommandAssert;     // RFNSBridgeKeyLogParameterTypeVoidPointer, NULL.
+RFNS_BRIDGE_KEY_LOGGER_EXTERN const void * const RFNSBridgeKeyLogParameterKeyNameCommandBreakpoint; // RFNSBridgeKeyLogParameterTypeVoidPointer, NULL.
+RFNS_BRIDGE_KEY_LOGGER_EXTERN const void * const RFNSBridgeKeyLogParameterKeyNameCommandInform;     // RFNSBridgeKeyLogParameterTypeVoidPointer, NULL.
+RFNS_BRIDGE_KEY_LOGGER_EXTERN const void * const RFNSBridgeKeyLogParameterKeyNameCommandWarn;       // RFNSBridgeKeyLogParameterTypeVoidPointer, NULL.
 
 // Common Parameter Key Names.
 RFNS_BRIDGE_KEY_LOGGER_EXTERN const void * const RFNSBridgeKeyLogParameterKeyNameConditionText; // RFNSBridgeKeyLogParameterTypeVoidPointer, RFNSBridgeKeyLogParameterTypeCString.
+RFNS_BRIDGE_KEY_LOGGER_EXTERN const void * const RFNSBridgeKeyLogParameterKeyNameException;     // RFNSBridgeKeyLogParameterTypeVoidPointer, RFNSBridgeKeyLogParameterTypeObjectiveCNSException.
+RFNS_BRIDGE_KEY_LOGGER_EXTERN const void * const RFNSBridgeKeyLogParameterKeyNameError;         // RFNSBridgeKeyLogParameterTypeVoidPointer, RFNSBridgeKeyLogParameterTypeObjectiveCNSError.
 RFNS_BRIDGE_KEY_LOGGER_EXTERN const void * const RFNSBridgeKeyLogParameterKeyNameMessage;       // RFNSBridgeKeyLogParameterTypeVoidPointer, RFNSBridgeKeyLogParameterTypeCString | RFNSBridgeKeyLogParameterTypeObjectiveCNSString.
 
 // Parameter Key Names for Objective-C.

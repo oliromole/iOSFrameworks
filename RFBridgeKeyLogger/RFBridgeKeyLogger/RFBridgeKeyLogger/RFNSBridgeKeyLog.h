@@ -46,7 +46,7 @@
 // Importing the system headers.
 #import <sys/types.h>
 
-RFNS_BRIDGE_KEY_LOGGER_EXTERN void RFNSBridgeKeyLog(RFNSBridgeKeyLogParameter* parameters, size_t length);
+RFNS_BRIDGE_KEY_LOGGER_EXTERN void RFNSBridgeKeyLog(RFNSBridgeKeyLogParameter *parameters, size_t length);
 
 RFNS_BRIDGE_KEY_LOGGER_EXTERN RFNSBridgeKeyLogHandler *RFNSGetDefaultBridgeKeyLogHandler(void);
 RFNS_BRIDGE_KEY_LOGGER_EXTERN RFNSBridgeKeyLogHandler *RFNSGetBridgeKeyLogHandler(void);

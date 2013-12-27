@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:RECoreGraphics/RECoreGraphics.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:RECoreLocation/RECoreLocation.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:REFoundation/REFoundation.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:REMapKit/REMapKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:REQuartzCore/REQuartzCore.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:REUIKit/REUIKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:RFBridgeKeyLogger/RFBridgeKeyLogger.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:RFFoundation/RFFoundation.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:RFLibKern/RFLibKern.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:RFMapKit/RFMapKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:RFNetwork/RFNetwork.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:RFObjC/RFObjC.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:RFQuartzCore/RFQuartzCore.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:RFUIKit/RFUIKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:RWObjC/RWObjC.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:RWSQLite/RWSQLite.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:RWUUID/RWUUID.xcodeproj">
+   </FileRef>
+</Workspace>

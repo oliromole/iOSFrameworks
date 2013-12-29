@@ -1,9 +1,9 @@
 //
-//  RECoreGraphics.h
+//  RECGMath.m
 //  RECoreGraphics
 //  https://github.com/oliromole/iOSFrameworks.git
 //
-//  Created by Roman Oliichuk on 2012.07.11.
+//  Created by Roman Oliichuk on 2013.09.17.
 //  Copyright (c) 2012 Roman Oliichuk. All rights reserved.
 //
 
@@ -38,8 +38,8 @@
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-// Importing the project headers.
-#import "RECGContext.h"
-#import "RECGGeometry.h"
-#import "RECGImage.h"
+// Importing the header.
 #import "RECGMath.h"
+
+// Importing the system headers.
+#import <CoreGraphics/CoreGraphics.h>

@@ -42,6 +42,7 @@
 #import "RFUISplitBackgroundView.h"
 
 // Importing the external headers.
+#import <RECoreGraphics/RECoreGraphics.h>
 #import <REUIKit/REUIKit.h>
 
 // Importing the system headers.
@@ -129,7 +130,7 @@
     
     else
     {
-        width0 = truncf(mWidth0 * (viewFrame.size.width / (mWidth0 + mWidth2)));
+        width0 = cg_trunc(mWidth0 * (viewFrame.size.width / (mWidth0 + mWidth2)));
         width1 = 0.0f;
         width2 = viewFrame.size.width - width0;
     }
@@ -147,7 +148,7 @@
     
     else
     {
-        height0 = truncf(mHeight0 * (viewFrame.size.height / (mHeight0 + mHeight2)));
+        height0 = cg_trunc(mHeight0 * (viewFrame.size.height / (mHeight0 + mHeight2)));
         height1 = 0.0f;
         height2 = viewFrame.size.height - height0;
     }

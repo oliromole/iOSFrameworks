@@ -655,7 +655,7 @@ int32_t volatile RFNSURLConnection_Counter = 0;
     else if (mInputData && (mInputData.length > 0))
     {
         inputStream = [[NSInputStream alloc] initWithData:mInputData];
-        compiledInputStreamLength = mInputData.length;
+        compiledInputStreamLength = (long long)mInputData.length;
     }
     
     else if (mInputFile && (mInputFile.length > 0))

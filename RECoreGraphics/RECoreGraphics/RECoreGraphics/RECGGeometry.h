@@ -38,12 +38,12 @@
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
+// Importing the project headers.
+#import "RECGMath.h"
+
 // Importing the system headers.
 #import <CoreGraphics/CGBase.h>
 #import <CoreGraphics/CGGeometry.h>
-
-// Importing the system headers.
-#import <math.h>
 
 CG_EXTERN const CGSize CGSizeOne;
 
@@ -78,8 +78,8 @@ CG_INLINE CGPoint CGPointUnion(CGPoint point1, CGPoint point2)
 CG_INLINE CGPoint CGPointAbs(CGPoint point)
 {
     CGPoint absPoint;
-    absPoint.x = fabsf(point.x);
-    absPoint.y = fabsf(point.y);
+    absPoint.x = cg_fabs(point.x);
+    absPoint.y = cg_fabs(point.y);
     return absPoint;
 }
 
@@ -102,16 +102,16 @@ CG_INLINE CGPoint CGPointDiv(CGPoint point1, CGPoint point2)
 CG_INLINE CGPoint CGPointMod(CGPoint point1, CGPoint point2)
 {
     CGPoint remainderPoint;
-    remainderPoint.x = fmodf(point1.x, point2.x);
-    remainderPoint.y = fmodf(point1.y, point2.y);
+    remainderPoint.x = cg_fmod(point1.x, point2.x);
+    remainderPoint.y = cg_fmod(point1.y, point2.y);
     return remainderPoint;
 }
 
 CG_INLINE CGPoint CGPointModf(CGPoint point, CGPoint *pIntegralPoint)
 {
     CGPoint fractionalPoint;
-    fractionalPoint.x = modff(point.x, (pIntegralPoint ? &pIntegralPoint->x : NULL));
-    fractionalPoint.y = modff(point.y, (pIntegralPoint ? &pIntegralPoint->y : NULL));
+    fractionalPoint.x = cg_modf(point.x, (pIntegralPoint ? &pIntegralPoint->x : NULL));
+    fractionalPoint.y = cg_modf(point.y, (pIntegralPoint ? &pIntegralPoint->y : NULL));
     return fractionalPoint;
 }
 
@@ -169,8 +169,8 @@ CG_INLINE bool CGRectIsZero(CGRect rect)
 CG_INLINE CGSize CGSizeAbs(CGSize size)
 {
     CGSize absSize;
-    absSize.width = fabsf(size.width);
-    absSize.height = fabsf(size.height);
+    absSize.width = cg_fabs(size.width);
+    absSize.height = cg_fabs(size.height);
     return absSize;
 }
 
@@ -193,16 +193,16 @@ CG_INLINE CGSize CGSizeDiv(CGSize size1, CGSize size2)
 CG_INLINE CGSize CGSizeMod(CGSize size1, CGSize size2)
 {
     CGSize remainderSize;
-    remainderSize.width = fmodf(size1.width, size2.width);
-    remainderSize.height = fmodf(size1.height, size2.height);
+    remainderSize.width = cg_fmod(size1.width, size2.width);
+    remainderSize.height = cg_fmod(size1.height, size2.height);
     return remainderSize;
 }
 
 CG_INLINE CGSize CGSizeModf(CGSize size, CGSize *pIntegralSize)
 {
     CGSize fractionalSize;
-    fractionalSize.width = modff(size.width, (pIntegralSize ? &pIntegralSize->width : NULL));
-    fractionalSize.height = modff(size.height, (pIntegralSize ? &pIntegralSize->height : NULL));
+    fractionalSize.width = cg_modf(size.width, (pIntegralSize ? &pIntegralSize->width : NULL));
+    fractionalSize.height = cg_modf(size.height, (pIntegralSize ? &pIntegralSize->height : NULL));
     return fractionalSize;
 }
 

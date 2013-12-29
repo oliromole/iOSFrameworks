@@ -236,7 +236,7 @@
     
     if (mIsMemoryUsed)
     {
-        result = mBufferLength;
+        result = (long long)mBufferLength;
     }
     
     else
@@ -307,7 +307,7 @@
                 
                 memset((mBuffer + mBufferLength), 0, (mBufferCapacity - mBufferLength));
                 
-                result = mBufferLength;
+                result = (long long)mBufferLength;
             }
             
             // length > mBufferCapacity
@@ -338,7 +338,7 @@
                     mBufferCapacity = newBufferCapacity;
                     mBufferLength = (NSUInteger)length;
                     
-                    result = mBufferLength;
+                    result = (long long)mBufferLength;
                 }
             }
         }
@@ -403,9 +403,9 @@
                 
                 result = 0ll;
                 
-                while (result < mBufferLength)
+                while (result < (long long)mBufferLength)
                 {
-                    ssize_t writtenBytes = write(mFileHandle, (mBuffer + result), (size_t)(mBufferLength - result));
+                    ssize_t writtenBytes = write(mFileHandle, (mBuffer + result), (size_t)((long long)mBufferLength - result));
                     
                     if (writtenBytes < 0)
                     {
@@ -599,7 +599,7 @@
                     
                     NSUInteger maxLength = (NSUInteger)length;
                     
-                    while (result < maxLength)
+                    while (result < (long long)maxLength)
                     {
                         ssize_t readBytes = read(mFileHandle, (mBuffer + mBufferLength), (maxLength - mBufferLength));
                         

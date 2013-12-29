@@ -16,6 +16,8 @@
 		30592B1217C40F2300F5BD7D /* RECGContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 30592B0D17C40F2300F5BD7D /* RECGContext.m */; };
 		30592B1317C40F2300F5BD7D /* RECGGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 30592B0F17C40F2300F5BD7D /* RECGGeometry.m */; };
 		3060A8A017F6F841008CE300 /* RECGImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3060A89F17F6F841008CE300 /* RECGImage.m */; };
+		309118171870B31800E90AED /* RECGMath.h in Headers */ = {isa = PBXBuildFile; fileRef = 309118151870B31800E90AED /* RECGMath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309118181870B31800E90AED /* RECGMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 309118161870B31800E90AED /* RECGMath.m */; };
 		30D832A8184D1C810068D6EE /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30D832A7184D1C810068D6EE /* CoreFoundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +32,8 @@
 		30592B1117C40F2300F5BD7D /* RECoreGraphics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECoreGraphics.m; sourceTree = "<group>"; };
 		3060A89E17F6F841008CE300 /* RECGImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECGImage.h; sourceTree = "<group>"; };
 		3060A89F17F6F841008CE300 /* RECGImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECGImage.m; sourceTree = "<group>"; };
+		309118151870B31800E90AED /* RECGMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECGMath.h; sourceTree = "<group>"; };
+		309118161870B31800E90AED /* RECGMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECGMath.m; sourceTree = "<group>"; };
 		30D832A7184D1C810068D6EE /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -88,6 +92,8 @@
 				30592B0F17C40F2300F5BD7D /* RECGGeometry.m */,
 				3060A89E17F6F841008CE300 /* RECGImage.h */,
 				3060A89F17F6F841008CE300 /* RECGImage.m */,
+				309118151870B31800E90AED /* RECGMath.h */,
+				309118161870B31800E90AED /* RECGMath.m */,
 				30592B1017C40F2300F5BD7D /* RECoreGraphics.h */,
 				30592B1117C40F2300F5BD7D /* RECoreGraphics.m */,
 			);
@@ -106,6 +112,7 @@
 				301780B2184BF40F00D66153 /* RECGImage.h in Headers */,
 				301780B1184BF40F00D66153 /* RECGGeometry.h in Headers */,
 				301780B0184BF40F00D66153 /* RECGContext.h in Headers */,
+				309118171870B31800E90AED /* RECGMath.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +189,7 @@
 				30592B1217C40F2300F5BD7D /* RECGContext.m in Sources */,
 				30592B1317C40F2300F5BD7D /* RECGGeometry.m in Sources */,
 				3060A8A017F6F841008CE300 /* RECGImage.m in Sources */,
+				309118181870B31800E90AED /* RECGMath.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +200,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_ANALYZER_DEADCODE_DEADSTORES = YES;
 				CLANG_ANALYZER_GCD = YES;
 				CLANG_ANALYZER_MALLOC = YES;
@@ -273,6 +282,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_ANALYZER_DEADCODE_DEADSTORES = YES;
 				CLANG_ANALYZER_GCD = YES;
 				CLANG_ANALYZER_MALLOC = YES;

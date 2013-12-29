@@ -73,7 +73,7 @@ id UIActionSheet_REUIActionSheet_InitWithFrame(id self, SEL _cmd, CGRect frame)
         objectSuper.receiver = self;
         objectSuper.super_class = UIActionSheet_REUIActionSheet_SuperClass;
         
-        self = objc_msgSendSuper(&objectSuper, _cmd, frame);
+        self = ((id (*)(struct objc_super *super, SEL _cmd, CGRect frame))objc_msgSendSuper)(&objectSuper, _cmd, frame);
     }
     
     if (self)

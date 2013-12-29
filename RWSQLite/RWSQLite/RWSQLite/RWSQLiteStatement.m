@@ -992,7 +992,7 @@ jmp_exit:
                 goto jmp_exit;
             }
             
-            id object = objc_msgSend(bindObject, selector);
+            id object = ((id (*)(id self, SEL _cmd))objc_msgSend)(bindObject, selector);
             
             success = [self bindObject:object atIndex:(NSUInteger)bindIndex copied:copied error:(pError ? &error : nil)];
             

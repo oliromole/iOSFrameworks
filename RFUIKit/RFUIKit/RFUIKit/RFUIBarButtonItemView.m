@@ -42,6 +42,7 @@
 #import "RFUIBarButtonItemView.h"
 
 // Importing the external headers.
+#import <RECoreGraphics/RECoreGraphics.h>
 #import <REUIKit/REUIKit.h>
 
 // Importing the system headers.
@@ -136,10 +137,10 @@
             
         case RFUIBarButtonItemViewContentWidthModeCenter:
         {
-            long int oldViewWidth = lroundf(oldViewFrame.size.width);
+            long int oldViewWidth = cg_lround(oldViewFrame.size.width);
             oldViewWidth += (oldViewWidth % 2l);
             
-            long int newViewWidth = lroundf(newViewFrame.size.width);
+            long int newViewWidth = cg_lround(newViewFrame.size.width);
             newViewWidth += (newViewWidth % 2l);
             
             newViewFrame.origin.x = oldViewFrame.origin.x += ((oldViewWidth / 2l) - (newViewWidth / 2l));
@@ -207,7 +208,7 @@
     
     if (newViewFrame.size.height <= navigationBarFrame.size.height)
     {
-        newViewFrame.origin.y = truncf((navigationBarFrame.size.height - newViewFrame.size.height) / 2.0f);
+        newViewFrame.origin.y = cg_trunc((navigationBarFrame.size.height - newViewFrame.size.height) / 2.0f);
     }
     
     else

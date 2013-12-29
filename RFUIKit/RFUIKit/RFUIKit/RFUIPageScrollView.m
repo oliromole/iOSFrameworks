@@ -47,6 +47,7 @@
 #import "RFUIPageScrollViewDelegate.h"
 
 // Importing the external headers.
+#import <RECoreGraphics/RECoreGraphics.h>
 #import <REFoundation/REFoundation.h>
 #import <REUIKit/REUIKit.h>
 
@@ -164,11 +165,11 @@
         
         NSMutableSet *indexPaths = [[NSMutableSet alloc] initWithCapacity:4];
         
-        NSInteger indexOfRow0 = (NSInteger)truncf(contentOffset.y / viewFrame.size.height);
-        NSInteger indexOfRow1 = (NSInteger)truncf((contentOffset.y + viewFrame.size.height - 1.0f) / viewFrame.size.height);
+        NSInteger indexOfRow0 = (NSInteger)cg_trunc(contentOffset.y / viewFrame.size.height);
+        NSInteger indexOfRow1 = (NSInteger)cg_trunc((contentOffset.y + viewFrame.size.height - 1.0f) / viewFrame.size.height);
         
-        NSInteger indexOfColumn0 = (NSInteger)truncf(contentOffset.x / viewFrame.size.width);
-        NSInteger indexOfColumn1 = (NSInteger)truncf((contentOffset.x + viewFrame.size.width - 1.0f) / viewFrame.size.width);
+        NSInteger indexOfColumn0 = (NSInteger)cg_trunc(contentOffset.x / viewFrame.size.width);
+        NSInteger indexOfColumn1 = (NSInteger)cg_trunc((contentOffset.x + viewFrame.size.width - 1.0f) / viewFrame.size.width);
         
         if ((indexOfRow0 >= 0) && (indexOfRow0 < mNumberOfRows) &&
             (indexOfColumn0 >= 0) && (indexOfColumn0 < mNumberOfColumns))
@@ -294,8 +295,8 @@
             point.x = CGRectGetMidX(visibleContentFrame);
             point.y = CGRectGetMidY(visibleContentFrame);
             
-            NSInteger column = (NSInteger)truncf(point.x / visibleContentFrame.size.width);
-            NSInteger row = (NSInteger)truncf(point.y / visibleContentFrame.size.height);
+            NSInteger column = (NSInteger)cg_trunc(point.x / visibleContentFrame.size.width);
+            NSInteger row = (NSInteger)cg_trunc(point.y / visibleContentFrame.size.height);
             
             if (row < 0)
             {
@@ -493,8 +494,8 @@
 {
     CGRect viewFrame = self.frame;
     
-    NSInteger row = (NSInteger)truncf(point.y / viewFrame.size.height);
-    NSInteger column = (NSInteger)truncf(point.x / viewFrame.size.width);
+    NSInteger row = (NSInteger)cg_trunc(point.y / viewFrame.size.height);
+    NSInteger column = (NSInteger)cg_trunc(point.x / viewFrame.size.width);
     
     NSIndexPath *indexPath = nil;
     

@@ -43,3 +43,4 @@
 #import "RFNSBridgeKeyLogDefines.h"
 #import "RFNSBridgeKeyLogHandler.h"
 #import "RFNSBridgeKeyLogParameter.h"
+#import "RFNSLog.h"

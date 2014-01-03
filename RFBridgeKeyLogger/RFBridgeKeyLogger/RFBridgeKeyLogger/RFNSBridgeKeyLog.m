@@ -206,6 +206,24 @@ void RFNSDefaultBridgeKeyLog(RFNSBridgeKeyLogParameter *parameters, size_t numbe
                     asprintf(&texts[numberOfTexts], "    Assert\n");
                     numberOfTexts++;
                 }
+                else if ((parameter.keyType == &RFNSBridgeKeyLogParameterTypeVoidPointer) &&
+                         (parameter.keyName == &RFNSBridgeKeyLogParameterKeyNameCommandBreakpoint))
+                {
+                    asprintf(&texts[numberOfTexts], "    Breakpoint\n");
+                    numberOfTexts++;
+                }
+                else if ((parameter.keyType == &RFNSBridgeKeyLogParameterTypeVoidPointer) &&
+                         (parameter.keyName == &RFNSBridgeKeyLogParameterKeyNameCommandInform))
+                {
+                    asprintf(&texts[numberOfTexts], "    Inform\n");
+                    numberOfTexts++;
+                }
+                else if ((parameter.keyType == &RFNSBridgeKeyLogParameterTypeVoidPointer) &&
+                         (parameter.keyName == &RFNSBridgeKeyLogParameterKeyNameCommandWarn))
+                {
+                    asprintf(&texts[numberOfTexts], "    Warn\n");
+                    numberOfTexts++;
+                }
             }
         }
     }

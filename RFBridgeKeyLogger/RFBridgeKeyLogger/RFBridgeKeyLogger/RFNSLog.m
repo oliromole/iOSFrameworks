@@ -47,6 +47,16 @@
 void RFNSLoggerTestCDefines(void);
 void RFNSLoggerTestCDefines()
 {
+    // C.
+    
+    RFNSCAbort((arc4random() % 2), "Test: %s", "RFNSCAbort");
+    RFNSCAssert((arc4random() % 2), "Test: %s", "RFNSCAssert");
+    RFNSCBreakpoint((arc4random() % 2), "Test: %s", "RFNSCBreakpoint");
+    RFNSCInform((arc4random() % 2), "Test: %s", "RFNSCInform");
+    RFNSCWarn((arc4random() % 2), "Test: %s", "RFNSCWarn");
+    
+    // Objective-C.
+    
     RFNSObjectiveCCAbort((arc4random() % 2), @"Test: %@", @"RFNSObjectiveCCAbort");
     RFNSObjectiveCCAssert((arc4random() % 2), @"Test: %@", @"RFNSObjectiveCCAssert");
     RFNSObjectiveCCBreakpoint((arc4random() % 2), @"Test: %@", @"RFNSObjectiveCCBreakpoint");
@@ -80,6 +90,16 @@ void RFNSLoggerTestCDefines()
 
 - (void)testDefines
 {
+    // C.
+    
+    RFNSCAbort((arc4random() % 2), "Test: %s", "RFNSCAbort");
+    RFNSCAssert((arc4random() % 2), "Test: %s", "RFNSCAssert");
+    RFNSCBreakpoint((arc4random() % 2), "Test: %s", "RFNSCBreakpoint");
+    RFNSCInform((arc4random() % 2), "Test: %s", "RFNSCInform");
+    RFNSCWarn((arc4random() % 2), "Test: %s", "RFNSCWarn");
+    
+    // Objective-C.
+    
     RFNSObjectiveCCAbort((arc4random() % 2), @"Test: %@", @"RFNSObjectiveCCAbort");
     RFNSObjectiveCCAssert((arc4random() % 2), @"Test: %@", @"RFNSObjectiveCCAssert");
     RFNSObjectiveCCBreakpoint((arc4random() % 2), @"Test: %@", @"RFNSObjectiveCCBreakpoint");

@@ -46,6 +46,10 @@
 #import <Foundation/NSException.h>
 #import <Foundation/NSString.h>
 
+// Importing the system headers.
+#import <stdio.h>
+#import <stdlib.h>
+
 #define __RF_NS_LOGGER_PASTE__(prefix, number, name) prefix##number##name \
 
 // Common Variables.

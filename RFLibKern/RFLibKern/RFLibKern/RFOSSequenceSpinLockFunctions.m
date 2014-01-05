@@ -1,9 +1,9 @@
 //
-//  RFLibKern-Prefix.pch
+//  RFOSSequenceSpinLockFunctions.m
 //  RFLibKern
 //  https://github.com/oliromole/iOSFrameworks.git
 //
-//  Created by Roman Oliichuk on 2013.11.24.
+//  Created by Roman Oliichuk on 2014.01.05.
 //  Copyright (c) 2012 Roman Oliichuk. All rights reserved.
 //
 
@@ -38,28 +38,51 @@
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-//
-// Prefix header for all source files of the 'RFLibKern' target in the 'RFLibKern' project
-//
-
-// Importing the system headers.
-#import <Availability.h>
-
-#ifndef __IPHONE_5_0
-#   warning "This project uses features only available in iOS SDK 5.0 and later."
-#endif
-
-#if defined(PR_USE_PREPROCESSOR_DEFINITIONS) && (PR_USE_PREPROCESSOR_DEFINITIONS == 1)
-
-#ifdef __OBJC__
+// Importing the header.
+#import "RFOSSequenceSpinLockFunctions.h"
 
 // Importing the external headers.
 #import <RFBridgeKeyLogger/RFBridgeKeyLogger.h>
 
 // Importing the system headers.
 #import <libkern/OSAtomic.h>
-#import <stdint.h>
 
-#endif
+void RFOSSequenceSpinLockInitialize(RFOSSequenceSpinLock *pSequenceSpinLock)
+{
+    // Validating the arguments.
+    RFNSCAssert(pSequenceSpinLock, "The sequenceSpinLock argument is NULL.");
+    
+    // Initializing the sequence spin lock.
+    pSequenceSpinLock->counter1 = 0;
+    pSequenceSpinLock->counter2 = 2;
+}
 
-#endif
+RFOSSequenceSpinLockLockIdentifier RFOSSequenceSpinLockLock(RFOSSequenceSpinLock *pSequenceSpinLock)
+{
+    // Validating the arguments.
+    RFNSCAssert(pSequenceSpinLock, "The sequenceSpinLock argument is NULL.");
+    
+    // Getting the lock indentifier.
+    RFOSSequenceSpinLockLockIdentifier lockIdentifier = OSAtomicAdd32Barrier(2, &pSequenceSpinLock->counter1);
+    
+    // Locking the sequence lock.
+    while (!OSAtomicCompareAndSwap32Barrier(lockIdentifier, lockIdentifier + 1, &pSequenceSpinLock->counter2))
+    {
+    }
+    
+    // Returning the lock indentifier.
+    return lockIdentifier;
+}
+
+void RFOSSequenceSpinLockUnlock(RFOSSequenceSpinLock *pSequenceSpinLock, RFOSSequenceSpinLockLockIdentifier lockIdentifier)
+{
+    // Validating the arguments.
+    RFNSCAssert(pSequenceSpinLock, "The sequenceSpinLock argument is NULL.");
+    
+    // Unlocking the sequence lock.
+    while (!OSAtomicCompareAndSwap32Barrier(lockIdentifier + 1, lockIdentifier + 2, &pSequenceSpinLock->counter2))
+    {
+        // Validating the arguments.
+        RFNSCAssert(NO, "The lockIdentifier argument is invalid.");
+    }
+}

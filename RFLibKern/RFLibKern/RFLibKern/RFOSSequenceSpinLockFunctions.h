@@ -1,9 +1,9 @@
 //
-//  RFLibKern-Prefix.pch
+//  RFOSSequenceSpinLockFunctions.h
 //  RFLibKern
 //  https://github.com/oliromole/iOSFrameworks.git
 //
-//  Created by Roman Oliichuk on 2013.11.24.
+//  Created by Roman Oliichuk on 2014.01.05.
 //  Copyright (c) 2012 Roman Oliichuk. All rights reserved.
 //
 
@@ -38,28 +38,10 @@
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-//
-// Prefix header for all source files of the 'RFLibKern' target in the 'RFLibKern' project
-//
+// Importing the project headers.
+#import "RFOSSequenceSpinLock.h"
+#import "RFOSSequenceSpinLockLockIdentifier.h"
 
-// Importing the system headers.
-#import <Availability.h>
-
-#ifndef __IPHONE_5_0
-#   warning "This project uses features only available in iOS SDK 5.0 and later."
-#endif
-
-#if defined(PR_USE_PREPROCESSOR_DEFINITIONS) && (PR_USE_PREPROCESSOR_DEFINITIONS == 1)
-
-#ifdef __OBJC__
-
-// Importing the external headers.
-#import <RFBridgeKeyLogger/RFBridgeKeyLogger.h>
-
-// Importing the system headers.
-#import <libkern/OSAtomic.h>
-#import <stdint.h>
-
-#endif
-
-#endif
+void RFOSSequenceSpinLockInitialize(RFOSSequenceSpinLock *sequenceSpinLock);
+RFOSSequenceSpinLockLockIdentifier RFOSSequenceSpinLockLock(RFOSSequenceSpinLock *sequenceSpinLock);
+void RFOSSequenceSpinLockUnlock(RFOSSequenceSpinLock *sequenceSpinLock, RFOSSequenceSpinLockLockIdentifier lockIdentifier);

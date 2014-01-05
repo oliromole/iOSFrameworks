@@ -39,3 +39,6 @@
  */
 
 // Importing the project headers.
+#import "RFOSSequenceSpinLock.h"
+#import "RFOSSequenceSpinLockFunctions.h"
+#import "RFOSSequenceSpinLockLockIdentifier.h"

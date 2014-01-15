@@ -225,7 +225,7 @@ done
 
 # Remove the build folder.
 
-fun_remove_directory "${var_build_dir}/"
+fun_remove_directory "${var_build_dir}"
 
 # Remove the build folders.
 

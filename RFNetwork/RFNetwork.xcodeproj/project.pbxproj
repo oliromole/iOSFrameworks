@@ -22,7 +22,6 @@
 		30934300184EB0CB00FB31E9 /* REFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309342FC184EB0CB00FB31E9 /* REFoundation.framework */; };
 		30934301184EB0CB00FB31E9 /* RFFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309342FD184EB0CB00FB31E9 /* RFFoundation.framework */; };
 		30934302184EB0CB00FB31E9 /* RFUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309342FE184EB0CB00FB31E9 /* RFUIKit.framework */; };
-		30934303184EB0CB00FB31E9 /* RWObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309342FF184EB0CB00FB31E9 /* RWObjC.framework */; };
 		30934306184EB32700FB31E9 /* RWUUID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30934305184EB32700FB31E9 /* RWUUID.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +41,6 @@
 		309342FC184EB0CB00FB31E9 /* REFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = REFoundation.framework; path = ../Frameworks/REFoundation.framework; sourceTree = "<group>"; };
 		309342FD184EB0CB00FB31E9 /* RFFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RFFoundation.framework; path = ../Frameworks/RFFoundation.framework; sourceTree = "<group>"; };
 		309342FE184EB0CB00FB31E9 /* RFUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RFUIKit.framework; path = ../Frameworks/RFUIKit.framework; sourceTree = "<group>"; };
-		309342FF184EB0CB00FB31E9 /* RWObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RWObjC.framework; path = ../Frameworks/RWObjC.framework; sourceTree = "<group>"; };
 		30934305184EB32700FB31E9 /* RWUUID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RWUUID.framework; path = ../Frameworks/RWUUID.framework; sourceTree = "<group>"; };
 		30E9401E181F374900AE0374 /* RFNSURLConnectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFNSURLConnectionDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -53,7 +51,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				30934306184EB32700FB31E9 /* RWUUID.framework in Frameworks */,
-				30934303184EB0CB00FB31E9 /* RWObjC.framework in Frameworks */,
 				30934300184EB0CB00FB31E9 /* REFoundation.framework in Frameworks */,
 				30934301184EB0CB00FB31E9 /* RFFoundation.framework in Frameworks */,
 				3069A07B17CA506F00154C51 /* Foundation.framework in Frameworks */,
@@ -122,7 +119,6 @@
 				309342FC184EB0CB00FB31E9 /* REFoundation.framework */,
 				309342FD184EB0CB00FB31E9 /* RFFoundation.framework */,
 				309342FE184EB0CB00FB31E9 /* RFUIKit.framework */,
-				309342FF184EB0CB00FB31E9 /* RWObjC.framework */,
 				30934305184EB32700FB31E9 /* RWUUID.framework */,
 			);
 			name = "External Frameworks";

@@ -26,6 +26,7 @@ var_framework_names2=(
 "${var_separator}"
 "RECoreGraphics"    #
 "RECoreLocation"    #
+"REFoundation"      #
 "RFBridgeKeyLogger" #
 "RFQuartzCore"      #
 "RFObjC"            #
@@ -33,24 +34,21 @@ var_framework_names2=(
 "RWObjC"            #
 
 "${var_separator}"
-"REFoundation"      # RWObjC
 "REMapKit"          # RECoreLocation
+"REQuartzCore"      # REFoundation
+"REUIKit"           # REFoundation
 "RFLibKern"         # RFBridgeKeyLogger
+"RWUUID"            # REFoundation
 
 "${var_separator}"
-"REQuartzCore"      # REFoundation      RWObjC
-"REUIKit"           # REFoundation      RWObjC
-"RFMapKit"          # RECoreGraphics    RECoreLocation REFoundation    REMapKit RWObjC
-"RWUUID"            # REFoundation      RWObjC
+"RFFoundation"      # REFoundation      RWUUID
+"RFMapKit"          # RECoreGraphics    RECoreLocation REFoundation    REMapKit
 
 "${var_separator}"
-"RFFoundation"      # REFoundation      RWObjC         RWUUID
+"RFUIKit"           # REFoundation      RFFoundation   RWUUID
 
 "${var_separator}"
-"RFUIKit"           # REFoundation      RFFoundation   RWObjC          RWUUID
-
-"${var_separator}"
-"RFNetwork"         # REFoundation      RFFoundation   RFUIKit         RWUUID   RWObjC
+"RFNetwork"         # REFoundation      RFFoundation   RFUIKit         RWUUID
 )
 
 var_sdks=(

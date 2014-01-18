@@ -97,7 +97,6 @@
 		309342EE184EAFA800FB31E9 /* REFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309342E8184EAFA800FB31E9 /* REFoundation.framework */; };
 		309342EF184EAFA800FB31E9 /* REUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309342E9184EAFA800FB31E9 /* REUIKit.framework */; };
 		309342F0184EAFA800FB31E9 /* RFFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309342EA184EAFA800FB31E9 /* RFFoundation.framework */; };
-		309342F1184EAFA800FB31E9 /* RWObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309342EB184EAFA800FB31E9 /* RWObjC.framework */; };
 		309342F2184EAFA800FB31E9 /* RWUUID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309342EC184EAFA800FB31E9 /* RWUUID.framework */; };
 /* End PBXBuildFile section */
 
@@ -193,7 +192,6 @@
 		309342E8184EAFA800FB31E9 /* REFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = REFoundation.framework; path = ../Frameworks/REFoundation.framework; sourceTree = "<group>"; };
 		309342E9184EAFA800FB31E9 /* REUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = REUIKit.framework; path = ../Frameworks/REUIKit.framework; sourceTree = "<group>"; };
 		309342EA184EAFA800FB31E9 /* RFFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RFFoundation.framework; path = ../Frameworks/RFFoundation.framework; sourceTree = "<group>"; };
-		309342EB184EAFA800FB31E9 /* RWObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RWObjC.framework; path = ../Frameworks/RWObjC.framework; sourceTree = "<group>"; };
 		309342EC184EAFA800FB31E9 /* RWUUID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RWUUID.framework; path = ../Frameworks/RWUUID.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -208,7 +206,6 @@
 				309342E3184EAF4C00FB31E9 /* CoreGraphics.framework in Frameworks */,
 				309342F2184EAFA800FB31E9 /* RWUUID.framework in Frameworks */,
 				309342E1184EAF4400FB31E9 /* Foundation.framework in Frameworks */,
-				309342F1184EAFA800FB31E9 /* RWObjC.framework in Frameworks */,
 				309342EE184EAFA800FB31E9 /* REFoundation.framework in Frameworks */,
 				309342DF184EAF3B00FB31E9 /* QuartzCore.framework in Frameworks */,
 				309342F0184EAFA800FB31E9 /* RFFoundation.framework in Frameworks */,
@@ -352,7 +349,6 @@
 				309342E8184EAFA800FB31E9 /* REFoundation.framework */,
 				309342E9184EAFA800FB31E9 /* REUIKit.framework */,
 				309342EA184EAFA800FB31E9 /* RFFoundation.framework */,
-				309342EB184EAFA800FB31E9 /* RWObjC.framework */,
 				309342EC184EAFA800FB31E9 /* RWUUID.framework */,
 			);
 			name = "External Frameworks";

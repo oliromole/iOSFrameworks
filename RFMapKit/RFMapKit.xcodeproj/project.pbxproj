@@ -22,7 +22,6 @@
 		309342A0184EA9BE00FB31E9 /* RECoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3093429B184EA9BE00FB31E9 /* RECoreLocation.framework */; };
 		309342A1184EA9BE00FB31E9 /* REFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3093429C184EA9BE00FB31E9 /* REFoundation.framework */; };
 		309342A2184EA9BE00FB31E9 /* REMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3093429D184EA9BE00FB31E9 /* REMapKit.framework */; };
-		309342A3184EA9BE00FB31E9 /* RWObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3093429E184EA9BE00FB31E9 /* RWObjC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,7 +41,6 @@
 		3093429B184EA9BE00FB31E9 /* RECoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RECoreLocation.framework; path = ../Frameworks/RECoreLocation.framework; sourceTree = "<group>"; };
 		3093429C184EA9BE00FB31E9 /* REFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = REFoundation.framework; path = ../Frameworks/REFoundation.framework; sourceTree = "<group>"; };
 		3093429D184EA9BE00FB31E9 /* REMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = REMapKit.framework; path = ../Frameworks/REMapKit.framework; sourceTree = "<group>"; };
-		3093429E184EA9BE00FB31E9 /* RWObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RWObjC.framework; path = ../Frameworks/RWObjC.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +52,6 @@
 				309342A0184EA9BE00FB31E9 /* RECoreLocation.framework in Frameworks */,
 				3093429F184EA9BE00FB31E9 /* RECoreGraphics.framework in Frameworks */,
 				309342A2184EA9BE00FB31E9 /* REMapKit.framework in Frameworks */,
-				309342A3184EA9BE00FB31E9 /* RWObjC.framework in Frameworks */,
 				30934296184EA93E00FB31E9 /* Foundation.framework in Frameworks */,
 				309342A1184EA9BE00FB31E9 /* REFoundation.framework in Frameworks */,
 				30934294184EA93900FB31E9 /* QuartzCore.framework in Frameworks */,
@@ -123,7 +120,6 @@
 				3093429B184EA9BE00FB31E9 /* RECoreLocation.framework */,
 				3093429C184EA9BE00FB31E9 /* REFoundation.framework */,
 				3093429D184EA9BE00FB31E9 /* REMapKit.framework */,
-				3093429E184EA9BE00FB31E9 /* RWObjC.framework */,
 			);
 			name = "External Frameworks";
 			sourceTree = "<group>";

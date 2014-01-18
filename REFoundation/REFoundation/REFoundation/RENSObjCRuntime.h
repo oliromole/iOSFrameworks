@@ -38,9 +38,6 @@
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-// Importing the project headers.
-#import <RWObjC/RWObjC.h>
-
 // Importing the system headers.
 #import <Foundation/NSObjCRuntime.h>
 

@@ -13,7 +13,6 @@
 		3060C27218510C70004DF57C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3060C27118510C70004DF57C /* Foundation.framework */; };
 		3060C27418510C86004DF57C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3060C27318510C86004DF57C /* QuartzCore.framework */; };
 		3060C27818510D28004DF57C /* REFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3060C27618510D28004DF57C /* REFoundation.framework */; };
-		3060C27918510D28004DF57C /* RWObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3060C27718510D28004DF57C /* RWObjC.framework */; };
 		30D693E317C4207000CCCA25 /* RECATransform3D.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D693E017C4207000CCCA25 /* RECATransform3D.m */; };
 		30D693E417C4207000CCCA25 /* REQuartzCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D693E217C4207000CCCA25 /* REQuartzCore.m */; };
 /* End PBXBuildFile section */
@@ -22,7 +21,6 @@
 		3060C27118510C70004DF57C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3060C27318510C86004DF57C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		3060C27618510D28004DF57C /* REFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = REFoundation.framework; path = ../Frameworks/REFoundation.framework; sourceTree = "<group>"; };
-		3060C27718510D28004DF57C /* RWObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RWObjC.framework; path = ../Frameworks/RWObjC.framework; sourceTree = "<group>"; };
 		30D693CD17C4202200CCCA25 /* libREQuartzCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libREQuartzCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		30D693D417C4202200CCCA25 /* REQuartzCore-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "REQuartzCore-Prefix.pch"; sourceTree = "<group>"; };
 		30D693DF17C4207000CCCA25 /* RECATransform3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECATransform3D.h; sourceTree = "<group>"; };
@@ -39,7 +37,6 @@
 				3060C27818510D28004DF57C /* REFoundation.framework in Frameworks */,
 				3060C27418510C86004DF57C /* QuartzCore.framework in Frameworks */,
 				3060C27218510C70004DF57C /* Foundation.framework in Frameworks */,
-				3060C27918510D28004DF57C /* RWObjC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,7 +47,6 @@
 			isa = PBXGroup;
 			children = (
 				3060C27618510D28004DF57C /* REFoundation.framework */,
-				3060C27718510D28004DF57C /* RWObjC.framework */,
 			);
 			name = "External Frameworks";
 			sourceTree = "<group>";

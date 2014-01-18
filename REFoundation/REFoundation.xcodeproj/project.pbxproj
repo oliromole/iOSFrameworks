@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		304BF2F3184D683F00084FE2 /* RWObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 304BF2F2184D683F00084FE2 /* RWObjC.framework */; };
 		3082505D17CDFD6500026B07 /* RENSJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 3082505C17CDFD6500026B07 /* RENSJSONSerialization.m */; };
 		30AE2D7F17C2F53100DD7D72 /* REBase256.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AE2D3A17C2F53100DD7D72 /* REBase256.m */; };
 		30AE2D8017C2F53100DD7D72 /* REFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AE2D3C17C2F53100DD7D72 /* REFoundation.m */; };
@@ -86,7 +85,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		304BF2F2184D683F00084FE2 /* RWObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RWObjC.framework; path = ../Frameworks/RWObjC.framework; sourceTree = "<group>"; };
 		3082505B17CDFD6500026B07 /* RENSJSONSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENSJSONSerialization.h; sourceTree = "<group>"; };
 		3082505C17CDFD6500026B07 /* RENSJSONSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENSJSONSerialization.m; sourceTree = "<group>"; };
 		30AE2D2717C2F50600DD7D72 /* libREFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libREFoundation.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,7 +169,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				30D83303184D56B10068D6EE /* CoreFoundation.framework in Frameworks */,
-				304BF2F3184D683F00084FE2 /* RWObjC.framework in Frameworks */,
 				30D83304184D56B10068D6EE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -179,20 +176,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		304BF2F1184D683300084FE2 /* External Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				304BF2F2184D683F00084FE2 /* RWObjC.framework */,
-			);
-			name = "External Frameworks";
-			sourceTree = "<group>";
-		};
 		30AE2D1E17C2F50600DD7D72 = {
 			isa = PBXGroup;
 			children = (
 				30AE2D2C17C2F50600DD7D72 /* REFoundation */,
 				30AE2D2917C2F50600DD7D72 /* Frameworks */,
-				304BF2F1184D683300084FE2 /* External Frameworks */,
 				30AE2D2817C2F50600DD7D72 /* Products */,
 			);
 			sourceTree = "<group>";

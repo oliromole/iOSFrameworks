@@ -51,7 +51,6 @@
 		30934280184EA69200FB31E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3093427F184EA69200FB31E9 /* Foundation.framework */; };
 		30934284184EA6E800FB31E9 /* REFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30934282184EA6E800FB31E9 /* REFoundation.framework */; };
 		30934285184EA6E900FB31E9 /* RWUUID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30934283184EA6E800FB31E9 /* RWUUID.framework */; };
-		30934287184EA74400FB31E9 /* RWObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30934286184EA74400FB31E9 /* RWObjC.framework */; };
 		30BDBEF9182B9FAF007C6B92 /* RFNSDeallocEventCenterTargetAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BDBEF7182B9FAF007C6B92 /* RFNSDeallocEventCenterTargetAction.m */; };
 		30D7E7E81821DC640050047D /* RFNSTargetActionPair.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D7E7E61821DC640050047D /* RFNSTargetActionPair.m */; };
 /* End PBXBuildFile section */
@@ -99,7 +98,6 @@
 		3093427F184EA69200FB31E9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		30934282184EA6E800FB31E9 /* REFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = REFoundation.framework; path = ../Frameworks/REFoundation.framework; sourceTree = "<group>"; };
 		30934283184EA6E800FB31E9 /* RWUUID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RWUUID.framework; path = ../Frameworks/RWUUID.framework; sourceTree = "<group>"; };
-		30934286184EA74400FB31E9 /* RWObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RWObjC.framework; path = ../Frameworks/RWObjC.framework; sourceTree = "<group>"; };
 		30BDBEF6182B9FAF007C6B92 /* RFNSDeallocEventCenterTargetAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFNSDeallocEventCenterTargetAction.h; sourceTree = "<group>"; };
 		30BDBEF7182B9FAF007C6B92 /* RFNSDeallocEventCenterTargetAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFNSDeallocEventCenterTargetAction.m; sourceTree = "<group>"; };
 		30D7E7E51821DC640050047D /* RFNSTargetActionPair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFNSTargetActionPair.h; sourceTree = "<group>"; };
@@ -115,7 +113,6 @@
 				30934285184EA6E900FB31E9 /* RWUUID.framework in Frameworks */,
 				30934284184EA6E800FB31E9 /* REFoundation.framework in Frameworks */,
 				30934280184EA69200FB31E9 /* Foundation.framework in Frameworks */,
-				30934287184EA74400FB31E9 /* RWObjC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +207,6 @@
 			isa = PBXGroup;
 			children = (
 				30934282184EA6E800FB31E9 /* REFoundation.framework */,
-				30934286184EA74400FB31E9 /* RWObjC.framework */,
 				30934283184EA6E800FB31E9 /* RWUUID.framework */,
 			);
 			name = "External Frameworks";

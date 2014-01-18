@@ -76,7 +76,6 @@
 		3093425F184EA4AA00FB31E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3093425E184EA4AA00FB31E9 /* Foundation.framework */; };
 		30934261184EA4AE00FB31E9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30934260184EA4AE00FB31E9 /* CoreGraphics.framework */; };
 		30934265184EA50500FB31E9 /* REFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30934263184EA50500FB31E9 /* REFoundation.framework */; };
-		30934266184EA50500FB31E9 /* RWObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30934264184EA50500FB31E9 /* RWObjC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -150,7 +149,6 @@
 		3093425E184EA4AA00FB31E9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		30934260184EA4AE00FB31E9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		30934263184EA50500FB31E9 /* REFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = REFoundation.framework; path = ../Frameworks/REFoundation.framework; sourceTree = "<group>"; };
-		30934264184EA50500FB31E9 /* RWObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RWObjC.framework; path = ../Frameworks/RWObjC.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,7 +156,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30934266184EA50500FB31E9 /* RWObjC.framework in Frameworks */,
 				30934265184EA50500FB31E9 /* REFoundation.framework in Frameworks */,
 				30934261184EA4AE00FB31E9 /* CoreGraphics.framework in Frameworks */,
 				3093425F184EA4AA00FB31E9 /* Foundation.framework in Frameworks */,
@@ -281,7 +278,6 @@
 			isa = PBXGroup;
 			children = (
 				30934263184EA50500FB31E9 /* REFoundation.framework */,
-				30934264184EA50500FB31E9 /* RWObjC.framework */,
 			);
 			name = "External Frameworks";
 			sourceTree = "<group>";

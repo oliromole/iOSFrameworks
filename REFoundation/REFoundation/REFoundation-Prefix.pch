@@ -53,9 +53,6 @@
 
 #ifdef __OBJC__
 
-// Importing the external headers.
-#import <RWObjC/RWObjC.h>
-
 // Importing the system headers.
 #import <CoreFoundation/CoreFoundation.h>
 #import <Foundation/Foundation.h>

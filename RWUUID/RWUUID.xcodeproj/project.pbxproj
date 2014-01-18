@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3033730118231DCB00C449C4 /* RWUUIDRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 303372FF18231DCB00C449C4 /* RWUUIDRepresentation.m */; };
 		30410991184D581500CC87AD /* REFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3041098F184D581500CC87AD /* REFoundation.framework */; };
-		30410992184D581500CC87AD /* RWSQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30410990184D581500CC87AD /* RWSQLite.framework */; };
 		3067E12217C35F030034B3B9 /* RWUUID-1.m in Sources */ = {isa = PBXBuildFile; fileRef = 3067E11F17C35F030034B3B9 /* RWUUID-1.m */; };
 		3067E12317C35F030034B3B9 /* RWUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 3067E12117C35F030034B3B9 /* RWUUID.m */; };
 		30D832CA184D51BD0068D6EE /* RWUUID-1.h in Headers */ = {isa = PBXBuildFile; fileRef = 3067E11E17C35F030034B3B9 /* RWUUID-1.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,7 +22,6 @@
 		303372FE18231DCB00C449C4 /* RWUUIDRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWUUIDRepresentation.h; sourceTree = "<group>"; };
 		303372FF18231DCB00C449C4 /* RWUUIDRepresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWUUIDRepresentation.m; sourceTree = "<group>"; };
 		3041098F184D581500CC87AD /* REFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = REFoundation.framework; path = ../Frameworks/REFoundation.framework; sourceTree = "<group>"; };
-		30410990184D581500CC87AD /* RWSQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RWSQLite.framework; path = ../Frameworks/RWSQLite.framework; sourceTree = "<group>"; };
 		3067E10C17C35E8A0034B3B9 /* libRWUUID.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRWUUID.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3067E11317C35E8A0034B3B9 /* RWUUID-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RWUUID-Prefix.pch"; sourceTree = "<group>"; };
 		3067E11E17C35F030034B3B9 /* RWUUID-1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RWUUID-1.h"; sourceTree = "<group>"; };
@@ -39,7 +37,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				30410991184D581500CC87AD /* REFoundation.framework in Frameworks */,
-				30410992184D581500CC87AD /* RWSQLite.framework in Frameworks */,
 				30D832CF184D52A70068D6EE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,7 +48,6 @@
 			isa = PBXGroup;
 			children = (
 				3041098F184D581500CC87AD /* REFoundation.framework */,
-				30410990184D581500CC87AD /* RWSQLite.framework */,
 			);
 			name = "External Frameworks";
 			sourceTree = "<group>";

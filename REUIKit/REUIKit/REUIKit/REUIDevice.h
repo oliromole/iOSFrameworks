@@ -65,9 +65,11 @@
 + (BOOL)isSystemVersionGraterThanOrEqualTo_6_1_2; // See also: http://support.apple.com/kb/DL1639
 + (BOOL)isSystemVersionGraterThanOrEqualTo_6_1_3; // See also: http://support.apple.com/kb/DL1646
 + (BOOL)isSystemVersionGraterThanOrEqualTo_6_1_4; // See also: http://support.apple.com/kb/DL1652
++ (BOOL)isSystemVersionGraterThanOrEqualTo_6_1_5; // See also: http://support.apple.com/kb/DL1702
 + (BOOL)isSystemVersionGraterThanOrEqualTo_7_0;   // See also: http://support.apple.com/kb/DL1682
 + (BOOL)isSystemVersionGraterThanOrEqualTo_7_0_1; // See also: http://support.apple.com/kb/DL1683
 + (BOOL)isSystemVersionGraterThanOrEqualTo_7_0_2; // See also: http://support.apple.com/kb/DL1685
 + (BOOL)isSystemVersionGraterThanOrEqualTo_7_0_3; // See also: http://support.apple.com/kb/DL1691
++ (BOOL)isSystemVersionGraterThanOrEqualTo_7_0_4; // See also: http://support.apple.com/kb/DL1701
 
 @end

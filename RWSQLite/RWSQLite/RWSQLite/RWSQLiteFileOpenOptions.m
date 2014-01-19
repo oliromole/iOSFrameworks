@@ -1,5 +1,5 @@
 //
-//  RWSQLiteFileOpenOperations.m
+//  RWSQLiteFileOpenOptions.m
 //  RWSQLite
 //  https://github.com/oliromole/iOSFrameworks.git
 //
@@ -39,7 +39,7 @@
  */
 
 // Importing the header.
-#import "RWSQLiteFileOpenOperations.h"
+#import "RWSQLiteFileOpenOptions.h"
 
 // Importing the system headers.
 #import <Foundation/Foundation.h>

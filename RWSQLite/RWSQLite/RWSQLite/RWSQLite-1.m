@@ -109,7 +109,7 @@ jmp_error:
     return [[self alloc] initWithSqlite3:sqlite3];
 }
 
-- (id)initWithContentsOfFile:(NSString *)path fileOpenOperations:(RWSQLiteFileOpenOperations)fileOpenOperations virtualFileSystem:(NSString *)virtualFileSystem error:(NSError **)pError
+- (id)initWithContentsOfFile:(NSString *)path fileOpenOptions:(RWSQLiteFileOpenOptions)fileOpenOptions virtualFileSystem:(NSString *)virtualFileSystem error:(NSError **)pError
 {
     char               *cPath = NULL;
     char               *cVirtualFileSystem = NULL;
@@ -124,7 +124,7 @@ jmp_error:
         goto jmp_error;
     }
     
-    fileOpenOperations &= ~(RWSQLiteFileOpenOperationURI);
+    fileOpenOptions &= ~(RWSQLiteFileOpenOptionURI);
     
     cVirtualFileSystem = (char *)RWSQLiteCStringCreateWithNSString(virtualFileSystem, RWSQLiteStringEncodingUTF8);
     
@@ -133,7 +133,7 @@ jmp_error:
         goto jmp_error;
     }
     
-    resultCode = (RWSQLiteResultCode)sqlite3_open_v2(cPath, &sqlite3, (int)fileOpenOperations, cVirtualFileSystem);
+    resultCode = (RWSQLiteResultCode)sqlite3_open_v2(cPath, &sqlite3, (int)fileOpenOptions, cVirtualFileSystem);
     
     if (resultCode != RWSQLiteResultCodeSuccess)
     {
@@ -194,12 +194,12 @@ jmp_error:
     return self;
 }
 
-+ (id)liteWithContentsOfFile:(NSString *)path fileOpenOperations:(RWSQLiteFileOpenOperations)fileOpenOperations virtualFileSystem:(NSString *)virtualFileSystem error:(NSError **)pError
++ (id)liteWithContentsOfFile:(NSString *)path fileOpenOptions:(RWSQLiteFileOpenOptions)fileOpenOptions virtualFileSystem:(NSString *)virtualFileSystem error:(NSError **)pError
 {
-    return [[self alloc] initWithContentsOfFile:path fileOpenOperations:fileOpenOperations virtualFileSystem:virtualFileSystem error:pError];
+    return [[self alloc] initWithContentsOfFile:path fileOpenOptions:fileOpenOptions virtualFileSystem:virtualFileSystem error:pError];
 }
 
-- (id)initWithContentsOfURL:(NSURL *)url fileOpenOperations:(RWSQLiteFileOpenOperations)fileOpenOperations virtualFileSystem:(NSString *)virtualFileSystem error:(NSError **)pError
+- (id)initWithContentsOfURL:(NSURL *)url fileOpenOptions:(RWSQLiteFileOpenOptions)fileOpenOptions virtualFileSystem:(NSString *)virtualFileSystem error:(NSError **)pError
 {
     char               *cURL = NULL;
     char               *cVirtualFileSystem = NULL;
@@ -214,7 +214,7 @@ jmp_error:
         goto jmp_error;
     }
     
-    fileOpenOperations |= RWSQLiteFileOpenOperationURI;
+    fileOpenOptions |= RWSQLiteFileOpenOptionURI;
     
     cVirtualFileSystem = (char *)RWSQLiteCStringCreateWithNSString(virtualFileSystem, RWSQLiteStringEncodingUTF8);
     
@@ -223,7 +223,7 @@ jmp_error:
         goto jmp_error;
     }
     
-    resultCode = (RWSQLiteResultCode)sqlite3_open_v2(cURL, &sqlite3, (int)fileOpenOperations, cVirtualFileSystem);
+    resultCode = (RWSQLiteResultCode)sqlite3_open_v2(cURL, &sqlite3, (int)fileOpenOptions, cVirtualFileSystem);
     
     if (resultCode != RWSQLiteResultCodeSuccess)
     {
@@ -284,9 +284,9 @@ jmp_error:
     return self;
 }
 
-+ (id)liteWithContentsOfURL:(NSURL *)url fileOpenOperations:(RWSQLiteFileOpenOperations)fileOpenOperations virtualFileSystem:(NSString *)virtualFileSystem error:(NSError **)pError
++ (id)liteWithContentsOfURL:(NSURL *)url fileOpenOptions:(RWSQLiteFileOpenOptions)fileOpenOptions virtualFileSystem:(NSString *)virtualFileSystem error:(NSError **)pError
 {
-    return [[self alloc] initWithContentsOfURL:url fileOpenOperations:fileOpenOperations virtualFileSystem:virtualFileSystem error:pError];
+    return [[self alloc] initWithContentsOfURL:url fileOpenOptions:fileOpenOptions virtualFileSystem:virtualFileSystem error:pError];
 }
 
 #pragma mark - Deallocating a RWSQLite

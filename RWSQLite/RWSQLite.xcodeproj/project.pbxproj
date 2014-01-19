@@ -18,7 +18,7 @@
 		30D2628517C4B74D00929A2C /* RWSQLiteData.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D2626B17C4B74D00929A2C /* RWSQLiteData.m */; };
 		30D2628617C4B74D00929A2C /* RWSQLiteDataType.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D2626D17C4B74D00929A2C /* RWSQLiteDataType.m */; };
 		30D2628717C4B74D00929A2C /* RWSQLiteError.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D2626F17C4B74D00929A2C /* RWSQLiteError.m */; };
-		30D2628817C4B74D00929A2C /* RWSQLiteFileOpenOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D2627117C4B74D00929A2C /* RWSQLiteFileOpenOperations.m */; };
+		30D2628817C4B74D00929A2C /* RWSQLiteFileOpenOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D2627117C4B74D00929A2C /* RWSQLiteFileOpenOptions.m */; };
 		30D2628917C4B74D00929A2C /* RWSQLiteLibraryConfigurationOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D2627317C4B74D00929A2C /* RWSQLiteLibraryConfigurationOptions.m */; };
 		30D2628A17C4B74D00929A2C /* RWSQLiteLibraryThreadsafeMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D2627517C4B74D00929A2C /* RWSQLiteLibraryThreadsafeMode.m */; };
 		30D2628B17C4B74D00929A2C /* RWSQLiteLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D2627717C4B74D00929A2C /* RWSQLiteLimit.m */; };
@@ -33,7 +33,7 @@
 		30D832B4184D4FDC0068D6EE /* RWSQLiteData.h in Headers */ = {isa = PBXBuildFile; fileRef = 30D2626A17C4B74D00929A2C /* RWSQLiteData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		30D832B5184D4FDC0068D6EE /* RWSQLiteDataType.h in Headers */ = {isa = PBXBuildFile; fileRef = 30D2626C17C4B74D00929A2C /* RWSQLiteDataType.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		30D832B6184D4FDC0068D6EE /* RWSQLiteError.h in Headers */ = {isa = PBXBuildFile; fileRef = 30D2626E17C4B74D00929A2C /* RWSQLiteError.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		30D832B7184D4FDC0068D6EE /* RWSQLiteFileOpenOperations.h in Headers */ = {isa = PBXBuildFile; fileRef = 30D2627017C4B74D00929A2C /* RWSQLiteFileOpenOperations.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D832B7184D4FDC0068D6EE /* RWSQLiteFileOpenOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 30D2627017C4B74D00929A2C /* RWSQLiteFileOpenOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		30D832B8184D4FDC0068D6EE /* RWSQLiteLibraryConfigurationOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 30D2627217C4B74D00929A2C /* RWSQLiteLibraryConfigurationOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		30D832B9184D4FDC0068D6EE /* RWSQLiteLibraryThreadsafeMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 30D2627417C4B74D00929A2C /* RWSQLiteLibraryThreadsafeMode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		30D832BA184D4FDC0068D6EE /* RWSQLiteLimit.h in Headers */ = {isa = PBXBuildFile; fileRef = 30D2627617C4B74D00929A2C /* RWSQLiteLimit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -69,8 +69,8 @@
 		30D2626D17C4B74D00929A2C /* RWSQLiteDataType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSQLiteDataType.m; sourceTree = "<group>"; };
 		30D2626E17C4B74D00929A2C /* RWSQLiteError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWSQLiteError.h; sourceTree = "<group>"; };
 		30D2626F17C4B74D00929A2C /* RWSQLiteError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSQLiteError.m; sourceTree = "<group>"; };
-		30D2627017C4B74D00929A2C /* RWSQLiteFileOpenOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWSQLiteFileOpenOperations.h; sourceTree = "<group>"; };
-		30D2627117C4B74D00929A2C /* RWSQLiteFileOpenOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSQLiteFileOpenOperations.m; sourceTree = "<group>"; };
+		30D2627017C4B74D00929A2C /* RWSQLiteFileOpenOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWSQLiteFileOpenOptions.h; sourceTree = "<group>"; };
+		30D2627117C4B74D00929A2C /* RWSQLiteFileOpenOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSQLiteFileOpenOptions.m; sourceTree = "<group>"; };
 		30D2627217C4B74D00929A2C /* RWSQLiteLibraryConfigurationOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWSQLiteLibraryConfigurationOptions.h; sourceTree = "<group>"; };
 		30D2627317C4B74D00929A2C /* RWSQLiteLibraryConfigurationOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSQLiteLibraryConfigurationOptions.m; sourceTree = "<group>"; };
 		30D2627417C4B74D00929A2C /* RWSQLiteLibraryThreadsafeMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWSQLiteLibraryThreadsafeMode.h; sourceTree = "<group>"; };
@@ -160,8 +160,8 @@
 				30D2626D17C4B74D00929A2C /* RWSQLiteDataType.m */,
 				30D2626E17C4B74D00929A2C /* RWSQLiteError.h */,
 				30D2626F17C4B74D00929A2C /* RWSQLiteError.m */,
-				30D2627017C4B74D00929A2C /* RWSQLiteFileOpenOperations.h */,
-				30D2627117C4B74D00929A2C /* RWSQLiteFileOpenOperations.m */,
+				30D2627017C4B74D00929A2C /* RWSQLiteFileOpenOptions.h */,
+				30D2627117C4B74D00929A2C /* RWSQLiteFileOpenOptions.m */,
 				30D2627217C4B74D00929A2C /* RWSQLiteLibraryConfigurationOptions.h */,
 				30D2627317C4B74D00929A2C /* RWSQLiteLibraryConfigurationOptions.m */,
 				30D2627417C4B74D00929A2C /* RWSQLiteLibraryThreadsafeMode.h */,
@@ -203,7 +203,7 @@
 				30D832BC184D4FDC0068D6EE /* RWSQLiteMutexType.h in Headers */,
 				30D832B9184D4FDC0068D6EE /* RWSQLiteLibraryThreadsafeMode.h in Headers */,
 				30D832BE184D4FDC0068D6EE /* RWSQLiteStatement.h in Headers */,
-				30D832B7184D4FDC0068D6EE /* RWSQLiteFileOpenOperations.h in Headers */,
+				30D832B7184D4FDC0068D6EE /* RWSQLiteFileOpenOptions.h in Headers */,
 				30D832B8184D4FDC0068D6EE /* RWSQLiteLibraryConfigurationOptions.h in Headers */,
 				30D832BD184D4FDC0068D6EE /* RWSQLiteRow.h in Headers */,
 				30D832B2184D4FDC0068D6EE /* RWSQLite-1.h in Headers */,
@@ -293,7 +293,7 @@
 				30D2628517C4B74D00929A2C /* RWSQLiteData.m in Sources */,
 				30D2628617C4B74D00929A2C /* RWSQLiteDataType.m in Sources */,
 				30D2628717C4B74D00929A2C /* RWSQLiteError.m in Sources */,
-				30D2628817C4B74D00929A2C /* RWSQLiteFileOpenOperations.m in Sources */,
+				30D2628817C4B74D00929A2C /* RWSQLiteFileOpenOptions.m in Sources */,
 				30D2628917C4B74D00929A2C /* RWSQLiteLibraryConfigurationOptions.m in Sources */,
 				30D2628A17C4B74D00929A2C /* RWSQLiteLibraryThreadsafeMode.m in Sources */,
 				30D2628B17C4B74D00929A2C /* RWSQLiteLimit.m in Sources */,

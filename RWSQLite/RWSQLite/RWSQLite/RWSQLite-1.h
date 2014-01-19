@@ -40,7 +40,7 @@
 
 // Importing the project headers.
 #import "RWSQLiteBlobOpenOptions.h"
-#import "RWSQLiteFileOpenOperations.h"
+#import "RWSQLiteFileOpenOptions.h"
 #import "RWSQLiteLibraryThreadsafeMode.h"
 #import "RWSQLiteStringEncoding.h"
 
@@ -74,10 +74,10 @@
 + (id)lite;
 - (id)initWithSqlite3:(sqlite3 *)sqlite3;
 + (id)liteWithSqlite3:(sqlite3 *)sqlite3;
-- (id)initWithContentsOfFile:(NSString *)path fileOpenOperations:(RWSQLiteFileOpenOperations)fileOpenOperations virtualFileSystem:(NSString *)virtualFileSystem error:(NSError **)error;
-+ (id)liteWithContentsOfFile:(NSString *)path fileOpenOperations:(RWSQLiteFileOpenOperations)fileOpenOperations virtualFileSystem:(NSString *)virtualFileSystem error:(NSError **)error;
-- (id)initWithContentsOfURL:(NSURL *)url fileOpenOperations:(RWSQLiteFileOpenOperations)fileOpenOperations virtualFileSystem:(NSString *)virtualFileSystem error:(NSError **)error;
-+ (id)liteWithContentsOfURL:(NSURL *)url fileOpenOperations:(RWSQLiteFileOpenOperations)fileOpenOperations virtualFileSystem:(NSString *)virtualFileSystem error:(NSError **)error;
+- (id)initWithContentsOfFile:(NSString *)path fileOpenOptions:(RWSQLiteFileOpenOptions)fileOpenOptions virtualFileSystem:(NSString *)virtualFileSystem error:(NSError **)error;
++ (id)liteWithContentsOfFile:(NSString *)path fileOpenOptions:(RWSQLiteFileOpenOptions)fileOpenOptions virtualFileSystem:(NSString *)virtualFileSystem error:(NSError **)error;
+- (id)initWithContentsOfURL:(NSURL *)url fileOpenOptions:(RWSQLiteFileOpenOptions)fileOpenOptions virtualFileSystem:(NSString *)virtualFileSystem error:(NSError **)error;
++ (id)liteWithContentsOfURL:(NSURL *)url fileOpenOptions:(RWSQLiteFileOpenOptions)fileOpenOptions virtualFileSystem:(NSString *)virtualFileSystem error:(NSError **)error;
 
 // Configuring The SQLite Library
 

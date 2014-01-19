@@ -45,7 +45,7 @@
 #import "RWSQLiteData.h"
 #import "RWSQLiteDataType.h"
 #import "RWSQLiteError.h"
-#import "RWSQLiteFileOpenOperations.h"
+#import "RWSQLiteFileOpenOptions.h"
 #import "RWSQLiteLibraryConfigurationOptions.h"
 #import "RWSQLiteLibraryThreadsafeMode.h"
 #import "RWSQLiteLimit.h"

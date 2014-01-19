@@ -1,9 +1,9 @@
 //
-//  RWSQLite.h
+//  RWSQLiteZeroData.m
 //  RWSQLite
 //  https://github.com/oliromole/iOSFrameworks.git
 //
-//  Created by Roman Oliichuk on 2012.06.22.
+//  Created by Roman Oliichuk on 2014.01.19.
 //  Copyright (c) 2012 Roman Oliichuk. All rights reserved.
 //
 
@@ -38,22 +38,83 @@
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-// Importing the project headers.
-#import "RWSQLite-1.h"
-#import "RWSQLiteBlob.h"
-#import "RWSQLiteBlobOpenOptions.h"
-#import "RWSQLiteData.h"
-#import "RWSQLiteDataType.h"
-#import "RWSQLiteError.h"
-#import "RWSQLiteFileOpenOperations.h"
-#import "RWSQLiteLibraryConfigurationOptions.h"
-#import "RWSQLiteLibraryThreadsafeMode.h"
-#import "RWSQLiteLimit.h"
-#import "RWSQLiteMutex.h"
-#import "RWSQLiteMutexType.h"
-#import "RWSQLiteRow.h"
-#import "RWSQLiteStatement.h"
-#import "RWSQLiteString.h"
-#import "RWSQLiteStringEncoding.h"
-#import "RWSQLiteURL.h"
+// Importing the header.
 #import "RWSQLiteZeroData.h"
+
+// Importing the system headers.
+#import <Foundation/Foundation.h>
+
+@implementation RWSQLiteZeroData
+
+#pragma mark - Initializing and Creating a RWSQLiteZeroData
+
+- (id)init
+{
+    self = [super init];
+    
+    if (!self)
+    {
+        goto jmp_exit;
+    }
+    
+    mLength = 0;
+    
+jmp_exit:
+    
+    return self;
+}
+
++ (id)liteZeroData
+{
+    return [[self alloc] init];
+}
+
+- (id)initWithLength:(NSUInteger)length
+{
+    self = [super init];
+    
+    if (!self)
+    {
+        goto jmp_exit;
+    }
+    
+    mLength = length;
+    
+jmp_exit:
+    
+    return self;
+}
+
++ (id)liteZeroDataWithLength:(NSUInteger)length
+{
+    return [[self alloc] initWithLength:length];
+}
+
+#pragma mark - Deallocating a RWSQLiteZeroData
+
+- (void)dealloc
+{
+}
+
+#pragma mark - Testing Zero Data
+
+- (NSUInteger)length
+{
+    return mLength;
+}
+
+@end
+
+@implementation RWSQLiteMutableZeroData : RWSQLiteZeroData
+
+#pragma mark - Modifying Data
+
+- (void)setLength:(NSUInteger)length
+{
+    if (mLength != length)
+    {
+        mLength = length;
+    }
+}
+
+@end

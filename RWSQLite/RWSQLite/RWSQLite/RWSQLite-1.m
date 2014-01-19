@@ -42,6 +42,7 @@
 #import "RWSQLite-1.h"
 
 // Importing the project headers.
+#import "RWSQLiteBlob.h"
 #import "RWSQLiteError.h"
 #import "RWSQLiteLibraryConfigurationOptions.h"
 #import "RWSQLiteLimit.h"
@@ -1866,6 +1867,100 @@ jmp_exit:
     }
     
     return success;
+}
+
+#pragma mark - Opening the Blob
+
+- (RWSQLiteBlob *)copyOpenBlobWithDatabaseName:(NSString *)databaseName tableName:(NSString *)tableName columnName:(NSString *)columnName rowIdentifier:(SInt64)rowIdentifier options:(RWSQLiteBlobOpenOptions)options error:(NSError **)pError
+{
+    RWSQLiteBlob       *blob = nil;
+    char               *cColumnName = NULL;
+    char               *cDatabaseName = NULL;
+    int                 cOpenFlags = 0;
+    char               *cTableName = NULL;
+    NSError            *error = nil;
+    RWSQLiteResultCode  resultCode = RWSQLiteResultCodeSuccess;
+    sqlite3_blob       *sqliteBlob = NULL;
+    
+    if (!mSqlite3)
+    {
+        goto jmp_exit;
+    }
+    
+    cDatabaseName = (char *)RWSQLiteCStringCreateWithNSString(databaseName, RWSQLiteStringEncodingUTF8);
+    
+    if (!cDatabaseName ^ !databaseName)
+    {
+        goto jmp_exit;
+    }
+    
+    cTableName = (char *)RWSQLiteCStringCreateWithNSString(tableName, RWSQLiteStringEncodingUTF8);
+    
+    if (!cTableName ^ !tableName)
+    {
+        goto jmp_exit;
+    }
+    
+    cColumnName = (char *)RWSQLiteCStringCreateWithNSString(columnName, RWSQLiteStringEncodingUTF8);
+    
+    if (!cColumnName ^ !columnName)
+    {
+        goto jmp_exit;
+    }
+    
+    cOpenFlags = (int)(options & RWSQLiteBlobOpenOptionMask);
+    
+    resultCode = (RWSQLiteResultCode)sqlite3_blob_open(mSqlite3, cDatabaseName, cTableName, cColumnName, (sqlite3_int64)rowIdentifier, cOpenFlags, &sqliteBlob);
+    
+    if (resultCode != RWSQLiteResultCodeSuccess)
+    {
+        if (pError)
+        {
+            error = RWSQLiteNSErrorCreateWithSqliteAndResultCode(mSqlite3, resultCode);
+        }
+        
+        goto jmp_exit;
+    }
+    
+    blob = [[RWSQLiteBlob alloc] initWithSqliteBlob:sqliteBlob];
+    
+    if (blob)
+    {
+        sqliteBlob = NULL;
+    }
+    
+    else
+    {
+        goto jmp_exit;
+    }
+    
+    
+jmp_exit:
+    
+    if (pError)
+    {
+        *pError = error;
+    }
+    
+    free(cColumnName);
+    cColumnName = NULL;
+    
+    free(cDatabaseName);
+    cDatabaseName = NULL;
+    
+    free(cTableName);
+    cTableName = NULL;
+    
+    sqlite3_blob_close(sqliteBlob);
+    sqliteBlob = NULL;
+    
+    return blob;
+}
+
+- (RWSQLiteBlob *)openBlobWithDatabaseName:(NSString *)databaseName tableName:(NSString *)tableName columnName:(NSString *)columnName rowIdentifier:(SInt64)rowIdentifier options:(RWSQLiteBlobOpenOptions)options error:(NSError **)pError
+{
+    RWSQLiteBlob *blob = [self copyOpenBlobWithDatabaseName:databaseName tableName:tableName columnName:columnName rowIdentifier:rowIdentifier options:options error:pError];
+    return blob;
 }
 
 #pragma mark - Conforming the NSObject Protocol

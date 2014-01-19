@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30836E49188BE25500DB94A5 /* RWSQLiteBlob.h in Headers */ = {isa = PBXBuildFile; fileRef = 30836E47188BE25500DB94A5 /* RWSQLiteBlob.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30836E4A188BE25500DB94A5 /* RWSQLiteBlob.m in Sources */ = {isa = PBXBuildFile; fileRef = 30836E48188BE25500DB94A5 /* RWSQLiteBlob.m */; };
+		30836E4D188C286200DB94A5 /* RWSQLiteZeroData.h in Headers */ = {isa = PBXBuildFile; fileRef = 30836E4B188C286200DB94A5 /* RWSQLiteZeroData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30836E4E188C286200DB94A5 /* RWSQLiteZeroData.m in Sources */ = {isa = PBXBuildFile; fileRef = 30836E4C188C286200DB94A5 /* RWSQLiteZeroData.m */; };
 		3083C9D7183C1A4300BC2DB2 /* RWSQLiteStringEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 3083C9D5183C1A4300BC2DB2 /* RWSQLiteStringEncoding.m */; };
+		309796FE188C37BA00CBBD16 /* RWSQLiteBlobOpenOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 309796FC188C37BA00CBBD16 /* RWSQLiteBlobOpenOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309796FF188C37BA00CBBD16 /* RWSQLiteBlobOpenOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 309796FD188C37BA00CBBD16 /* RWSQLiteBlobOpenOptions.m */; };
 		30D2628417C4B74D00929A2C /* RWSQLite-1.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D2626917C4B74D00929A2C /* RWSQLite-1.m */; };
 		30D2628517C4B74D00929A2C /* RWSQLiteData.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D2626B17C4B74D00929A2C /* RWSQLiteData.m */; };
 		30D2628617C4B74D00929A2C /* RWSQLiteDataType.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D2626D17C4B74D00929A2C /* RWSQLiteDataType.m */; };
@@ -45,8 +51,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30836E47188BE25500DB94A5 /* RWSQLiteBlob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWSQLiteBlob.h; sourceTree = "<group>"; };
+		30836E48188BE25500DB94A5 /* RWSQLiteBlob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSQLiteBlob.m; sourceTree = "<group>"; };
+		30836E4B188C286200DB94A5 /* RWSQLiteZeroData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWSQLiteZeroData.h; sourceTree = "<group>"; };
+		30836E4C188C286200DB94A5 /* RWSQLiteZeroData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSQLiteZeroData.m; sourceTree = "<group>"; };
 		3083C9D4183C1A4300BC2DB2 /* RWSQLiteStringEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWSQLiteStringEncoding.h; sourceTree = "<group>"; };
 		3083C9D5183C1A4300BC2DB2 /* RWSQLiteStringEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSQLiteStringEncoding.m; sourceTree = "<group>"; };
+		309796FC188C37BA00CBBD16 /* RWSQLiteBlobOpenOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWSQLiteBlobOpenOptions.h; sourceTree = "<group>"; };
+		309796FD188C37BA00CBBD16 /* RWSQLiteBlobOpenOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSQLiteBlobOpenOptions.m; sourceTree = "<group>"; };
 		30D2625617C4B6FA00929A2C /* libRWSQLite.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRWSQLite.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		30D2625D17C4B6FA00929A2C /* RWSQLite-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RWSQLite-Prefix.pch"; sourceTree = "<group>"; };
 		30D2626817C4B74D00929A2C /* RWSQLite-1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RWSQLite-1.h"; sourceTree = "<group>"; };
@@ -138,6 +150,10 @@
 				30D2626917C4B74D00929A2C /* RWSQLite-1.m */,
 				30D2628217C4B74D00929A2C /* RWSQLite.h */,
 				30D2628317C4B74D00929A2C /* RWSQLite.m */,
+				30836E47188BE25500DB94A5 /* RWSQLiteBlob.h */,
+				30836E48188BE25500DB94A5 /* RWSQLiteBlob.m */,
+				309796FC188C37BA00CBBD16 /* RWSQLiteBlobOpenOptions.h */,
+				309796FD188C37BA00CBBD16 /* RWSQLiteBlobOpenOptions.m */,
 				30D2626A17C4B74D00929A2C /* RWSQLiteData.h */,
 				30D2626B17C4B74D00929A2C /* RWSQLiteData.m */,
 				30D2626C17C4B74D00929A2C /* RWSQLiteDataType.h */,
@@ -166,6 +182,8 @@
 				3083C9D5183C1A4300BC2DB2 /* RWSQLiteStringEncoding.m */,
 				30D2628017C4B74D00929A2C /* RWSQLiteURL.h */,
 				30D2628117C4B74D00929A2C /* RWSQLiteURL.m */,
+				30836E4B188C286200DB94A5 /* RWSQLiteZeroData.h */,
+				30836E4C188C286200DB94A5 /* RWSQLiteZeroData.m */,
 			);
 			path = RWSQLite;
 			sourceTree = "<group>";
@@ -179,6 +197,7 @@
 			files = (
 				30D832BF184D4FDC0068D6EE /* RWSQLiteString.h in Headers */,
 				30D832C1184D4FDC0068D6EE /* RWSQLiteURL.h in Headers */,
+				30836E49188BE25500DB94A5 /* RWSQLiteBlob.h in Headers */,
 				30D832B4184D4FDC0068D6EE /* RWSQLiteData.h in Headers */,
 				30D832BB184D4FDC0068D6EE /* RWSQLiteMutex.h in Headers */,
 				30D832BC184D4FDC0068D6EE /* RWSQLiteMutexType.h in Headers */,
@@ -191,9 +210,11 @@
 				30D832C2184D4FE50068D6EE /* RWSQLite-Prefix.pch in Headers */,
 				30D832B3184D4FDC0068D6EE /* RWSQLite.h in Headers */,
 				30D832B5184D4FDC0068D6EE /* RWSQLiteDataType.h in Headers */,
+				309796FE188C37BA00CBBD16 /* RWSQLiteBlobOpenOptions.h in Headers */,
 				30D832B6184D4FDC0068D6EE /* RWSQLiteError.h in Headers */,
 				30D832C0184D4FDC0068D6EE /* RWSQLiteStringEncoding.h in Headers */,
 				30D832BA184D4FDC0068D6EE /* RWSQLiteLimit.h in Headers */,
+				30836E4D188C286200DB94A5 /* RWSQLiteZeroData.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30836E4E188C286200DB94A5 /* RWSQLiteZeroData.m in Sources */,
 				A7BCD695183A38B500E65A83 /* RWSQLiteRow.m in Sources */,
 				30D2628417C4B74D00929A2C /* RWSQLite-1.m in Sources */,
 				30D2628517C4B74D00929A2C /* RWSQLiteData.m in Sources */,
@@ -275,6 +297,8 @@
 				30D2628917C4B74D00929A2C /* RWSQLiteLibraryConfigurationOptions.m in Sources */,
 				30D2628A17C4B74D00929A2C /* RWSQLiteLibraryThreadsafeMode.m in Sources */,
 				30D2628B17C4B74D00929A2C /* RWSQLiteLimit.m in Sources */,
+				30836E4A188BE25500DB94A5 /* RWSQLiteBlob.m in Sources */,
+				309796FF188C37BA00CBBD16 /* RWSQLiteBlobOpenOptions.m in Sources */,
 				30D2628C17C4B74D00929A2C /* RWSQLiteMutex.m in Sources */,
 				30D2628D17C4B74D00929A2C /* RWSQLiteMutexType.m in Sources */,
 				30D2628E17C4B74D00929A2C /* RWSQLiteStatement.m in Sources */,

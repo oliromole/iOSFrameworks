@@ -39,6 +39,7 @@
  */
 
 // Importing the project headers.
+#import "RWSQLiteBlobOpenOptions.h"
 #import "RWSQLiteFileOpenOperations.h"
 #import "RWSQLiteLibraryThreadsafeMode.h"
 #import "RWSQLiteStringEncoding.h"
@@ -56,6 +57,7 @@
 @class NSString;
 @class NSURL;
 
+@class RWSQLiteBlob;
 @class RWSQLiteMutex;
 @class RWSQLiteStatement;
 
@@ -203,5 +205,10 @@
 - (NSMutableArray *)copyExecuteWithCommand:(NSString *)command class:(Class)cls bindValues:(NSDictionary *)bindValues error:(NSError **)error;
 - (NSMutableArray *)executeWithCommand:(NSString *)command class:(Class)cls bindValues:(NSDictionary *)bindValues error:(NSError **)error;
 - (BOOL)executeWithCommand:(NSString *)command class:(Class)cls bindValues:(NSDictionary *)bindValues enumerateRowsUsingBlock:(void (^)(id object, NSUInteger index, BOOL *stop))block error:(NSError **)error;
+
+// Opening the Blob
+
+- (RWSQLiteBlob *)copyOpenBlobWithDatabaseName:(NSString *)databaseName tableName:(NSString *)tableName columnName:(NSString *)columnName rowIdentifier:(SInt64)rowIdentifier options:(RWSQLiteBlobOpenOptions)options error:(NSError **)error;
+- (RWSQLiteBlob *)openBlobWithDatabaseName:(NSString *)databaseName tableName:(NSString *)tableName columnName:(NSString *)columnName rowIdentifier:(SInt64)rowIdentifier options:(RWSQLiteBlobOpenOptions)options error:(NSError **)error;
 
 @end

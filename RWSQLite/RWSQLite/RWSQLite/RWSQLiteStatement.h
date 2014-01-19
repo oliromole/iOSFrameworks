@@ -172,7 +172,7 @@
 - (id)objectClass:(Class)cls error:(NSError **)error;
 
 // Destroying a Prepared Statement Object
-- (BOOL)finalizeStatementError:(NSError **)error;
+- (BOOL)finalizeError:(NSError **)error;
 
 // Resetting a Prepared Statement Object
 - (BOOL)resetError:(NSError **)error;

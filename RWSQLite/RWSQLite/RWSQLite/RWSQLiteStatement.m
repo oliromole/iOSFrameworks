@@ -45,6 +45,7 @@
 #import "RWSQLiteData.h"
 #import "RWSQLiteRow.h"
 #import "RWSQLiteString.h"
+#import "RWSQLiteZeroData.h"
 
 // Importing the system headers.
 #import <Foundation/Foundation.h>
@@ -57,6 +58,7 @@ Class RWSQLiteNSDataClass;
 Class RWSQLiteNSNullClass;
 Class RWSQLiteNSNumberClass;
 Class RWSQLiteNSStringClass;
+Class RWSQLiteZeroDataClass;
 
 NSNumber * RWSQLiteNSNumberLongLongNegativeOne = nil;
 NSNumber * RWSQLiteNSNumberLongLongPositiveOne = nil;
@@ -72,6 +74,7 @@ NSNumber * RWSQLiteNSNumberLongLongZero = nil;
     RWSQLiteNSNullClass = [NSNull class];
     RWSQLiteNSNumberClass = [NSNumber class];
     RWSQLiteNSStringClass = [NSString class];
+    RWSQLiteZeroDataClass = [RWSQLiteZeroData class];
     
     RWSQLiteNSNumberLongLongNegativeOne = [[NSNumber alloc] initWithLongLong:-1ll];
     RWSQLiteNSNumberLongLongPositiveOne = [[NSNumber alloc] initWithLongLong:1ll];
@@ -823,6 +826,13 @@ jmp_exit:
     else if ([object isKindOfClass:RWSQLiteNSNullClass])
     {
         success = [self bindNullAtIndex:index error:(pError ? &error : nil)];
+    }
+    
+    else if ([object isKindOfClass:RWSQLiteZeroDataClass])
+    {
+        RWSQLiteZeroData *zeroData = (RWSQLiteZeroData *)object;
+        
+        success = [self bindZeroDataAtIndex:index length:zeroData.length error:(pError ? &error : nil)];
     }
     
     else
@@ -1904,7 +1914,7 @@ jmp_exit:
 
 #pragma mark - Destroying a Prepared Statement Object
 
-- (BOOL)finalizeStatementError:(NSError **)pError
+- (BOOL)finalizeError:(NSError **)pError
 {
     NSError            *error = nil;
     RWSQLiteResultCode  resultCode = RWSQLiteResultCodeSuccess;
@@ -1931,7 +1941,12 @@ jmp_exit:
         goto jmp_exit;
     }
     
+    mSqlite3_stmt = NULL;
+    
+    success = YES;
+    
 jmp_exit:
+    
     if (pError)
     {
         *pError = error;

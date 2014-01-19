@@ -611,7 +611,7 @@
 
 + (id)bigIntegerWithInteger:(NSInteger)value
 {
-    return [[self alloc] initWithInt:value];
+    return [[self alloc] initWithInteger:value];
 }
 
 - (id)initWithUnsignedInteger:(NSUInteger)value
@@ -652,7 +652,7 @@
 
 + (id)bigIntegerWithUnsignedInteger:(NSUInteger)value
 {
-    return [[self alloc] initWithUnsignedInt:value];
+    return [[self alloc] initWithUnsignedInteger:value];
 }
 
 - (id)initWithString:(NSString *)string

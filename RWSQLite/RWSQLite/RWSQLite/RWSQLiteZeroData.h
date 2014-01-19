@@ -1,9 +1,9 @@
 //
-//  RWSQLite.h
+//  RWSQLiteZeroData.h
 //  RWSQLite
 //  https://github.com/oliromole/iOSFrameworks.git
 //
-//  Created by Roman Oliichuk on 2012.06.22.
+//  Created by Roman Oliichuk on 2014.01.19.
 //  Copyright (c) 2012 Roman Oliichuk. All rights reserved.
 //
 
@@ -38,22 +38,34 @@
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-// Importing the project headers.
-#import "RWSQLite-1.h"
-#import "RWSQLiteBlob.h"
-#import "RWSQLiteBlobOpenOptions.h"
-#import "RWSQLiteData.h"
-#import "RWSQLiteDataType.h"
-#import "RWSQLiteError.h"
-#import "RWSQLiteFileOpenOperations.h"
-#import "RWSQLiteLibraryConfigurationOptions.h"
-#import "RWSQLiteLibraryThreadsafeMode.h"
-#import "RWSQLiteLimit.h"
-#import "RWSQLiteMutex.h"
-#import "RWSQLiteMutexType.h"
-#import "RWSQLiteRow.h"
-#import "RWSQLiteStatement.h"
-#import "RWSQLiteString.h"
-#import "RWSQLiteStringEncoding.h"
-#import "RWSQLiteURL.h"
-#import "RWSQLiteZeroData.h"
+// Importing the system headers.
+#import <Foundation/NSObjCRuntime.h>
+#import <Foundation/NSObject.h>
+
+@interface RWSQLiteZeroData : NSObject
+{
+@protected
+    
+    NSUInteger mLength;
+}
+
+// Initializing and Creating a RWSQLiteZeroData
+
++ (id)liteZeroData;
+
+- (id)initWithLength:(NSUInteger)length;
++ (id)liteZeroDataWithLength:(NSUInteger)length;
+
+// Testing Zero Data
+
+- (NSUInteger)length;
+
+@end
+
+@interface RWSQLiteMutableZeroData : RWSQLiteZeroData
+
+// Modifying Data
+
+- (void)setLength:(NSUInteger)length;
+
+@end

@@ -42,13 +42,13 @@ var_framework_names2=(
 
 "${var_separator}"
 "RFFoundation"      # REFoundation      RWUUID
-"RFMapKit"          # RECoreGraphics    RECoreLocation REFoundation    REMapKit
+"RFMapKit"          # RECoreGraphics    RECoreLocation REFoundation REMapKit
 
 "${var_separator}"
-"RFUIKit"           # REFoundation      RFFoundation   RWUUID
+"RFUIKit"           # REFoundation      REUIKit        RFFoundation RWUUID
 
 "${var_separator}"
-"RFNetwork"         # REFoundation      RFFoundation   RFUIKit         RWUUID
+"RFNetwork"         # REFoundation      RFFoundation   RFUIKit      RWUUID
 )
 
 var_sdks=(

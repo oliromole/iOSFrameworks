@@ -1,9 +1,9 @@
 //
-//  RWSQLite.h
+//  RWSQLiteBlob.h
 //  RWSQLite
 //  https://github.com/oliromole/iOSFrameworks.git
 //
-//  Created by Roman Oliichuk on 2012.06.22.
+//  Created by Roman Oliichuk on 2014.01.19.
 //  Copyright (c) 2012 Roman Oliichuk. All rights reserved.
 //
 
@@ -38,22 +38,56 @@
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-// Importing the project headers.
-#import "RWSQLite-1.h"
-#import "RWSQLiteBlob.h"
-#import "RWSQLiteBlobOpenOptions.h"
-#import "RWSQLiteData.h"
-#import "RWSQLiteDataType.h"
-#import "RWSQLiteError.h"
-#import "RWSQLiteFileOpenOperations.h"
-#import "RWSQLiteLibraryConfigurationOptions.h"
-#import "RWSQLiteLibraryThreadsafeMode.h"
-#import "RWSQLiteLimit.h"
-#import "RWSQLiteMutex.h"
-#import "RWSQLiteMutexType.h"
-#import "RWSQLiteRow.h"
-#import "RWSQLiteStatement.h"
-#import "RWSQLiteString.h"
-#import "RWSQLiteStringEncoding.h"
-#import "RWSQLiteURL.h"
-#import "RWSQLiteZeroData.h"
+// Importing the system headers.
+#import <Foundation/NSObjCRuntime.h>
+#import <Foundation/NSObject.h>
+
+// Importing the system headers.
+#import <sqlite3.h>
+
+@class NSError;
+@class NSData;
+@class NSMutableData;
+
+@class RWSQLite;
+
+@interface RWSQLiteBlob : NSObject
+{
+@protected
+    
+    sqlite3_blob *mSqlite3_blob;
+}
+
+// Initializing and Creating a RWSQLiteBlob
+
++ (id)liteBlob;
+- (id)initWithSqliteBlob:(sqlite3_blob *)sqliteBlob;
++ (id)liteBlobWithSqliteBlob:(sqlite3_blob *)sqliteBlob;
+
+// Managing the sqlite3_blob
+
+@property (nonatomic, readonly) sqlite3_blob *sqlite3_blob;
+- (void)setSqlite3_blob:(sqlite3_blob *)sqlite3_blob;
+
+// Reopening the Blob Object
+
+- (BOOL)reopenWithRowIdentifier:(SInt64)rowIdentifier error:(NSError **)error;
+
+// Closing the Blob Object
+
+- (BOOL)closeError:(NSError **)error;
+
+// Testing Data
+
+- (NSUInteger)lengthError:(NSError **)error;
+
+// Reading the Data
+
+- (NSMutableData *)copyReadDataLenght:(NSUInteger)length offset:(NSUInteger)offset error:(NSError **)error;
+- (NSMutableData *)readDataLenght:(NSUInteger)length offset:(NSUInteger)offset error:(NSError **)error;
+
+// Writing the Data
+
+- (BOOL)writeData:(NSData *)data offset:(NSUInteger)offset error:(NSError **)error;
+
+@end

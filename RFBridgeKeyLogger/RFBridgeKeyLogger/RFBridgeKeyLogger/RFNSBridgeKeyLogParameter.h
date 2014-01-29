@@ -71,6 +71,7 @@ RFNS_BRIDGE_KEY_LOGGER_EXTERN const void * const RFNSBridgeKeyLogParameterKeyNam
 RFNS_BRIDGE_KEY_LOGGER_EXTERN const void * const RFNSBridgeKeyLogParameterKeyNamePredefinedMacro__DATE__;            // RFNSBridgeKeyLogParameterTypeVoidPointer, RFNSBridgeKeyLogParameterTypeCString.
 RFNS_BRIDGE_KEY_LOGGER_EXTERN const void * const RFNSBridgeKeyLogParameterKeyNamePredefinedMacro__FILE__;            // RFNSBridgeKeyLogParameterTypeVoidPointer, RFNSBridgeKeyLogParameterTypeCString.
 RFNS_BRIDGE_KEY_LOGGER_EXTERN const void * const RFNSBridgeKeyLogParameterKeyNamePredefinedMacro__FUNCTION__;        // RFNSBridgeKeyLogParameterTypeVoidPointer, RFNSBridgeKeyLogParameterTypeCString.
+RFNS_BRIDGE_KEY_LOGGER_EXTERN const void * const RFNSBridgeKeyLogParameterKeyNamePredefinedMacro__INCLUDE_LEVEL__;   // RFNSBridgeKeyLogParameterTypeVoidPointer, RFNSBridgeKeyLogParameterTypeLongInteger.
 RFNS_BRIDGE_KEY_LOGGER_EXTERN const void * const RFNSBridgeKeyLogParameterKeyNamePredefinedMacro__LINE__;            // RFNSBridgeKeyLogParameterTypeVoidPointer, RFNSBridgeKeyLogParameterTypeLongInteger.
 RFNS_BRIDGE_KEY_LOGGER_EXTERN const void * const RFNSBridgeKeyLogParameterKeyNamePredefinedMacro__PRETTY_FUNCTION__; // RFNSBridgeKeyLogParameterTypeVoidPointer, RFNSBridgeKeyLogParameterTypeCString.
 RFNS_BRIDGE_KEY_LOGGER_EXTERN const void * const RFNSBridgeKeyLogParameterKeyNamePredefinedMacro__TIME__;            // RFNSBridgeKeyLogParameterTypeVoidPointer, RFNSBridgeKeyLogParameterTypeCString.

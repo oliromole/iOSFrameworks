@@ -58,6 +58,7 @@ const char     *__RF_NS_LOGGER_PASTE__(prefix, number, _RFNSBridgeKeyLogParamete
 const void     *__RF_NS_LOGGER_PASTE__(prefix, number, _RFNSBridgeKeyLogParameterValuePredefinedMacro__DATE__)            = __DATE__;            \
 const void     *__RF_NS_LOGGER_PASTE__(prefix, number, _RFNSBridgeKeyLogParameterValuePredefinedMacro__FILE__)            = __FILE__;            \
 const void     *__RF_NS_LOGGER_PASTE__(prefix, number, _RFNSBridgeKeyLogParameterValuePredefinedMacro__FUNCTION__)        = __FUNCTION__;        \
+const long int *__RF_NS_LOGGER_PASTE__(prefix, number, _RFNSBridgeKeyLogParameterValuePredefinedMacro__INCLUDE_LEVEL__)   = __INCLUDE_LEVEL__;   \
 const long int  __RF_NS_LOGGER_PASTE__(prefix, number, _RFNSBridgeKeyLogParameterValuePredefinedMacro__LINE__)            = __LINE__;            \
 const void     *__RF_NS_LOGGER_PASTE__(prefix, number, _RFNSBridgeKeyLogParameterValuePredefinedMacro__PRETTY_FUNCTION__) = __PRETTY_FUNCTION__; \
 const void     *__RF_NS_LOGGER_PASTE__(prefix, number, _RFNSBridgeKeyLogParameterValuePredefinedMacro__TIME__)            = __TIME__;            \
@@ -92,6 +93,13 @@ const void     *__RF_NS_LOGGER_PASTE__(prefix, number, _RFNSBridgeKeyLogParamete
     .keyName   = &RFNSBridgeKeyLogParameterKeyNamePredefinedMacro__FUNCTION__,                                               \
     .valueType = &RFNSBridgeKeyLogParameterTypeCString,                                                                      \
     .value     = &__RF_NS_LOGGER_PASTE__(prefix, number, _RFNSBridgeKeyLogParameterValuePredefinedMacro__FUNCTION__),        \
+},                                                                                                                           \
+(RFNSBridgeKeyLogParameter)                                                                                                  \
+{                                                                                                                            \
+.keyType   = &RFNSBridgeKeyLogParameterTypeVoidPointer,                                                                      \
+.keyName   = &RFNSBridgeKeyLogParameterKeyNamePredefinedMacro__INCLUDE_LEVEL__,                                              \
+.valueType = &RFNSBridgeKeyLogParameterTypeLongInteger,                                                                      \
+.value     = &__RF_NS_LOGGER_PASTE__(prefix, number, _RFNSBridgeKeyLogParameterValuePredefinedMacro__INCLUDE_LEVEL__),       \
 },                                                                                                                           \
 (RFNSBridgeKeyLogParameter)                                                                                                  \
 {                                                                                                                            \

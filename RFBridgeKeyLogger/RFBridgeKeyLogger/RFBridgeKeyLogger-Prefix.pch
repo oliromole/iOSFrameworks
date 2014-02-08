@@ -59,6 +59,7 @@
 // Importing the system headers.
 #import <libkern/OSAtomic.h>
 #import <memory.h>
+#import <stddef.h>
 #import <stdio.h>
 #import <stdlib.h>
 #import <sys/types.h>

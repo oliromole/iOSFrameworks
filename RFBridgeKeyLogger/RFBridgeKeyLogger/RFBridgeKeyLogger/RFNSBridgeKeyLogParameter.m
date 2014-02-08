@@ -41,40 +41,43 @@
 // Importing the header.
 #import "RFNSBridgeKeyLogParameter.h"
 
+// Importing the system headers.
+#import <stddef.h>
+
 // Parameter Types.
-const void * const RFNSBridgeKeyLogParameterTypeCString = &RFNSBridgeKeyLogParameterTypeCString;
-const void * const RFNSBridgeKeyLogParameterTypeObjectiveCID = &RFNSBridgeKeyLogParameterTypeObjectiveCID;
-const void * const RFNSBridgeKeyLogParameterTypeObjectiveCNSException = &RFNSBridgeKeyLogParameterTypeObjectiveCNSException;
-const void * const RFNSBridgeKeyLogParameterTypeObjectiveCNSError = &RFNSBridgeKeyLogParameterTypeObjectiveCNSError;
-const void * const RFNSBridgeKeyLogParameterTypeObjectiveCNSString = &RFNSBridgeKeyLogParameterTypeObjectiveCNSString;
-const void * const RFNSBridgeKeyLogParameterTypeObjectiveCSelector = &RFNSBridgeKeyLogParameterTypeObjectiveCSelector;
-const void * const RFNSBridgeKeyLogParameterTypeLongInteger = &RFNSBridgeKeyLogParameterTypeLongInteger;
-const void * const RFNSBridgeKeyLogParameterTypeVoidPointer = &RFNSBridgeKeyLogParameterTypeVoidPointer;
+const void * const RFNSBridgeKeyLogParameterTypeCString = NULL;
+const void * const RFNSBridgeKeyLogParameterTypeObjectiveCID = NULL;
+const void * const RFNSBridgeKeyLogParameterTypeObjectiveCNSException = NULL;
+const void * const RFNSBridgeKeyLogParameterTypeObjectiveCNSError = NULL;
+const void * const RFNSBridgeKeyLogParameterTypeObjectiveCNSString = NULL;
+const void * const RFNSBridgeKeyLogParameterTypeObjectiveCSelector = NULL;
+const void * const RFNSBridgeKeyLogParameterTypeLongInteger = NULL;
+const void * const RFNSBridgeKeyLogParameterTypeVoidPointer = NULL;
 
 // Parameter Key Names for Predefined Macros.
-const void * const RFNSBridgeKeyLogParameterKeyNamePredefinedMacro__BASE_FILE__ = &RFNSBridgeKeyLogParameterKeyNamePredefinedMacro__BASE_FILE__;
-const void * const RFNSBridgeKeyLogParameterKeyNamePredefinedMacro__DATE__ = &RFNSBridgeKeyLogParameterKeyNamePredefinedMacro__DATE__;
-const void * const RFNSBridgeKeyLogParameterKeyNamePredefinedMacro__FILE__ = &RFNSBridgeKeyLogParameterKeyNamePredefinedMacro__FILE__;
-const void * const RFNSBridgeKeyLogParameterKeyNamePredefinedMacro__FUNCTION__ = &RFNSBridgeKeyLogParameterKeyNamePredefinedMacro__FUNCTION__;
-const void * const RFNSBridgeKeyLogParameterKeyNamePredefinedMacro__INCLUDE_LEVEL__ = &RFNSBridgeKeyLogParameterKeyNamePredefinedMacro__INCLUDE_LEVEL__;
-const void * const RFNSBridgeKeyLogParameterKeyNamePredefinedMacro__LINE__ = &RFNSBridgeKeyLogParameterKeyNamePredefinedMacro__LINE__;
-const void * const RFNSBridgeKeyLogParameterKeyNamePredefinedMacro__PRETTY_FUNCTION__ = &RFNSBridgeKeyLogParameterKeyNamePredefinedMacro__PRETTY_FUNCTION__;
-const void * const RFNSBridgeKeyLogParameterKeyNamePredefinedMacro__TIME__ = &RFNSBridgeKeyLogParameterKeyNamePredefinedMacro__TIME__;
-const void * const RFNSBridgeKeyLogParameterKeyNamePredefinedMacro__TIMESTAMP__ = &RFNSBridgeKeyLogParameterKeyNamePredefinedMacro__TIMESTAMP__;
+const void * const RFNSBridgeKeyLogParameterKeyNamePredefinedMacro__BASE_FILE__ = NULL;
+const void * const RFNSBridgeKeyLogParameterKeyNamePredefinedMacro__DATE__ = NULL;
+const void * const RFNSBridgeKeyLogParameterKeyNamePredefinedMacro__FILE__ = NULL;
+const void * const RFNSBridgeKeyLogParameterKeyNamePredefinedMacro__FUNCTION__ = NULL;
+const void * const RFNSBridgeKeyLogParameterKeyNamePredefinedMacro__INCLUDE_LEVEL__ = NULL;
+const void * const RFNSBridgeKeyLogParameterKeyNamePredefinedMacro__LINE__ = NULL;
+const void * const RFNSBridgeKeyLogParameterKeyNamePredefinedMacro__PRETTY_FUNCTION__ = NULL;
+const void * const RFNSBridgeKeyLogParameterKeyNamePredefinedMacro__TIME__ = NULL;
+const void * const RFNSBridgeKeyLogParameterKeyNamePredefinedMacro__TIMESTAMP__ = NULL;
 
 // Parameter Key Names for Commands.
-const void * const RFNSBridgeKeyLogParameterKeyNameCommandAbort = &RFNSBridgeKeyLogParameterKeyNameCommandAbort;
-const void * const RFNSBridgeKeyLogParameterKeyNameCommandAssert = &RFNSBridgeKeyLogParameterKeyNameCommandAssert;
-const void * const RFNSBridgeKeyLogParameterKeyNameCommandBreakpoint = &RFNSBridgeKeyLogParameterKeyNameCommandBreakpoint;
-const void * const RFNSBridgeKeyLogParameterKeyNameCommandInform = &RFNSBridgeKeyLogParameterKeyNameCommandInform;
-const void * const RFNSBridgeKeyLogParameterKeyNameCommandWarn = &RFNSBridgeKeyLogParameterKeyNameCommandWarn;
+const void * const RFNSBridgeKeyLogParameterKeyNameCommandAbort = NULL;
+const void * const RFNSBridgeKeyLogParameterKeyNameCommandAssert = NULL;
+const void * const RFNSBridgeKeyLogParameterKeyNameCommandBreakpoint = NULL;
+const void * const RFNSBridgeKeyLogParameterKeyNameCommandInform = NULL;
+const void * const RFNSBridgeKeyLogParameterKeyNameCommandWarn = NULL;
 
 // Common Parameter Key Names.
-const void * const RFNSBridgeKeyLogParameterKeyNameConditionText = &RFNSBridgeKeyLogParameterKeyNameConditionText;
-const void * const RFNSBridgeKeyLogParameterKeyNameException = &RFNSBridgeKeyLogParameterKeyNameException;
-const void * const RFNSBridgeKeyLogParameterKeyNameError = &RFNSBridgeKeyLogParameterKeyNameError;
-const void * const RFNSBridgeKeyLogParameterKeyNameMessage = &RFNSBridgeKeyLogParameterKeyNameMessage;
+const void * const RFNSBridgeKeyLogParameterKeyNameConditionText = NULL;
+const void * const RFNSBridgeKeyLogParameterKeyNameException = NULL;
+const void * const RFNSBridgeKeyLogParameterKeyNameError = NULL;
+const void * const RFNSBridgeKeyLogParameterKeyNameMessage = NULL;
 
 // Parameter Key Names for Objective-C.
-const void * const RFNSBridgeKeyLogParameterKeyNameObjectiveC_cmd = &RFNSBridgeKeyLogParameterKeyNameObjectiveC_cmd;
-const void * const RFNSBridgeKeyLogParameterKeyNameObjectiveCself = &RFNSBridgeKeyLogParameterKeyNameObjectiveCself;
+const void * const RFNSBridgeKeyLogParameterKeyNameObjectiveC_cmd = NULL;
+const void * const RFNSBridgeKeyLogParameterKeyNameObjectiveCself = NULL;

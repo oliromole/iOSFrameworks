@@ -21,6 +21,8 @@
 		30AD28A01879BAB400E1F929 /* RFOSSequenceSpinLockFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AD289E1879BAB400E1F929 /* RFOSSequenceSpinLockFunctions.m */; };
 		30AD28A31879BB8A00E1F929 /* RFOSSequenceSpinLockLockIdentifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 30AD28A11879BB8A00E1F929 /* RFOSSequenceSpinLockLockIdentifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		30AD28A41879BB8A00E1F929 /* RFOSSequenceSpinLockLockIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AD28A21879BB8A00E1F929 /* RFOSSequenceSpinLockLockIdentifier.m */; };
+		30BDB66F18A7FC4A0046F8F2 /* RFOSPrivateLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 30BDB66D18A7FC4A0046F8F2 /* RFOSPrivateLog.h */; };
+		30BDB67018A7FC4A0046F8F2 /* RFOSPrivateLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BDB66E18A7FC4A0046F8F2 /* RFOSPrivateLog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		30AD289E1879BAB400E1F929 /* RFOSSequenceSpinLockFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFOSSequenceSpinLockFunctions.m; sourceTree = "<group>"; };
 		30AD28A11879BB8A00E1F929 /* RFOSSequenceSpinLockLockIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFOSSequenceSpinLockLockIdentifier.h; sourceTree = "<group>"; };
 		30AD28A21879BB8A00E1F929 /* RFOSSequenceSpinLockLockIdentifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFOSSequenceSpinLockLockIdentifier.m; sourceTree = "<group>"; };
+		30BDB66D18A7FC4A0046F8F2 /* RFOSPrivateLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFOSPrivateLog.h; sourceTree = "<group>"; };
+		30BDB66E18A7FC4A0046F8F2 /* RFOSPrivateLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFOSPrivateLog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 				302FA88A1879D9CD00AF1F9F /* RFOSLevelSpinLock.m */,
 				302FA88D1879DC7D00AF1F9F /* RFOSLevelSpinLockFunctions.h */,
 				302FA88E1879DC7D00AF1F9F /* RFOSLevelSpinLockFunctions.m */,
+				30BDB66D18A7FC4A0046F8F2 /* RFOSPrivateLog.h */,
+				30BDB66E18A7FC4A0046F8F2 /* RFOSPrivateLog.m */,
 				305F3F4A187964440056EEDF /* RFOSSequenceSpinLock.h */,
 				305F3F4B187964440056EEDF /* RFOSSequenceSpinLock.m */,
 				30AD289D1879BAB400E1F929 /* RFOSSequenceSpinLockFunctions.h */,
@@ -126,6 +132,7 @@
 				302FA88B1879D9CD00AF1F9F /* RFOSLevelSpinLock.h in Headers */,
 				302FA88F1879DC7D00AF1F9F /* RFOSLevelSpinLockFunctions.h in Headers */,
 				30AD28A31879BB8A00E1F929 /* RFOSSequenceSpinLockLockIdentifier.h in Headers */,
+				30BDB66F18A7FC4A0046F8F2 /* RFOSPrivateLog.h in Headers */,
 				30934289184EA7CC00FB31E9 /* RFLibKern.h in Headers */,
 				3093428A184EA7D100FB31E9 /* RFLibKern-Prefix.pch in Headers */,
 			);
@@ -204,6 +211,7 @@
 				30AD28A41879BB8A00E1F929 /* RFOSSequenceSpinLockLockIdentifier.m in Sources */,
 				302FA88C1879D9CD00AF1F9F /* RFOSLevelSpinLock.m in Sources */,
 				302FA8901879DC7D00AF1F9F /* RFOSLevelSpinLockFunctions.m in Sources */,
+				30BDB67018A7FC4A0046F8F2 /* RFOSPrivateLog.m in Sources */,
 				30AD28A01879BAB400E1F929 /* RFOSSequenceSpinLockFunctions.m in Sources */,
 				305F3F4D187964440056EEDF /* RFOSSequenceSpinLock.m in Sources */,
 			);

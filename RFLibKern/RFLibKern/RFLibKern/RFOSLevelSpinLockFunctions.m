@@ -41,8 +41,8 @@
 // Importing the header.
 #import "RFOSLevelSpinLockFunctions.h"
 
-// Importing the external headers.
-#import <RFBridgeKeyLogger/RFBridgeKeyLogger.h>
+// Importing the project headers.
+#import "RFOSPrivateLog.h"
 
 // Importing the system headers.
 #import <libkern/OSAtomic.h>
@@ -68,8 +68,8 @@ uint32_t RFOSLevelSpinLockStaticGetMaximumLevelCount(uint32_t numberOfLevels)
 void RFOSLevelSpinLockInitialize(RFOSLevelSpinLock *pLevelSpinLock, uint32_t numberOfLevels)
 {
     // Validating the arguments.
-    RFNSCAssert(pLevelSpinLock, "The levelSpinLock argument is NULL.");
-    RFNSCAssert(((numberOfLevels >= UINT32_C(1)) && (numberOfLevels <= RFOSLevelSpinLockStaticGetMaximumNumberOfLevels())), "The numberOfLevels (%lu) argument is out of bounds [1, RFOSLevelSpinLockStaticGetMaximumNumberOfLevels()] ([1, %ld]).", (unsigned long)numberOfLevels, (unsigned long)RFOSLevelSpinLockStaticGetMaximumNumberOfLevels());
+    RFOSPrivateCAssert(pLevelSpinLock, "The levelSpinLock argument is NULL.");
+    RFOSPrivateCAssert(((numberOfLevels >= UINT32_C(1)) && (numberOfLevels <= RFOSLevelSpinLockStaticGetMaximumNumberOfLevels())), "The numberOfLevels (%lu) argument is out of bounds [1, RFOSLevelSpinLockStaticGetMaximumNumberOfLevels()] ([1, %ld]).", (unsigned long)numberOfLevels, (unsigned long)RFOSLevelSpinLockStaticGetMaximumNumberOfLevels());
     
     // Initializing the level spin lock.
     pLevelSpinLock->numberOfLevels = numberOfLevels;
@@ -88,8 +88,8 @@ void RFOSLevelSpinLockInitialize(RFOSLevelSpinLock *pLevelSpinLock, uint32_t num
 uint32_t RFOSLevelSpinLockGetNumberOfLevels(RFOSLevelSpinLock *pLevelSpinLock)
 {
     // Validating the arguments.
-    RFNSCAssert(pLevelSpinLock, "The levelSpinLock argument is NULL.");
-    RFNSCAssert(((pLevelSpinLock->numberOfLevels >= UINT32_C(1)) && (pLevelSpinLock->numberOfLevels <= RFOSLevelSpinLockStaticGetMaximumNumberOfLevels())), "The levelSpinLock->numberOfLevels (%lu) argument is corrupted, because it is out of bounds [1, RFOSLevelSpinLockStaticGetMaximumNumberOfLevels()] ([1, %ld]).", (unsigned long)pLevelSpinLock->numberOfLevels, (unsigned long)RFOSLevelSpinLockStaticGetMaximumNumberOfLevels());
+    RFOSPrivateCAssert(pLevelSpinLock, "The levelSpinLock argument is NULL.");
+    RFOSPrivateCAssert(((pLevelSpinLock->numberOfLevels >= UINT32_C(1)) && (pLevelSpinLock->numberOfLevels <= RFOSLevelSpinLockStaticGetMaximumNumberOfLevels())), "The levelSpinLock->numberOfLevels (%lu) argument is corrupted, because it is out of bounds [1, RFOSLevelSpinLockStaticGetMaximumNumberOfLevels()] ([1, %ld]).", (unsigned long)pLevelSpinLock->numberOfLevels, (unsigned long)RFOSLevelSpinLockStaticGetMaximumNumberOfLevels());
     
     // Getting the number of levels.
     uint32_t numberOfLevels = pLevelSpinLock->numberOfLevels;
@@ -101,9 +101,9 @@ uint32_t RFOSLevelSpinLockGetNumberOfLevels(RFOSLevelSpinLock *pLevelSpinLock)
 uint32_t RFOSLevelSpinLockGetMaximumLevelCount(RFOSLevelSpinLock *pLevelSpinLock, uint32_t level)
 {
     // Validating the arguments.
-    RFNSCAssert(pLevelSpinLock, "The levelSpinLock argument is NULL.");
-    RFNSCAssert(((pLevelSpinLock->numberOfLevels >= UINT32_C(1)) && (pLevelSpinLock->numberOfLevels <= RFOSLevelSpinLockStaticGetMaximumNumberOfLevels())), "The levelSpinLock->numberOfLevels (%lu) argument is corrupted, because it is out of bounds [1, RFOSLevelSpinLockStaticGetMaximumNumberOfLevels()] ([1, %ld]).", (unsigned long)pLevelSpinLock->numberOfLevels, (unsigned long)RFOSLevelSpinLockStaticGetMaximumNumberOfLevels());
-    RFNSCAssert((level < pLevelSpinLock->numberOfLevels), "The level (%lu) argument is out of bounds [0, levelSpinLock->numberOfLevels) ([0, %ld)).", (unsigned long)level, (unsigned long)pLevelSpinLock->numberOfLevels);
+    RFOSPrivateCAssert(pLevelSpinLock, "The levelSpinLock argument is NULL.");
+    RFOSPrivateCAssert(((pLevelSpinLock->numberOfLevels >= UINT32_C(1)) && (pLevelSpinLock->numberOfLevels <= RFOSLevelSpinLockStaticGetMaximumNumberOfLevels())), "The levelSpinLock->numberOfLevels (%lu) argument is corrupted, because it is out of bounds [1, RFOSLevelSpinLockStaticGetMaximumNumberOfLevels()] ([1, %ld]).", (unsigned long)pLevelSpinLock->numberOfLevels, (unsigned long)RFOSLevelSpinLockStaticGetMaximumNumberOfLevels());
+    RFOSPrivateCAssert((level < pLevelSpinLock->numberOfLevels), "The level (%lu) argument is out of bounds [0, levelSpinLock->numberOfLevels) ([0, %ld)).", (unsigned long)level, (unsigned long)pLevelSpinLock->numberOfLevels);
     
     // Calculating the additional data.
     
@@ -122,10 +122,10 @@ uint32_t RFOSLevelSpinLockGetMaximumLevelCount(RFOSLevelSpinLock *pLevelSpinLock
 void RFOSLevelSpinLockSetMaximumLevelCount(RFOSLevelSpinLock *pLevelSpinLock, uint32_t level, uint32_t maximumCount)
 {
     // Validating the arguments.
-    RFNSCAssert(pLevelSpinLock, "The levelSpinLock argument is NULL.");
-    RFNSCAssert(((pLevelSpinLock->numberOfLevels >= UINT32_C(1)) && (pLevelSpinLock->numberOfLevels <= RFOSLevelSpinLockStaticGetMaximumNumberOfLevels())), "The levelSpinLock->numberOfLevels (%lu) argument is corrupted, because it is out of bounds [1, RFOSLevelSpinLockStaticGetMaximumNumberOfLevels()] ([1, %ld]).", (unsigned long)pLevelSpinLock->numberOfLevels, (unsigned long)RFOSLevelSpinLockStaticGetMaximumNumberOfLevels());
-    RFNSCAssert((level < pLevelSpinLock->numberOfLevels), "The level (%lu) argument is out of bounds [0, levelSpinLock->numberOfLevels) ([0, %ld)).", (unsigned long)level, (unsigned long)pLevelSpinLock->numberOfLevels);
-    RFNSCAssert(((maximumCount >= UINT32_C(1)) && (maximumCount <= RFOSLevelSpinLockStaticGetMaximumLevelCount(pLevelSpinLock->numberOfLevels))), "The maximumCount (%lu) argument is out of bounds [1, RFOSLevelSpinLockStaticGetMaximumLevelCount(levelSpinLock->numberOfLevels)] ([1, %ld]).", (unsigned long)maximumCount, (unsigned long)RFOSLevelSpinLockStaticGetMaximumLevelCount(pLevelSpinLock->numberOfLevels));
+    RFOSPrivateCAssert(pLevelSpinLock, "The levelSpinLock argument is NULL.");
+    RFOSPrivateCAssert(((pLevelSpinLock->numberOfLevels >= UINT32_C(1)) && (pLevelSpinLock->numberOfLevels <= RFOSLevelSpinLockStaticGetMaximumNumberOfLevels())), "The levelSpinLock->numberOfLevels (%lu) argument is corrupted, because it is out of bounds [1, RFOSLevelSpinLockStaticGetMaximumNumberOfLevels()] ([1, %ld]).", (unsigned long)pLevelSpinLock->numberOfLevels, (unsigned long)RFOSLevelSpinLockStaticGetMaximumNumberOfLevels());
+    RFOSPrivateCAssert((level < pLevelSpinLock->numberOfLevels), "The level (%lu) argument is out of bounds [0, levelSpinLock->numberOfLevels) ([0, %ld)).", (unsigned long)level, (unsigned long)pLevelSpinLock->numberOfLevels);
+    RFOSPrivateCAssert(((maximumCount >= UINT32_C(1)) && (maximumCount <= RFOSLevelSpinLockStaticGetMaximumLevelCount(pLevelSpinLock->numberOfLevels))), "The maximumCount (%lu) argument is out of bounds [1, RFOSLevelSpinLockStaticGetMaximumLevelCount(levelSpinLock->numberOfLevels)] ([1, %ld]).", (unsigned long)maximumCount, (unsigned long)RFOSLevelSpinLockStaticGetMaximumLevelCount(pLevelSpinLock->numberOfLevels));
     
     // Calculating the additional data.
     
@@ -148,9 +148,9 @@ void RFOSLevelSpinLockSetMaximumLevelCount(RFOSLevelSpinLock *pLevelSpinLock, ui
 bool RFOSLevelSpinLockTry(RFOSLevelSpinLock *pLevelSpinLock, uint32_t level)
 {
     // Validating the arguments.
-    RFNSCAssert(pLevelSpinLock, "The levelSpinLock argument is NULL.");
-    RFNSCAssert(((pLevelSpinLock->numberOfLevels >= UINT32_C(1)) && (pLevelSpinLock->numberOfLevels <= RFOSLevelSpinLockStaticGetMaximumNumberOfLevels())), "The levelSpinLock->numberOfLevels (%lu) argument is corrupted, because it is out of bounds [1, RFOSLevelSpinLockStaticGetMaximumNumberOfLevels()] ([1, %ld]).", (unsigned long)pLevelSpinLock->numberOfLevels, (unsigned long)RFOSLevelSpinLockStaticGetMaximumNumberOfLevels());
-    RFNSCAssert((level < pLevelSpinLock->numberOfLevels), "The level (%lu) argument is out of bounds [0, levelSpinLock->numberOfLevels) ([0, %ld)).", (unsigned long)level, (unsigned long)pLevelSpinLock->numberOfLevels);
+    RFOSPrivateCAssert(pLevelSpinLock, "The levelSpinLock argument is NULL.");
+    RFOSPrivateCAssert(((pLevelSpinLock->numberOfLevels >= UINT32_C(1)) && (pLevelSpinLock->numberOfLevels <= RFOSLevelSpinLockStaticGetMaximumNumberOfLevels())), "The levelSpinLock->numberOfLevels (%lu) argument is corrupted, because it is out of bounds [1, RFOSLevelSpinLockStaticGetMaximumNumberOfLevels()] ([1, %ld]).", (unsigned long)pLevelSpinLock->numberOfLevels, (unsigned long)RFOSLevelSpinLockStaticGetMaximumNumberOfLevels());
+    RFOSPrivateCAssert((level < pLevelSpinLock->numberOfLevels), "The level (%lu) argument is out of bounds [0, levelSpinLock->numberOfLevels) ([0, %ld)).", (unsigned long)level, (unsigned long)pLevelSpinLock->numberOfLevels);
     
     // Calculating the additional data.
     
@@ -203,7 +203,7 @@ jmp_decrement_waitingCount:
     // Decrementing the waitingCount for the level.
     {
         uint32_t newWaitingCounts = (uint32_t)OSAtomicAdd32Barrier(-((int32_t)levelAmount), (volatile int32_t *)&pLevelSpinLock->waitingCounts);
-        RFNSCAssert(((newWaitingCounts & levelMask) != levelMask), "The levelSpinLock->waitingCounts argument is corrupted.");
+        RFOSPrivateCAssert(((newWaitingCounts & levelMask) != levelMask), "The levelSpinLock->waitingCounts argument is corrupted.");
     }
     
 jmp_return:
@@ -215,9 +215,9 @@ jmp_return:
 void RFOSLevelSpinLockLock(RFOSLevelSpinLock *pLevelSpinLock, uint32_t level)
 {
     // Validating the arguments.
-    RFNSCAssert(pLevelSpinLock, "The levelSpinLock argument is NULL.");
-    RFNSCAssert(((pLevelSpinLock->numberOfLevels >= UINT32_C(1)) && (pLevelSpinLock->numberOfLevels <= RFOSLevelSpinLockStaticGetMaximumNumberOfLevels())), "The levelSpinLock->numberOfLevels (%lu) argument is corrupted, because it is out of bounds [1, RFOSLevelSpinLockStaticGetMaximumNumberOfLevels()] ([1, %ld]).", (unsigned long)pLevelSpinLock->numberOfLevels, (unsigned long)RFOSLevelSpinLockStaticGetMaximumNumberOfLevels());
-    RFNSCAssert((level < pLevelSpinLock->numberOfLevels), "The level (%lu) argument is out of bounds [0, levelSpinLock->numberOfLevels) ([0, %ld)).", (unsigned long)level, (unsigned long)pLevelSpinLock->numberOfLevels);
+    RFOSPrivateCAssert(pLevelSpinLock, "The levelSpinLock argument is NULL.");
+    RFOSPrivateCAssert(((pLevelSpinLock->numberOfLevels >= UINT32_C(1)) && (pLevelSpinLock->numberOfLevels <= RFOSLevelSpinLockStaticGetMaximumNumberOfLevels())), "The levelSpinLock->numberOfLevels (%lu) argument is corrupted, because it is out of bounds [1, RFOSLevelSpinLockStaticGetMaximumNumberOfLevels()] ([1, %ld]).", (unsigned long)pLevelSpinLock->numberOfLevels, (unsigned long)RFOSLevelSpinLockStaticGetMaximumNumberOfLevels());
+    RFOSPrivateCAssert((level < pLevelSpinLock->numberOfLevels), "The level (%lu) argument is out of bounds [0, levelSpinLock->numberOfLevels) ([0, %ld)).", (unsigned long)level, (unsigned long)pLevelSpinLock->numberOfLevels);
     
     // Calculating the additional data.
     
@@ -257,15 +257,15 @@ void RFOSLevelSpinLockLock(RFOSLevelSpinLock *pLevelSpinLock, uint32_t level)
     // Decrementing the waitingCount for the level.
     
     uint32_t newWaitingCounts = (uint32_t)OSAtomicAdd32Barrier(-((int32_t)levelAmount), (volatile int32_t *)&pLevelSpinLock->waitingCounts);
-    RFNSCAssert(((newWaitingCounts & levelMask) != levelMask), "The levelSpinLock->waitingCounts argument is corrupted.");
+    RFOSPrivateCAssert(((newWaitingCounts & levelMask) != levelMask), "The levelSpinLock->waitingCounts argument is corrupted.");
 }
 
 void RFOSLevelSpinLockUnlock(RFOSLevelSpinLock *pLevelSpinLock, uint32_t level)
 {
     // Validating the arguments.
-    RFNSCAssert(pLevelSpinLock, "The levelSpinLock argument is NULL.");
-    RFNSCAssert(((pLevelSpinLock->numberOfLevels >= UINT32_C(1)) && (pLevelSpinLock->numberOfLevels <= RFOSLevelSpinLockStaticGetMaximumNumberOfLevels())), "The levelSpinLock->numberOfLevels (%lu) argument is corrupted, because it is out of bounds [1, RFOSLevelSpinLockStaticGetMaximumNumberOfLevels()] ([1, %ld]).", (unsigned long)pLevelSpinLock->numberOfLevels, (unsigned long)RFOSLevelSpinLockStaticGetMaximumNumberOfLevels());
-    RFNSCAssert((level < pLevelSpinLock->numberOfLevels), "The level (%lu) argument is out of bounds [0, levelSpinLock->numberOfLevels) ([0, %ld)).", (unsigned long)level, (unsigned long)pLevelSpinLock->numberOfLevels);
+    RFOSPrivateCAssert(pLevelSpinLock, "The levelSpinLock argument is NULL.");
+    RFOSPrivateCAssert(((pLevelSpinLock->numberOfLevels >= UINT32_C(1)) && (pLevelSpinLock->numberOfLevels <= RFOSLevelSpinLockStaticGetMaximumNumberOfLevels())), "The levelSpinLock->numberOfLevels (%lu) argument is corrupted, because it is out of bounds [1, RFOSLevelSpinLockStaticGetMaximumNumberOfLevels()] ([1, %ld]).", (unsigned long)pLevelSpinLock->numberOfLevels, (unsigned long)RFOSLevelSpinLockStaticGetMaximumNumberOfLevels());
+    RFOSPrivateCAssert((level < pLevelSpinLock->numberOfLevels), "The level (%lu) argument is out of bounds [0, levelSpinLock->numberOfLevels) ([0, %ld)).", (unsigned long)level, (unsigned long)pLevelSpinLock->numberOfLevels);
     
     // Calculating the additional data.
     
@@ -278,6 +278,6 @@ void RFOSLevelSpinLockUnlock(RFOSLevelSpinLock *pLevelSpinLock, uint32_t level)
     // Decrementing the heldCount for the level.
     
     uint32_t newHeldCounts = (uint32_t)OSAtomicAdd32Barrier(-((int32_t)levelAmount), (volatile int32_t *)&pLevelSpinLock->heldCounts);
-    RFNSCAssert(((newHeldCounts & ~levelMask) == UINT32_C(0)), "The levelSpinLock->oldHeldCounts argument is corrupted. The number of call unlock functions is greater than the number of call lock functions.");
-    RFNSCAssert(((newHeldCounts & levelMask) != levelMask), "The levelSpinLock->heldCounts argument is corrupted. The number of call unlock functions is greater than the number of call lock functions.");
+    RFOSPrivateCAssert(((newHeldCounts & ~levelMask) == UINT32_C(0)), "The levelSpinLock->oldHeldCounts argument is corrupted. The number of call unlock functions is greater than the number of call lock functions.");
+    RFOSPrivateCAssert(((newHeldCounts & levelMask) != levelMask), "The levelSpinLock->heldCounts argument is corrupted. The number of call unlock functions is greater than the number of call lock functions.");
 }

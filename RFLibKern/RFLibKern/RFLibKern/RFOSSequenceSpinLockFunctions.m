@@ -41,16 +41,17 @@
 // Importing the header.
 #import "RFOSSequenceSpinLockFunctions.h"
 
-// Importing the external headers.
-#import <RFBridgeKeyLogger/RFBridgeKeyLogger.h>
+// Importing the project headers.
+#import "RFOSPrivateLog.h"
 
 // Importing the system headers.
 #import <libkern/OSAtomic.h>
+#import <stdbool.h>
 
 void RFOSSequenceSpinLockInitialize(RFOSSequenceSpinLock *pSequenceSpinLock)
 {
     // Validating the arguments.
-    RFNSCAssert(pSequenceSpinLock, "The sequenceSpinLock argument is NULL.");
+    RFOSPrivateCAssert(pSequenceSpinLock, "The sequenceSpinLock argument is NULL.");
     
     // Initializing the sequence spin lock.
     pSequenceSpinLock->counter1 = 0;
@@ -60,7 +61,7 @@ void RFOSSequenceSpinLockInitialize(RFOSSequenceSpinLock *pSequenceSpinLock)
 RFOSSequenceSpinLockLockIdentifier RFOSSequenceSpinLockLock(RFOSSequenceSpinLock *pSequenceSpinLock)
 {
     // Validating the arguments.
-    RFNSCAssert(pSequenceSpinLock, "The sequenceSpinLock argument is NULL.");
+    RFOSPrivateCAssert(pSequenceSpinLock, "The sequenceSpinLock argument is NULL.");
     
     // Getting the lock indentifier.
     RFOSSequenceSpinLockLockIdentifier lockIdentifier = OSAtomicAdd32Barrier(2, &pSequenceSpinLock->counter1);
@@ -77,12 +78,12 @@ RFOSSequenceSpinLockLockIdentifier RFOSSequenceSpinLockLock(RFOSSequenceSpinLock
 void RFOSSequenceSpinLockUnlock(RFOSSequenceSpinLock *pSequenceSpinLock, RFOSSequenceSpinLockLockIdentifier lockIdentifier)
 {
     // Validating the arguments.
-    RFNSCAssert(pSequenceSpinLock, "The sequenceSpinLock argument is NULL.");
+    RFOSPrivateCAssert(pSequenceSpinLock, "The sequenceSpinLock argument is NULL.");
     
     // Unlocking the sequence lock.
     while (!OSAtomicCompareAndSwap32Barrier(lockIdentifier + 1, lockIdentifier + 2, &pSequenceSpinLock->counter2))
     {
         // Validating the arguments.
-        RFNSCAssert(NO, "The lockIdentifier argument is invalid.");
+        RFOSPrivateCAssert(false, "The lockIdentifier argument is invalid.");
     }
 }

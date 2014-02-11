@@ -39,7 +39,8 @@
  */
 
 // Importing the project headers.
-#import "RFBridgeKeyLogger.h"
+#import "RFNSBridgeKeyLog.h"
+#import "RFNSBridgeKeyLogParameter.h"
 
 // Importing the system headers.
 #import <Foundation/NSError.h>
@@ -55,14 +56,14 @@
 // Common Variables.
 #define __RF_NS_LOGGER_COMMON_VARIABLES__(prefix, number)                                                                                        \
 const char     *__RF_NS_LOGGER_PASTE__(prefix, number, _RFNSBridgeKeyLogParameterValuePredefinedMacro__BASE_FILE__)       = __BASE_FILE__;       \
-const void     *__RF_NS_LOGGER_PASTE__(prefix, number, _RFNSBridgeKeyLogParameterValuePredefinedMacro__DATE__)            = __DATE__;            \
-const void     *__RF_NS_LOGGER_PASTE__(prefix, number, _RFNSBridgeKeyLogParameterValuePredefinedMacro__FILE__)            = __FILE__;            \
-const void     *__RF_NS_LOGGER_PASTE__(prefix, number, _RFNSBridgeKeyLogParameterValuePredefinedMacro__FUNCTION__)        = __FUNCTION__;        \
+const char     *__RF_NS_LOGGER_PASTE__(prefix, number, _RFNSBridgeKeyLogParameterValuePredefinedMacro__DATE__)            = __DATE__;            \
+const char     *__RF_NS_LOGGER_PASTE__(prefix, number, _RFNSBridgeKeyLogParameterValuePredefinedMacro__FILE__)            = __FILE__;            \
+const char     *__RF_NS_LOGGER_PASTE__(prefix, number, _RFNSBridgeKeyLogParameterValuePredefinedMacro__FUNCTION__)        = __FUNCTION__;        \
 const long int *__RF_NS_LOGGER_PASTE__(prefix, number, _RFNSBridgeKeyLogParameterValuePredefinedMacro__INCLUDE_LEVEL__)   = __INCLUDE_LEVEL__;   \
 const long int  __RF_NS_LOGGER_PASTE__(prefix, number, _RFNSBridgeKeyLogParameterValuePredefinedMacro__LINE__)            = __LINE__;            \
-const void     *__RF_NS_LOGGER_PASTE__(prefix, number, _RFNSBridgeKeyLogParameterValuePredefinedMacro__PRETTY_FUNCTION__) = __PRETTY_FUNCTION__; \
-const void     *__RF_NS_LOGGER_PASTE__(prefix, number, _RFNSBridgeKeyLogParameterValuePredefinedMacro__TIME__)            = __TIME__;            \
-const void     *__RF_NS_LOGGER_PASTE__(prefix, number, _RFNSBridgeKeyLogParameterValuePredefinedMacro__TIMESTAMP__)       = __TIMESTAMP__;       \
+const char     *__RF_NS_LOGGER_PASTE__(prefix, number, _RFNSBridgeKeyLogParameterValuePredefinedMacro__PRETTY_FUNCTION__) = __PRETTY_FUNCTION__; \
+const char     *__RF_NS_LOGGER_PASTE__(prefix, number, _RFNSBridgeKeyLogParameterValuePredefinedMacro__TIME__)            = __TIME__;            \
+const char     *__RF_NS_LOGGER_PASTE__(prefix, number, _RFNSBridgeKeyLogParameterValuePredefinedMacro__TIMESTAMP__)       = __TIMESTAMP__;       \
 
 // Common Parameters.
 #define __RF_NS_LOGGER_COMMON_PARAMETERS__(prefix, number)                                                                   \
@@ -169,7 +170,7 @@ const void     *__RF_NS_LOGGER_PASTE__(prefix, number, _RFNSBridgeKeyLogParamete
 #define __RF_NS_LOGGER_CONDITION_VARIABLES__(prefix, number, condition)                                           \
 const char *__RF_NS_LOGGER_PASTE__(prefix, number, _RFNSBridgeKeyLogParameterKeyValueConditionText) = #condition; \
 
-// Confition Parameters.
+// Condition Parameters.
 #define __RF_NS_LOGGER_CONDITION_PARAMETERS__(prefix, number)                                              \
 (RFNSBridgeKeyLogParameter)                                                                                \
 {                                                                                                          \
@@ -179,7 +180,7 @@ const char *__RF_NS_LOGGER_PASTE__(prefix, number, _RFNSBridgeKeyLogParameterKey
     .value     = &__RF_NS_LOGGER_PASTE__(prefix, number, _RFNSBridgeKeyLogParameterKeyValueConditionText), \
 },                                                                                                         \
 
-// Confition Releases.
+// Condition Releases.
 #define __RF_NS_LOGGER_CONDITION_RELEASES__(prefix, number) \
 
 // C Message Variables.

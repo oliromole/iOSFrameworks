@@ -21,6 +21,8 @@
 		3096D85618529E1D00FA913B /* RFNSBridgeKeyLogDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 3096D85418529E1D00FA913B /* RFNSBridgeKeyLogDefines.m */; };
 		3096D8591852A1CC00FA913B /* RFNSBridgeKeyLogHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 3096D8571852A1CC00FA913B /* RFNSBridgeKeyLogHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3096D85A1852A1CC00FA913B /* RFNSBridgeKeyLogHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3096D8581852A1CC00FA913B /* RFNSBridgeKeyLogHandler.m */; };
+		30BF634918A66FCE00484620 /* RFNSProtectedLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 30BF634718A66FCE00484620 /* RFNSProtectedLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30BF634A18A66FCE00484620 /* RFNSProtectedLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BF634818A66FCE00484620 /* RFNSProtectedLog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		3096D85418529E1D00FA913B /* RFNSBridgeKeyLogDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFNSBridgeKeyLogDefines.m; sourceTree = "<group>"; };
 		3096D8571852A1CC00FA913B /* RFNSBridgeKeyLogHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFNSBridgeKeyLogHandler.h; sourceTree = "<group>"; };
 		3096D8581852A1CC00FA913B /* RFNSBridgeKeyLogHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFNSBridgeKeyLogHandler.m; sourceTree = "<group>"; };
+		30BF634718A66FCE00484620 /* RFNSProtectedLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFNSProtectedLog.h; sourceTree = "<group>"; };
+		30BF634818A66FCE00484620 /* RFNSProtectedLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFNSProtectedLog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				3096D84C18529CAA00FA913B /* RFNSBridgeKeyLogParameter.m */,
 				3055AC2418749AF1006E7C63 /* RFNSLog.h */,
 				3055AC2518749AF1006E7C63 /* RFNSLog.m */,
+				30BF634718A66FCE00484620 /* RFNSProtectedLog.h */,
+				30BF634818A66FCE00484620 /* RFNSProtectedLog.m */,
 			);
 			path = RFBridgeKeyLogger;
 			sourceTree = "<group>";
@@ -118,6 +124,7 @@
 				3096D84F18529CAA00FA913B /* RFNSBridgeKeyLog.h in Headers */,
 				30198421185293AF001774F3 /* RFBridgeKeyLogger-Prefix.pch in Headers */,
 				3096D84D18529CAA00FA913B /* RFBridgeKeyLogger.h in Headers */,
+				30BF634918A66FCE00484620 /* RFNSProtectedLog.h in Headers */,
 				3096D8591852A1CC00FA913B /* RFNSBridgeKeyLogHandler.h in Headers */,
 				3096D85118529CAA00FA913B /* RFNSBridgeKeyLogParameter.h in Headers */,
 			);
@@ -193,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3096D85018529CAA00FA913B /* RFNSBridgeKeyLog.m in Sources */,
+				30BF634A18A66FCE00484620 /* RFNSProtectedLog.m in Sources */,
 				3096D84E18529CAA00FA913B /* RFBridgeKeyLogger.m in Sources */,
 				3096D85218529CAA00FA913B /* RFNSBridgeKeyLogParameter.m in Sources */,
 				3055AC2718749AF1006E7C63 /* RFNSLog.m in Sources */,

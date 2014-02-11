@@ -76,6 +76,7 @@ const void * const RFNSBridgeKeyLogParameterKeyNameCommandWarn = NULL;
 const void * const RFNSBridgeKeyLogParameterKeyNameConditionText = NULL;
 const void * const RFNSBridgeKeyLogParameterKeyNameException = NULL;
 const void * const RFNSBridgeKeyLogParameterKeyNameError = NULL;
+const void * const RFNSBridgeKeyLogParameterKeyNameFrameworkName = NULL;
 const void * const RFNSBridgeKeyLogParameterKeyNameMessage = NULL;
 
 // Parameter Key Names for Objective-C.

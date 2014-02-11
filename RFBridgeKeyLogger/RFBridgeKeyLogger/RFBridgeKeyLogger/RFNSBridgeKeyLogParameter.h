@@ -88,6 +88,7 @@ RFNS_BRIDGE_KEY_LOGGER_EXTERN const void * const RFNSBridgeKeyLogParameterKeyNam
 RFNS_BRIDGE_KEY_LOGGER_EXTERN const void * const RFNSBridgeKeyLogParameterKeyNameConditionText; // RFNSBridgeKeyLogParameterTypeVoidPointer, RFNSBridgeKeyLogParameterTypeCString.
 RFNS_BRIDGE_KEY_LOGGER_EXTERN const void * const RFNSBridgeKeyLogParameterKeyNameException;     // RFNSBridgeKeyLogParameterTypeVoidPointer, RFNSBridgeKeyLogParameterTypeObjectiveCNSException.
 RFNS_BRIDGE_KEY_LOGGER_EXTERN const void * const RFNSBridgeKeyLogParameterKeyNameError;         // RFNSBridgeKeyLogParameterTypeVoidPointer, RFNSBridgeKeyLogParameterTypeObjectiveCNSError.
+RFNS_BRIDGE_KEY_LOGGER_EXTERN const void * const RFNSBridgeKeyLogParameterKeyNameFrameworkName; // RFNSBridgeKeyLogParameterTypeVoidPointer, RFNSBridgeKeyLogParameterTypeCString | RFNSBridgeKeyLogParameterTypeObjectiveCNSString.
 RFNS_BRIDGE_KEY_LOGGER_EXTERN const void * const RFNSBridgeKeyLogParameterKeyNameMessage;       // RFNSBridgeKeyLogParameterTypeVoidPointer, RFNSBridgeKeyLogParameterTypeCString | RFNSBridgeKeyLogParameterTypeObjectiveCNSString.
 
 // Parameter Key Names for Objective-C.

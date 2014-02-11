@@ -1,9 +1,9 @@
 //
-//  RFBridgeKeyLogger.h
+//  RFNSProtectedLog.m
 //  RFBridgeKeyLogger
 //  https://github.com/oliromole/iOSFrameworks.git
 //
-//  Created by Roman Oliichuk on 2013.12.06.
+//  Created by Roman Oliichuk on 2014.02.08.
 //  Copyright (c) 2012 Roman Oliichuk. All rights reserved.
 //
 
@@ -38,10 +38,8 @@
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-// Importing the project headers.
-#import "RFNSBridgeKeyLog.h"
-#import "RFNSBridgeKeyLogDefines.h"
-#import "RFNSBridgeKeyLogHandler.h"
-#import "RFNSBridgeKeyLogParameter.h"
-#import "RFNSLog.h"
+// Importing the header.
 #import "RFNSProtectedLog.h"
+
+// Importing the system headers.
+#import <Foundation/Foundation.h>

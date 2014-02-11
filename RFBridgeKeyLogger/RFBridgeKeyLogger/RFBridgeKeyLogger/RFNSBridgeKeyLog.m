@@ -148,6 +148,13 @@ void RFNSDefaultBridgeKeyLog(RFNSBridgeKeyLogParameter *parameters, size_t numbe
                     numberOfTexts++;
                 }
                 else if ((parameter.keyType == &RFNSBridgeKeyLogParameterTypeVoidPointer) &&
+                         (parameter.keyName == &RFNSBridgeKeyLogParameterKeyNamePredefinedMacro__INCLUDE_LEVEL__) &&
+                         (parameter.valueType == &RFNSBridgeKeyLogParameterTypeLongInteger))
+                {
+                    asprintf(&texts[numberOfTexts], "    __INCLUDE_LEVEL__: %ld\n", *((const long *)parameter.value));
+                    numberOfTexts++;
+                }
+                else if ((parameter.keyType == &RFNSBridgeKeyLogParameterTypeVoidPointer) &&
                          (parameter.keyName == &RFNSBridgeKeyLogParameterKeyNamePredefinedMacro__LINE__) &&
                          (parameter.valueType == &RFNSBridgeKeyLogParameterTypeLongInteger))
                 {
@@ -181,6 +188,13 @@ void RFNSDefaultBridgeKeyLog(RFNSBridgeKeyLogParameter *parameters, size_t numbe
                          (parameter.valueType == &RFNSBridgeKeyLogParameterTypeCString))
                 {
                     asprintf(&texts[numberOfTexts], "    Condition Text: %s\n", *((const char * const *)parameter.value));
+                    numberOfTexts++;
+                }
+                else if ((parameter.keyType == &RFNSBridgeKeyLogParameterTypeVoidPointer) &&
+                         (parameter.keyName == &RFNSBridgeKeyLogParameterKeyNameFrameworkName) &&
+                         (parameter.valueType == &RFNSBridgeKeyLogParameterTypeCString))
+                {
+                    asprintf(&texts[numberOfTexts], "    Framework Name: %s\n", *((const char * const *)parameter.value));
                     numberOfTexts++;
                 }
                 else if ((parameter.keyType == &RFNSBridgeKeyLogParameterTypeVoidPointer) &&

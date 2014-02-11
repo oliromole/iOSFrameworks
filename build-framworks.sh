@@ -420,9 +420,38 @@ do
 
     var_command_lipo_detaile_info="xcrun -sdk iphoneos lipo -detailed_info"
     var_command_lipo_detaile_info="${var_command_lipo_detaile_info} ${var_frameworks_framework_library_path}"
-    var_command_lipo_detaile_info="${var_command_lipo_detaile_info}"
 
     ${var_command_lipo_detaile_info} | grep "architecture"
 done
 
-echo "---FINISHED---"
+# Finish
+
+var_finished=1
+
+for var_framework_name in "${var_framework_names2[@]}"
+do
+    if [ "${var_framework_name}" == "${var_separator}" ]
+    then
+        continue
+    fi
+
+    var_frameworks_framework_path="${var_frameworks_dir}/${var_framework_name}.framework"
+    var_frameworks_framework_library_path="${var_frameworks_framework_path}/${var_framework_name}"
+
+    if [ ! -f "${var_frameworks_framework_library_path}" ]
+    then
+        var_finished=0
+        echo "Failed: ${var_framework_name}"
+    fi
+done
+
+if [ "${var_finished}" -eq 1 ]
+then
+    echo "---FINISHED---"
+
+    exit 0
+else
+    echo "---FIAILD---"
+
+    exit 1
+fi

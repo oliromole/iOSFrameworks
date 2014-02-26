@@ -69,11 +69,14 @@ BOOL UIDevice_UIDeviceREUIDevice_IsSystemVersionGraterThanOrEqualTo_6_1_2 = NO;
 BOOL UIDevice_UIDeviceREUIDevice_IsSystemVersionGraterThanOrEqualTo_6_1_3 = NO;
 BOOL UIDevice_UIDeviceREUIDevice_IsSystemVersionGraterThanOrEqualTo_6_1_4 = NO;
 BOOL UIDevice_UIDeviceREUIDevice_IsSystemVersionGraterThanOrEqualTo_6_1_5 = NO;
+BOOL UIDevice_UIDeviceREUIDevice_IsSystemVersionGraterThanOrEqualTo_6_1_6 = NO;
 BOOL UIDevice_UIDeviceREUIDevice_IsSystemVersionGraterThanOrEqualTo_7_0 = NO;
 BOOL UIDevice_UIDeviceREUIDevice_IsSystemVersionGraterThanOrEqualTo_7_0_1 = NO;
 BOOL UIDevice_UIDeviceREUIDevice_IsSystemVersionGraterThanOrEqualTo_7_0_2 = NO;
 BOOL UIDevice_UIDeviceREUIDevice_IsSystemVersionGraterThanOrEqualTo_7_0_3 = NO;
 BOOL UIDevice_UIDeviceREUIDevice_IsSystemVersionGraterThanOrEqualTo_7_0_4 = NO;
+BOOL UIDevice_UIDeviceREUIDevice_IsSystemVersionGraterThanOrEqualTo_7_0_5 = NO;
+BOOL UIDevice_UIDeviceREUIDevice_IsSystemVersionGraterThanOrEqualTo_7_0_6 = NO;
 
 BOOL *UIDevice_UIDeviceREUIDevice_IsSystemVersionGraterThanOrEqualTos[] =
 {
@@ -90,11 +93,14 @@ BOOL *UIDevice_UIDeviceREUIDevice_IsSystemVersionGraterThanOrEqualTos[] =
     &UIDevice_UIDeviceREUIDevice_IsSystemVersionGraterThanOrEqualTo_6_1_3,
     &UIDevice_UIDeviceREUIDevice_IsSystemVersionGraterThanOrEqualTo_6_1_4,
     &UIDevice_UIDeviceREUIDevice_IsSystemVersionGraterThanOrEqualTo_6_1_5,
+    &UIDevice_UIDeviceREUIDevice_IsSystemVersionGraterThanOrEqualTo_6_1_6,
     &UIDevice_UIDeviceREUIDevice_IsSystemVersionGraterThanOrEqualTo_7_0,
     &UIDevice_UIDeviceREUIDevice_IsSystemVersionGraterThanOrEqualTo_7_0_1,
     &UIDevice_UIDeviceREUIDevice_IsSystemVersionGraterThanOrEqualTo_7_0_2,
     &UIDevice_UIDeviceREUIDevice_IsSystemVersionGraterThanOrEqualTo_7_0_3,
     &UIDevice_UIDeviceREUIDevice_IsSystemVersionGraterThanOrEqualTo_7_0_4,
+    &UIDevice_UIDeviceREUIDevice_IsSystemVersionGraterThanOrEqualTo_7_0_5,
+    &UIDevice_UIDeviceREUIDevice_IsSystemVersionGraterThanOrEqualTo_7_0_6,
 };
 
 NSInteger UIDevice_UIDeviceREUIDevice_IsSystemVersionGraterThanOrEqualTo_Count = (sizeof(UIDevice_UIDeviceREUIDevice_IsSystemVersionGraterThanOrEqualTos) / sizeof(UIDevice_UIDeviceREUIDevice_IsSystemVersionGraterThanOrEqualTos[0]));
@@ -114,11 +120,14 @@ NSString *UIDevice_UIDeviceREUIDevice_IsSystemVersionGraterThanOrEqualToAsString
     @"6.1.3",
     @"6.1.4",
     @"6.1.5",
+    @"6.1.6",
     @"7",
     @"7.0.1",
     @"7.0.2",
     @"7.0.3",
     @"7.0.4",
+    @"7.0.5",
+    @"7.0.6",
 };
 
 void UIDevice_UIDeviceREUIDevice_IsSystemVersion_Initialize(void);
@@ -336,6 +345,13 @@ void UIDevice_UIDeviceREUIDevice_IsSystemVersion_Initialize()
     return UIDevice_UIDeviceREUIDevice_IsSystemVersionGraterThanOrEqualTo_6_1_5;
 }
 
++ (BOOL)isSystemVersionGraterThanOrEqualTo_6_1_6
+{
+    UIDevice_UIDeviceREUIDevice_IsSystemVersion_Initialize();
+    
+    return UIDevice_UIDeviceREUIDevice_IsSystemVersionGraterThanOrEqualTo_6_1_6;
+}
+
 + (BOOL)isSystemVersionGraterThanOrEqualTo_7_0
 {
     UIDevice_UIDeviceREUIDevice_IsSystemVersion_Initialize();
@@ -369,6 +385,20 @@ void UIDevice_UIDeviceREUIDevice_IsSystemVersion_Initialize()
     UIDevice_UIDeviceREUIDevice_IsSystemVersion_Initialize();
     
     return UIDevice_UIDeviceREUIDevice_IsSystemVersionGraterThanOrEqualTo_7_0_4;
+}
+
++ (BOOL)isSystemVersionGraterThanOrEqualTo_7_0_5
+{
+    UIDevice_UIDeviceREUIDevice_IsSystemVersion_Initialize();
+    
+    return UIDevice_UIDeviceREUIDevice_IsSystemVersionGraterThanOrEqualTo_7_0_5;
+}
+
++ (BOOL)isSystemVersionGraterThanOrEqualTo_7_0_6
+{
+    UIDevice_UIDeviceREUIDevice_IsSystemVersion_Initialize();
+    
+    return UIDevice_UIDeviceREUIDevice_IsSystemVersionGraterThanOrEqualTo_7_0_6;
 }
 
 @end

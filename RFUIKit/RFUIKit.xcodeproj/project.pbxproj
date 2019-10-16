@@ -440,8 +440,6 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
-				en,
 			);
 			mainGroup = 300AC6E017C43081002637FA;
 			productRefGroup = 300AC6EA17C43081002637FA /* Products */;

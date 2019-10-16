@@ -173,8 +173,6 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
-				en,
 			);
 			mainGroup = 30389C2017C42BA8001FA7E8;
 			productRefGroup = 30389C2A17C42BA8001FA7E8 /* Products */;

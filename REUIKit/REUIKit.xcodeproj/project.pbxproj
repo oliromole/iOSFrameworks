@@ -360,8 +360,6 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
-				en,
 			);
 			mainGroup = 30004ABD17C424CE00C55E59;
 			productRefGroup = 30004AC717C424CE00C55E59 /* Products */;

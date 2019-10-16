@@ -146,8 +146,6 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
-				en,
 			);
 			mainGroup = 30D693C417C4202200CCCA25;
 			productRefGroup = 30D693CE17C4202200CCCA25 /* Products */;

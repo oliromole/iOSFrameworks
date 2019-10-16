@@ -143,7 +143,7 @@
 		30592AF217C40E4600F5BD7D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Roman Oliichuk";
 			};
 			buildConfigurationList = 30592AF517C40E4600F5BD7D /* Build configuration list for PBXProject "RECoreGraphics" */;

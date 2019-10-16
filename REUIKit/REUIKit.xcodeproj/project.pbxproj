@@ -352,7 +352,7 @@
 		30004ABE17C424CE00C55E59 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Roman Oliichuk";
 			};
 			buildConfigurationList = 30004AC117C424CE00C55E59 /* Build configuration list for PBXProject "REUIKit" */;

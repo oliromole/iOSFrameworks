@@ -245,7 +245,7 @@
 		30D2624E17C4B6FA00929A2C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Roman Oliichuk";
 			};
 			buildConfigurationList = 30D2625117C4B6FA00929A2C /* Build configuration list for PBXProject "RWSQLite" */;

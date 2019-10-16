@@ -271,7 +271,7 @@
 		3085D47417C36925007C223A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Roman Oliichuk";
 			};
 			buildConfigurationList = 3085D47717C36925007C223A /* Build configuration list for PBXProject "RFFoundation" */;

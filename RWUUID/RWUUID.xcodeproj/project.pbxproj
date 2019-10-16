@@ -141,7 +141,7 @@
 		3067E10417C35E8A0034B3B9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Roman Oliichuk";
 			};
 			buildConfigurationList = 3067E10717C35E8A0034B3B9 /* Build configuration list for PBXProject "RWUUID" */;

@@ -122,7 +122,7 @@
 		30BFD19A17C2E4670029B447 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Roman Oliichuk";
 			};
 			buildConfigurationList = 30BFD19D17C2E4670029B447 /* Build configuration list for PBXProject "RWObjC" */;

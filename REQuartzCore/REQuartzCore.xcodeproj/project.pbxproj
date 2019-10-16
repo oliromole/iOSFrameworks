@@ -138,7 +138,7 @@
 		30D693C517C4202200CCCA25 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Roman Oliichuk";
 			};
 			buildConfigurationList = 30D693C817C4202200CCCA25 /* Build configuration list for PBXProject "REQuartzCore" */;

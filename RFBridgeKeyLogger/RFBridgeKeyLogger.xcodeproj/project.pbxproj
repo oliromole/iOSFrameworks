@@ -157,7 +157,7 @@
 		301983E318528FB4001774F3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Roman Oliichuk";
 			};
 			buildConfigurationList = 301983E618528FB4001774F3 /* Build configuration list for PBXProject "RFBridgeKeyLogger" */;

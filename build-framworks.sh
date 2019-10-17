@@ -56,7 +56,7 @@ var_sdks=(
 "iphoneos"
 )
 
-var_used_paranel_command=0
+var_used_parallel_command=0
 var_preprocessor_definitions_enabled=1
 
 var_root="${PWD}"
@@ -235,7 +235,7 @@ do
 
     var_framework_build_dir="${var_framework_project_dir}/build"
 
-    if [ "${var_used_paranel_command}" -eq 1 ]
+    if [ "${var_used_parallel_command}" -eq 1 ]
     then
         fun_remove_directory "${var_framework_build_dir}/" &
     else
@@ -287,7 +287,7 @@ do
                 var_command_xcodebuild_build="${var_command_xcodebuild_build} PR_USE_PREPROCESSOR_DEFINITIONS=1"
             fi
 
-            if [ "${var_used_paranel_command}" -eq 1 ]
+            if [ "${var_used_parallel_command}" -eq 1 ]
             then
                 fun_run_command "${var_command_xcodebuild_build}" &
             else
@@ -311,7 +311,7 @@ do
 
         var_sdk_frameworks_framework_path="${var_sdk_frameworks_dir}/${var_framework_name}.framework"
 
-        if [ "${var_used_paranel_command}" -eq 1 ]
+        if [ "${var_used_parallel_command}" -eq 1 ]
         then
             fun_move_directory "${var_frameworks_framework_path}" "${var_sdk_frameworks_framework_path}" &
         else
@@ -348,7 +348,7 @@ do
 
         if [ -d "${var_sdk_frameworks_framework_headers_dir}/" ]
         then
-            if [ "${var_used_paranel_command}" -eq 1 ]
+            if [ "${var_used_parallel_command}" -eq 1 ]
             then
                 fun_copy_directory "${var_sdk_frameworks_framework_headers_dir}" "${var_frameworks_framework_headers_dir}" &
             else
@@ -367,7 +367,7 @@ do
 
         if [ -d "${var_sdk_frameworks_framework_private_headers_dir}/" ]
         then
-            if [ "${var_used_paranel_command}" -eq 1 ]
+            if [ "${var_used_parallel_command}" -eq 1 ]
             then
                 fun_copy_directory "${var_sdk_frameworks_framework_private_headers_dir}" "${var_frameworks_framework_private_headers_dir}" &
             else
@@ -392,7 +392,7 @@ do
 
     var_command_lipo_create="${var_command_lipo_create} -output ${var_frameworks_framework_library_path}"
 
-    if [ "${var_used_paranel_command}" -eq 1 ]
+    if [ "${var_used_parallel_command}" -eq 1 ]
     then
         fun_run_command "${var_command_lipo_create}" &
     else

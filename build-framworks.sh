@@ -56,7 +56,7 @@ var_sdks=(
 "iphoneos"
 )
 
-var_used_paranel_command=1
+var_used_paranel_command=0
 var_preprocessor_definitions_enabled=1
 
 var_root="${PWD}"

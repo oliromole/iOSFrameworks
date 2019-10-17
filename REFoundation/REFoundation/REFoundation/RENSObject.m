@@ -415,7 +415,7 @@ CFTypeID NSObject_NSObjectRENSObject_NSObject_TypeID = 0;
         @throw [NSException exceptionWithName:NSInvalidArgumentException reason:[NSString stringWithFormat:@"-[%@ %@]: unrecognized selector sent to instance %p", NSStringFromClass(self.class), NSStringFromSelector(selector), self] userInfo:nil];
     }
     
-    id returnValue = implementation(self, selector, object0, object1, object2);
+    id returnValue = ((id (*)(id, SEL, id, id, id))implementation)(self, selector, object0, object1, object2);
     return returnValue;
 }
 
@@ -428,7 +428,7 @@ CFTypeID NSObject_NSObjectRENSObject_NSObject_TypeID = 0;
         @throw [NSException exceptionWithName:NSInvalidArgumentException reason:[NSString stringWithFormat:@"-[%@ %@]: unrecognized selector sent to instance %p", NSStringFromClass(self.class), NSStringFromSelector(selector), self] userInfo:nil];
     }
     
-    id returnValue = implementation(self, selector, object0, object1, object2, object3);
+    id returnValue = ((id (*)(id, SEL, id, id, id, id))implementation)(self, selector, object0, object1, object2, object3);
     return returnValue;
 }
 
@@ -441,7 +441,7 @@ CFTypeID NSObject_NSObjectRENSObject_NSObject_TypeID = 0;
         @throw [NSException exceptionWithName:NSInvalidArgumentException reason:[NSString stringWithFormat:@"-[%@ %@]: unrecognized selector sent to instance %p", NSStringFromClass(self.class), NSStringFromSelector(selector), self] userInfo:nil];
     }
     
-    id returnValue = implementation(self, selector, object0, object1, object2, object3, object4);
+    id returnValue = ((id (*)(id, SEL, id, id, id, id, id))implementation)(self, selector, object0, object1, object2, object3, object4);
     return returnValue;
 }
 

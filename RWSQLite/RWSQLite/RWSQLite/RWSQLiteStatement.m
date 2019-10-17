@@ -942,7 +942,7 @@ jmp_exit:
                 goto jmp_exit;
             }
             
-            id value = method(bindObject, selector);
+            id value = ((id (*)(id, SEL))method)(bindObject, selector);
             
             success = [self bindObject:value forName:key copied:copied error:(pError ? &error : nil)];
             
